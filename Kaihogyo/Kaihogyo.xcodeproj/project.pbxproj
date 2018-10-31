@@ -15,7 +15,9 @@
 		873796BC218929C6004213CF /* Quote+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873796BB218929C6004213CF /* Quote+Convenience.swift */; };
 		873796BF21892BCB004213CF /* Quote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 873796BD21892BCB004213CF /* Quote.xcdatamodeld */; };
 		873796C121892C53004213CF /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873796C021892C53004213CF /* Stack.swift */; };
-		873796C321893179004213CF /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873796C221893179004213CF /* QuoteViewController.swift */; };
+		873796C321893179004213CF /* QuoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873796C221893179004213CF /* QuoteVC.swift */; };
+		8786F0EA218A0A0C007F43B0 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8786F0E9218A0A0C007F43B0 /* LoginVC.swift */; };
+		8786F0EC218A1FEB007F43B0 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8786F0EB218A1FEB007F43B0 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +31,9 @@
 		873796BB218929C6004213CF /* Quote+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quote+Convenience.swift"; sourceTree = "<group>"; };
 		873796BE21892BCB004213CF /* Quote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Quote.xcdatamodel; sourceTree = "<group>"; };
 		873796C021892C53004213CF /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
-		873796C221893179004213CF /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
+		873796C221893179004213CF /* QuoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteVC.swift; sourceTree = "<group>"; };
+		8786F0E9218A0A0C007F43B0 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		8786F0EB218A1FEB007F43B0 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,46 +66,49 @@
 		873796A1218928B7004213CF /* Kaihogyo */ = {
 			isa = PBXGroup;
 			children = (
-				873796B4218928DE004213CF /* Model */,
-				873796B5218928E5004213CF /* Model Controller */,
-				873796B6218928ED004213CF /* View Controller */,
-				873796B7218928FE004213CF /* View */,
+				873796B4218928DE004213CF /* Models */,
+				873796B5218928E5004213CF /* Model Controllers */,
+				8786F0E5218A09BF007F43B0 /* View Controllers--Find a Race */,
+				8786F0E6218A09C7007F43B0 /* View Controllers--Train Hard */,
+				873796B6218928ED004213CF /* View Controllers--Be Inspired */,
+				8786F0E8218A09D9007F43B0 /* View Controllers--Other */,
+				873796B7218928FE004213CF /* Views */,
 				873796B82189290C004213CF /* Resources */,
 			);
 			path = Kaihogyo;
 			sourceTree = "<group>";
 		};
-		873796B4218928DE004213CF /* Model */ = {
+		873796B4218928DE004213CF /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				873796BB218929C6004213CF /* Quote+Convenience.swift */,
 				873796C021892C53004213CF /* Stack.swift */,
 				873796BD21892BCB004213CF /* Quote.xcdatamodeld */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		873796B5218928E5004213CF /* Model Controller */ = {
+		873796B5218928E5004213CF /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				873796B921892987004213CF /* QuoteController.swift */,
 			);
-			path = "Model Controller";
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
-		873796B6218928ED004213CF /* View Controller */ = {
+		873796B6218928ED004213CF /* View Controllers--Be Inspired */ = {
 			isa = PBXGroup;
 			children = (
-				873796C221893179004213CF /* QuoteViewController.swift */,
+				873796C221893179004213CF /* QuoteVC.swift */,
 			);
-			path = "View Controller";
+			path = "View Controllers--Be Inspired";
 			sourceTree = "<group>";
 		};
-		873796B7218928FE004213CF /* View */ = {
+		873796B7218928FE004213CF /* Views */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		873796B82189290C004213CF /* Resources */ = {
@@ -114,6 +121,29 @@
 				873796AE218928B8004213CF /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		8786F0E5218A09BF007F43B0 /* View Controllers--Find a Race */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers--Find a Race";
+			sourceTree = "<group>";
+		};
+		8786F0E6218A09C7007F43B0 /* View Controllers--Train Hard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers--Train Hard";
+			sourceTree = "<group>";
+		};
+		8786F0E8218A09D9007F43B0 /* View Controllers--Other */ = {
+			isa = PBXGroup;
+			children = (
+				8786F0E9218A0A0C007F43B0 /* LoginVC.swift */,
+				8786F0EB218A1FEB007F43B0 /* TabBarController.swift */,
+			);
+			path = "View Controllers--Other";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,10 +219,12 @@
 			files = (
 				873796BF21892BCB004213CF /* Quote.xcdatamodeld in Sources */,
 				873796C121892C53004213CF /* Stack.swift in Sources */,
+				8786F0EA218A0A0C007F43B0 /* LoginVC.swift in Sources */,
 				873796BA21892987004213CF /* QuoteController.swift in Sources */,
-				873796C321893179004213CF /* QuoteViewController.swift in Sources */,
+				873796C321893179004213CF /* QuoteVC.swift in Sources */,
 				873796BC218929C6004213CF /* Quote+Convenience.swift in Sources */,
 				873796A3218928B7004213CF /* AppDelegate.swift in Sources */,
+				8786F0EC218A1FEB007F43B0 /* TabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

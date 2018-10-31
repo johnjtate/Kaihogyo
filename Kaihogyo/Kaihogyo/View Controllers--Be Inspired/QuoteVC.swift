@@ -1,5 +1,5 @@
 //
-//  QuoteViewController.swift
+//  QuoteVC.swift
 //  Kaihogyo
 //
 //  Created by John Tate on 10/30/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class QuoteViewController: UIViewController {
+class QuoteVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
