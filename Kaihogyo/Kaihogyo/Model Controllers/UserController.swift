@@ -18,7 +18,11 @@ class UserController {
     let currentUserWasSetNotification = Notification.Name("currentUserSet")
     
     // currentUser made optional because may not be logged in yet
-    var currentUser: User?
+    var currentUser: User? {
+        didSet {
+            NotificationCenter.default.post(name: currentUserWasSetNotification, object: nil)
+        }
+    }
     
     // CRUD functions
     func createUserWith(username: String, email: String, completion: ((Bool) -> Void)?) {

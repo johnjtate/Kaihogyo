@@ -10,6 +10,7 @@
 		8729C5C5218A4D5300DA1298 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8729C5C4218A4D5300DA1298 /* CloudKit.framework */; };
 		8729C5C7218A538800DA1298 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8729C5C6218A538800DA1298 /* UserController.swift */; };
 		8729C5C9218A54EE00DA1298 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8729C5C8218A54EE00DA1298 /* User.swift */; };
+		8729C5CB218A61B900DA1298 /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8729C5CA218A61B900DA1298 /* UIViewController+Alerts.swift */; };
 		873796A3218928B7004213CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873796A2218928B7004213CF /* AppDelegate.swift */; };
 		873796A8218928B7004213CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873796A6218928B7004213CF /* Main.storyboard */; };
 		873796AA218928B8004213CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 873796A9218928B8004213CF /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 		8729C5C4218A4D5300DA1298 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		8729C5C6218A538800DA1298 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
 		8729C5C8218A54EE00DA1298 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8729C5CA218A61B900DA1298 /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
 		8737969F218928B7004213CF /* Kaihogyo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kaihogyo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		873796A2218928B7004213CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		873796A7218928B7004213CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 			children = (
 				8786F0E9218A0A0C007F43B0 /* LoginVC.swift */,
 				8786F0EB218A1FEB007F43B0 /* TabBarController.swift */,
+				8729C5CA218A61B900DA1298 /* UIViewController+Alerts.swift */,
 			);
 			path = "View Controllers--Other";
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8729C5C7218A538800DA1298 /* UserController.swift in Sources */,
+				8729C5CB218A61B900DA1298 /* UIViewController+Alerts.swift in Sources */,
 				873796BF21892BCB004213CF /* Quote.xcdatamodeld in Sources */,
 				873796C121892C53004213CF /* Stack.swift in Sources */,
 				8786F0EA218A0A0C007F43B0 /* LoginVC.swift in Sources */,
