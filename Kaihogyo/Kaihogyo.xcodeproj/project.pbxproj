@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8729C5C5218A4D5300DA1298 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8729C5C4218A4D5300DA1298 /* CloudKit.framework */; };
+		8729C5C7218A538800DA1298 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8729C5C6218A538800DA1298 /* UserController.swift */; };
+		8729C5C9218A54EE00DA1298 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8729C5C8218A54EE00DA1298 /* User.swift */; };
 		873796A3218928B7004213CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873796A2218928B7004213CF /* AppDelegate.swift */; };
 		873796A8218928B7004213CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873796A6218928B7004213CF /* Main.storyboard */; };
 		873796AA218928B8004213CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 873796A9218928B8004213CF /* Assets.xcassets */; };
@@ -23,6 +26,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8729C5C2218A4D4D00DA1298 /* Kaihogyo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Kaihogyo.entitlements; sourceTree = "<group>"; };
+		8729C5C4218A4D5300DA1298 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		8729C5C6218A538800DA1298 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		8729C5C8218A54EE00DA1298 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8737969F218928B7004213CF /* Kaihogyo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kaihogyo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		873796A2218928B7004213CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		873796A7218928B7004213CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -45,17 +52,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8729C5C5218A4D5300DA1298 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8729C5C3218A4D5300DA1298 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8729C5C4218A4D5300DA1298 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		87379696218928B7004213CF = {
 			isa = PBXGroup;
 			children = (
 				873796A1218928B7004213CF /* Kaihogyo */,
 				873796A0218928B7004213CF /* Products */,
+				8729C5C3218A4D5300DA1298 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +87,7 @@
 		873796A1218928B7004213CF /* Kaihogyo */ = {
 			isa = PBXGroup;
 			children = (
+				8729C5C2218A4D4D00DA1298 /* Kaihogyo.entitlements */,
 				873796B4218928DE004213CF /* Models */,
 				873796B5218928E5004213CF /* Model Controllers */,
 				8786F0E5218A09BF007F43B0 /* View Controllers--Find a Race */,
@@ -89,6 +107,7 @@
 				873796BB218929C6004213CF /* Quote+Convenience.swift */,
 				873796C021892C53004213CF /* Stack.swift */,
 				873796BD21892BCB004213CF /* Quote.xcdatamodeld */,
+				8729C5C8218A54EE00DA1298 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -97,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				873796B921892987004213CF /* QuoteController.swift */,
+				8729C5C6218A538800DA1298 /* UserController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -192,6 +212,14 @@
 				TargetAttributes = {
 					8737969E218928B7004213CF = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -233,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8729C5C7218A538800DA1298 /* UserController.swift in Sources */,
 				873796BF21892BCB004213CF /* Quote.xcdatamodeld in Sources */,
 				873796C121892C53004213CF /* Stack.swift in Sources */,
 				8786F0EA218A0A0C007F43B0 /* LoginVC.swift in Sources */,
@@ -240,6 +269,7 @@
 				873796C321893179004213CF /* QuoteVC.swift in Sources */,
 				873796BC218929C6004213CF /* Quote+Convenience.swift in Sources */,
 				873796A3218928B7004213CF /* AppDelegate.swift in Sources */,
+				8729C5C9218A54EE00DA1298 /* User.swift in Sources */,
 				8786F0EC218A1FEB007F43B0 /* TabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,6 +416,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Kaihogyo/Kaihogyo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 74SYWHWN72;
 				INFOPLIST_FILE = "$(SRCROOT)/Kaihogyo/Resources/Info.plist";
@@ -404,6 +435,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Kaihogyo/Kaihogyo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 74SYWHWN72;
 				INFOPLIST_FILE = "$(SRCROOT)/Kaihogyo/Resources/Info.plist";
