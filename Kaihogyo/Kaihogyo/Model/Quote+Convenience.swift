@@ -11,12 +11,13 @@ import CoreData
 
 extension Quote {
     
-    convenience init(text: String, author: String, url: String?, context: NSManagedObjectContext = CoreDataStack.context) {
+    convenience init(text: String, author: String, url: String?, userAdded: Bool, context: NSManagedObjectContext = CoreDataStack.context) {
         
         self.init(context: context)
         
         self.text = text
         self.author = author
         self.url = url
+        self.userAdded = userAdded
     }
 }

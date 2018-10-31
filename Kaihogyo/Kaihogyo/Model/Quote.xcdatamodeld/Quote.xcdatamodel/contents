@@ -4,8 +4,9 @@
         <attribute name="author" attributeType="String" syncable="YES"/>
         <attribute name="text" attributeType="String" syncable="YES"/>
         <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userAdded" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Quote" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="Quote" positionX="-63" positionY="-18" width="128" height="103"/>
     </elements>
 </model>
