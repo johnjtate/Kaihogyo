@@ -11,6 +11,10 @@
 		873796A8218928B7004213CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873796A6218928B7004213CF /* Main.storyboard */; };
 		873796AA218928B8004213CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 873796A9218928B8004213CF /* Assets.xcassets */; };
 		873796AD218928B8004213CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873796AB218928B8004213CF /* LaunchScreen.storyboard */; };
+		873796BA21892987004213CF /* QuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873796B921892987004213CF /* QuoteController.swift */; };
+		873796BC218929C6004213CF /* Quote+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873796BB218929C6004213CF /* Quote+Convenience.swift */; };
+		873796BF21892BCB004213CF /* Quote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 873796BD21892BCB004213CF /* Quote.xcdatamodeld */; };
+		873796C121892C53004213CF /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873796C021892C53004213CF /* Stack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		873796A9218928B8004213CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		873796AC218928B8004213CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873796AE218928B8004213CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		873796B921892987004213CF /* QuoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteController.swift; sourceTree = "<group>"; };
+		873796BB218929C6004213CF /* Quote+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quote+Convenience.swift"; sourceTree = "<group>"; };
+		873796BE21892BCB004213CF /* Quote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Quote.xcdatamodel; sourceTree = "<group>"; };
+		873796C021892C53004213CF /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +72,9 @@
 		873796B4218928DE004213CF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				873796BB218929C6004213CF /* Quote+Convenience.swift */,
+				873796C021892C53004213CF /* Stack.swift */,
+				873796BD21892BCB004213CF /* Quote.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -71,6 +82,7 @@
 		873796B5218928E5004213CF /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
+				873796B921892987004213CF /* QuoteController.swift */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -172,6 +184,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				873796BF21892BCB004213CF /* Quote.xcdatamodeld in Sources */,
+				873796C121892C53004213CF /* Stack.swift in Sources */,
+				873796BA21892987004213CF /* QuoteController.swift in Sources */,
+				873796BC218929C6004213CF /* Quote+Convenience.swift in Sources */,
 				873796A3218928B7004213CF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,6 +388,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		873796BD21892BCB004213CF /* Quote.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				873796BE21892BCB004213CF /* Quote.xcdatamodel */,
+			);
+			currentVersion = 873796BE21892BCB004213CF /* Quote.xcdatamodel */;
+			path = Quote.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 87379697218928B7004213CF /* Project object */;
 }
