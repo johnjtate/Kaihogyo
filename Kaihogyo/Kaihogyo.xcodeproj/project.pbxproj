@@ -18,6 +18,8 @@
 		873796C321893179004213CF /* QuoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873796C221893179004213CF /* QuoteVC.swift */; };
 		8786F0EA218A0A0C007F43B0 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8786F0E9218A0A0C007F43B0 /* LoginVC.swift */; };
 		8786F0EC218A1FEB007F43B0 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8786F0EB218A1FEB007F43B0 /* TabBarController.swift */; };
+		8786F0F0218A299E007F43B0 /* CaesarDressing-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8786F0EE218A2921007F43B0 /* CaesarDressing-Regular.ttf */; };
+		8786F0F1218A29A5007F43B0 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8786F0EF218A292F007F43B0 /* OpenSans-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		873796C221893179004213CF /* QuoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteVC.swift; sourceTree = "<group>"; };
 		8786F0E9218A0A0C007F43B0 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		8786F0EB218A1FEB007F43B0 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		8786F0EE218A2921007F43B0 /* CaesarDressing-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CaesarDressing-Regular.ttf"; sourceTree = "<group>"; };
+		8786F0EF218A292F007F43B0 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,7 @@
 				873796B6218928ED004213CF /* View Controllers--Be Inspired */,
 				8786F0E8218A09D9007F43B0 /* View Controllers--Other */,
 				873796B7218928FE004213CF /* Views */,
+				8786F0ED218A277C007F43B0 /* Fonts */,
 				873796B82189290C004213CF /* Resources */,
 			);
 			path = Kaihogyo;
@@ -146,6 +151,15 @@
 			path = "View Controllers--Other";
 			sourceTree = "<group>";
 		};
+		8786F0ED218A277C007F43B0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8786F0EE218A2921007F43B0 /* CaesarDressing-Regular.ttf */,
+				8786F0EF218A292F007F43B0 /* OpenSans-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -204,9 +218,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8786F0F1218A29A5007F43B0 /* OpenSans-Regular.ttf in Resources */,
 				873796AD218928B8004213CF /* LaunchScreen.storyboard in Resources */,
 				873796AA218928B8004213CF /* Assets.xcassets in Resources */,
 				873796A8218928B7004213CF /* Main.storyboard in Resources */,
+				8786F0F0218A299E007F43B0 /* CaesarDressing-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
