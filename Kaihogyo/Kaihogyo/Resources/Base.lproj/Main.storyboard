@@ -152,7 +152,7 @@
         <!--Race Search-->
         <scene sceneID="aK0-I1-CIF">
             <objects>
-                <viewController id="6Sm-ZJ-qf1" sceneMemberID="viewController">
+                <viewController id="6Sm-ZJ-qf1" customClass="RaceSearchVC" customModule="Kaihogyo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sMg-IR-dut">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -205,6 +205,9 @@
                                                     <segment title="kilometers"/>
                                                 </segments>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="distanceSegmentedControlToggled:" destination="6Sm-ZJ-qf1" eventType="valueChanged" id="LMT-tS-JJw"/>
+                                                </connections>
                                             </segmentedControl>
                                         </subviews>
                                     </stackView>
@@ -257,7 +260,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wID-mQ-0Wg">
-                                <rect key="frame" x="8.5" y="241" width="303" height="92"/>
+                                <rect key="frame" x="8.5" y="261" width="303" height="61"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or in:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVa-vG-qF4">
                                         <rect key="frame" x="0.0" y="0.0" width="38.5" height="20.5"/>
@@ -266,7 +269,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="4Ke-o3-fro">
-                                        <rect key="frame" x="48.5" y="0.0" width="94.5" height="89.5"/>
+                                        <rect key="frame" x="48.5" y="0.0" width="94.5" height="55"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="city" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BSI-TV-ITb">
                                                 <rect key="frame" x="0.0" y="0.0" width="28" height="20.5"/>
@@ -280,16 +283,10 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVn-qV-1A9">
-                                                <rect key="frame" x="0.0" y="69" width="59" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="iZg-In-RTZ">
-                                        <rect key="frame" x="153" y="0.0" width="150" height="92"/>
+                                        <rect key="frame" x="153" y="0.0" width="150" height="61"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9uV-1h-gbC">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
@@ -297,14 +294,8 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aEX-kO-gVf">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eNA-bX-dca">
                                                 <rect key="frame" x="0.0" y="31" width="150" height="30"/>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yNH-24-ujY">
-                                                <rect key="frame" x="0.0" y="62" width="150" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -325,6 +316,9 @@
                                         <state key="normal" title="Clear All">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="clearAllButtonTapped:" destination="6Sm-ZJ-qf1" eventType="touchUpInside" id="BIR-kD-DCz"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTa-uo-veN">
                                         <rect key="frame" x="0.0" y="44" width="256" height="34"/>
@@ -332,6 +326,9 @@
                                         <state key="normal" title="Search for Race">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="searchForRaceButtonTapped:" destination="6Sm-ZJ-qf1" eventType="touchUpInside" id="mrM-TM-gJe"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -346,7 +343,7 @@
                             <constraint firstItem="eIx-wF-2PO" firstAttribute="width" secondItem="sMg-IR-dut" secondAttribute="width" multiplier="0.8" id="Hyf-xU-dEO"/>
                             <constraint firstItem="wID-mQ-0Wg" firstAttribute="centerX" secondItem="sMg-IR-dut" secondAttribute="centerX" id="Pcb-la-MoH"/>
                             <constraint firstItem="nms-nd-6jo" firstAttribute="bottom" secondItem="eIx-wF-2PO" secondAttribute="bottom" constant="10" id="Pqt-mu-PFP"/>
-                            <constraint firstItem="wID-mQ-0Wg" firstAttribute="top" secondItem="0pc-Ly-Kvc" secondAttribute="bottom" constant="10" id="V1C-FX-t9u"/>
+                            <constraint firstItem="wID-mQ-0Wg" firstAttribute="top" secondItem="0pc-Ly-Kvc" secondAttribute="bottom" constant="30" id="V1C-FX-t9u"/>
                             <constraint firstItem="wID-mQ-0Wg" firstAttribute="width" secondItem="0pc-Ly-Kvc" secondAttribute="width" id="WPl-Ru-rPY"/>
                             <constraint firstItem="eIx-wF-2PO" firstAttribute="centerX" secondItem="sMg-IR-dut" secondAttribute="centerX" id="cHg-eF-r53"/>
                             <constraint firstItem="0pc-Ly-Kvc" firstAttribute="top" secondItem="nms-nd-6jo" secondAttribute="top" constant="10" id="mBu-YP-aYz"/>
@@ -356,6 +353,17 @@
                     <navigationItem key="navigationItem" title="Race Search" id="5md-0H-90L">
                         <barButtonItem key="rightBarButtonItem" image="gear_icon" id="XCg-7j-FC6"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="ZIPCodeTextField" destination="POZ-ff-hIM" id="UaJ-hx-R4U"/>
+                        <outlet property="cityTextField" destination="9uV-1h-gbC" id="Llv-x2-keV"/>
+                        <outlet property="clearAllButton" destination="gXm-2H-uHv" id="MCs-Qj-bQz"/>
+                        <outlet property="distanceUnitsSegmentedControl" destination="ndA-Gb-UK1" id="1AA-qc-MNc"/>
+                        <outlet property="maxDistanceTextField" destination="YVy-1k-ZO2" id="aOw-Uk-MPC"/>
+                        <outlet property="minDistanceTextField" destination="EFb-Ff-4lC" id="cwU-Vq-NEW"/>
+                        <outlet property="radiusTextField" destination="bdo-Cd-eOr" id="Pje-lR-cxj"/>
+                        <outlet property="searchForRaceButton" destination="dTa-uo-veN" id="FnW-Dk-gyY"/>
+                        <outlet property="stateTextField" destination="eNA-bX-dca" id="Brj-N6-r36"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RXh-5b-CYQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -23,10 +23,10 @@ struct Race: Decodable {
     
     struct RaceDictionary: Decodable {
         
-        let name: String
-        let date: String
-        let description: String
-        let url: String
+        let name: String?
+        let date: String?
+        let description: String?
+        let url: String?
         let externalURL: String?
         let imageURL: String
         let address: AddressDictionary

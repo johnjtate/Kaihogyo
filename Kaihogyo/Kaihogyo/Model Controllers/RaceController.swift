@@ -14,8 +14,9 @@ class RaceController {
     static let baseURL = URL(string: "https://runsignup.com/rest/races")
     var races: [Race] = []
     
-    func fetchRaces(completion: @escaping([Race]?) -> Void) {
-    
+    func fetchRaces(min_distance: String?, max_distance: String?, distance_units: String, radius: String?, zipcode: String?, city: String?, state: String?, completion: @escaping([Race]?) -> Void) {
+
+        
         guard let baseURL = RaceController.baseURL else { return }
         var components = URLComponents(url: baseURL, resolvingAgainstBaseURL: true)
         
@@ -34,20 +35,59 @@ class RaceController {
         let start_date = URLQueryItem(name: "start_date", value: "today")
         let only_partner_races = URLQueryItem(name: "only_partner_races", value: "F")
         let search_start_date_only = URLQueryItem(name: "search_start_date_only", value: "F")
-        // default value is F (false)
-        let only_races_with_results = URLQueryItem(name: "only_races_with_results", value: "T")
-        //TODO: don't want to hardcode this; probably needs to be called in by the function
-        let state = URLQueryItem(name: "state", value: "UT")
-        let min_distance = URLQueryItem(name: "min_distance", value: "13")
-        // default value is K (kilometers)
-        let distance_units = URLQueryItem(name: "distance_units", value: "M")
+        let only_races_with_results = URLQueryItem(name: "only_races_with_results", value: "F")
+
         // APIkey and APIsecret stored in APIkeys.plist
         let apiKey = APIkeys.shared.RunSignUpAPIKey()
         let api_key = URLQueryItem(name: "api_key", value: apiKey)
         let apiSecret = APIkeys.shared.RunSignUpAPISecret()
         let api_secret = URLQueryItem(name: "api_secret", value: apiSecret)
-    
-        components?.queryItems = [format, events, race_headings, race_links, include_waiver, include_event_days, page, results_per_page, sort, start_date, only_partner_races, search_start_date_only, only_races_with_results, state, min_distance, distance_units, api_key, api_secret]
+        
+        components?.queryItems = [format, events, race_headings, race_links, include_waiver, include_event_days, page, results_per_page, sort, start_date, only_partner_races, search_start_date_only, only_races_with_results, api_key, api_secret]
+        
+        if let city = city {
+            if !city.isEmpty {
+                let cityQuery = URLQueryItem(name: "city", value: "\(String(describing: city))")
+                components?.queryItems?.append(cityQuery)
+            }
+        }
+        if let state = state {
+            if !state.isEmpty {
+                let stateQuery = URLQueryItem(name: "state", value: "\(String(describing: state))")
+                components?.queryItems?.append(stateQuery)
+            }
+        }
+        
+        if let min_distance = min_distance {
+            if !min_distance.isEmpty {
+                let minDistanceQuery = URLQueryItem(name: "min_distance", value: "\(String(describing: min_distance))")
+                components?.queryItems?.append(minDistanceQuery)
+            }
+        }
+        
+        if let max_distance = max_distance {
+            if !max_distance.isEmpty {
+                let maxDistanceQuery = URLQueryItem(name: "max_distance", value: "\(String(describing: max_distance))")
+                components?.queryItems?.append(maxDistanceQuery)
+            }
+        }
+        
+        let distanceUnitsQuery = URLQueryItem(name: "distance_units", value: "\(distance_units)")
+        components?.queryItems?.append(distanceUnitsQuery)
+        
+        if let zipcode = zipcode {
+            if !zipcode.isEmpty {
+                let zipcodeQuery = URLQueryItem(name: "zipcode", value: "\(String(describing: zipcode))")
+                components?.queryItems?.append(zipcodeQuery)
+            }
+        }
+        
+        if let radius = radius {
+            if !radius.isEmpty {
+                let radiusQuery = URLQueryItem(name: "radius", value: "\(String(describing: radius))")
+                components?.queryItems?.append(radiusQuery)
+            }
+        }
         
         guard let url = components?.url else { completion([]); return }
         print(url)
@@ -72,8 +112,4 @@ class RaceController {
             }
         }.resume()
     }
-    
-    
-    
-    
 }
