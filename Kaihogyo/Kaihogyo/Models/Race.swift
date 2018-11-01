@@ -25,13 +25,39 @@ struct Race: Decodable {
         
         let name: String
         let date: String
-        let race_id: Int
+        let description: String
+        let url: String
+        let externalURL: String?
+        let imageURL: String
+        let address: AddressDictionary
         
         private enum CodingKeys: String, CodingKey {
             case name
             case date = "next_date"
-            case race_id
+            case description
+            case url
+            case externalURL = "external_race_url"
+            case address
+            case imageURL = "logo_url"
+        }
+
+        struct AddressDictionary: Decodable {
+            
+            let street: String
+            let city: String
+            let state: String
+            let zipcode: String
+            let country: String
+            
+            private enum CodingKeys: String, CodingKey {
+                case street
+                case city
+                case state
+                case zipcode
+                case country = "country_code"
+            }
         }
     }
-    
 }
+
+
