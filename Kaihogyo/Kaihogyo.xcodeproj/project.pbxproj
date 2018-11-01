@@ -17,6 +17,9 @@
 		873796BF21892BCB004213CF /* Quote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 873796BD21892BCB004213CF /* Quote.xcdatamodeld */; };
 		873796C121892C53004213CF /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873796C021892C53004213CF /* Stack.swift */; };
 		873796C321893179004213CF /* QuoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873796C221893179004213CF /* QuoteVC.swift */; };
+		876F6EAB218A8A82002A8848 /* APIkeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 876F6EAA218A8A82002A8848 /* APIkeys.plist */; };
+		876F6EAD218A8AF1002A8848 /* RaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876F6EAC218A8AF1002A8848 /* RaceController.swift */; };
+		876F6EAF218A8B8E002A8848 /* Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876F6EAE218A8B8E002A8848 /* Race.swift */; };
 		8786F0EA218A0A0C007F43B0 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8786F0E9218A0A0C007F43B0 /* LoginVC.swift */; };
 		8786F0EC218A1FEB007F43B0 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8786F0EB218A1FEB007F43B0 /* TabBarController.swift */; };
 		8786F0F0218A299E007F43B0 /* CaesarDressing-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8786F0EE218A2921007F43B0 /* CaesarDressing-Regular.ttf */; };
@@ -37,6 +40,9 @@
 		873796BE21892BCB004213CF /* Quote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Quote.xcdatamodel; sourceTree = "<group>"; };
 		873796C021892C53004213CF /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		873796C221893179004213CF /* QuoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteVC.swift; sourceTree = "<group>"; };
+		876F6EAA218A8A82002A8848 /* APIkeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = APIkeys.plist; sourceTree = "<group>"; };
+		876F6EAC218A8AF1002A8848 /* RaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceController.swift; sourceTree = "<group>"; };
+		876F6EAE218A8B8E002A8848 /* Race.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Race.swift; sourceTree = "<group>"; };
 		8786F0E9218A0A0C007F43B0 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		8786F0EB218A1FEB007F43B0 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		8786F0EE218A2921007F43B0 /* CaesarDressing-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CaesarDressing-Regular.ttf"; sourceTree = "<group>"; };
@@ -103,6 +109,7 @@
 				873796BB218929C6004213CF /* Quote+Convenience.swift */,
 				873796C021892C53004213CF /* Stack.swift */,
 				873796BD21892BCB004213CF /* Quote.xcdatamodeld */,
+				876F6EAE218A8B8E002A8848 /* Race.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -111,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				873796B921892987004213CF /* QuoteController.swift */,
+				876F6EAC218A8AF1002A8848 /* RaceController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -138,6 +146,7 @@
 				873796A9218928B8004213CF /* Assets.xcassets */,
 				873796AB218928B8004213CF /* LaunchScreen.storyboard */,
 				873796AE218928B8004213CF /* Info.plist */,
+				876F6EAA218A8A82002A8848 /* APIkeys.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -243,6 +252,7 @@
 				8786F0F1218A29A5007F43B0 /* OpenSans-Regular.ttf in Resources */,
 				873796AD218928B8004213CF /* LaunchScreen.storyboard in Resources */,
 				873796AA218928B8004213CF /* Assets.xcassets in Resources */,
+				876F6EAB218A8A82002A8848 /* APIkeys.plist in Resources */,
 				873796A8218928B7004213CF /* Main.storyboard in Resources */,
 				8786F0F0218A299E007F43B0 /* CaesarDressing-Regular.ttf in Resources */,
 			);
@@ -257,7 +267,9 @@
 			files = (
 				873796BF21892BCB004213CF /* Quote.xcdatamodeld in Sources */,
 				873796C121892C53004213CF /* Stack.swift in Sources */,
+				876F6EAD218A8AF1002A8848 /* RaceController.swift in Sources */,
 				8786F0EA218A0A0C007F43B0 /* LoginVC.swift in Sources */,
+				876F6EAF218A8B8E002A8848 /* Race.swift in Sources */,
 				873796BA21892987004213CF /* QuoteController.swift in Sources */,
 				873796C321893179004213CF /* QuoteVC.swift in Sources */,
 				873796BC218929C6004213CF /* Quote+Convenience.swift in Sources */,

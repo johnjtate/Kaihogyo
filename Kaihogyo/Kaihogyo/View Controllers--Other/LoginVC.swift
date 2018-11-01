@@ -13,7 +13,9 @@ class LoginVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        RaceController.shared.fetchRaces { (races) in
+            
+        }
     }
     
     // MARK: - Helper Functions
