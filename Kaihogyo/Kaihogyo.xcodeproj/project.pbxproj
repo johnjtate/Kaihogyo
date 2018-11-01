@@ -24,6 +24,7 @@
 		8786F0EC218A1FEB007F43B0 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8786F0EB218A1FEB007F43B0 /* TabBarController.swift */; };
 		8786F0F0218A299E007F43B0 /* CaesarDressing-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8786F0EE218A2921007F43B0 /* CaesarDressing-Regular.ttf */; };
 		8786F0F1218A29A5007F43B0 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8786F0EF218A292F007F43B0 /* OpenSans-Regular.ttf */; };
+		87F94D58218B67B70051037A /* APIkeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F94D57218B67B70051037A /* APIkeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		8786F0EB218A1FEB007F43B0 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		8786F0EE218A2921007F43B0 /* CaesarDressing-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CaesarDressing-Regular.ttf"; sourceTree = "<group>"; };
 		8786F0EF218A292F007F43B0 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		87F94D57218B67B70051037A /* APIkeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIkeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 				873796AB218928B8004213CF /* LaunchScreen.storyboard */,
 				873796AE218928B8004213CF /* Info.plist */,
 				876F6EAA218A8A82002A8848 /* APIkeys.plist */,
+				87F94D57218B67B70051037A /* APIkeys.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87F94D58218B67B70051037A /* APIkeys.swift in Sources */,
 				873796BF21892BCB004213CF /* Quote.xcdatamodeld in Sources */,
 				873796C121892C53004213CF /* Stack.swift in Sources */,
 				876F6EAD218A8AF1002A8848 /* RaceController.swift in Sources */,

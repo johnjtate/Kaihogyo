@@ -38,8 +38,12 @@ class RaceController {
         let min_distance = URLQueryItem(name: "min_distance", value: "13")
         let distance_units = URLQueryItem(name: "distance_units", value: "M")
         //TODO: need to put these in APIkeys.plist
-        let api_key = URLQueryItem(name: "api_key", value: "ulOFUr6YXMGaejP39bgUDU7E2vpkRvYX")
-        let api_secret = URLQueryItem(name: "api_secret", value: "DfMxthiqzEoKaLnTpxV8Lc0hFAAqHajG")
+        let apiKey = APIkeys.shared.valueForAPIKey()
+        let api_key = URLQueryItem(name: "api_key", value: apiKey)
+        let apiSecret = APIkeys.shared.valueForAPISecret()
+        let api_secret = URLQueryItem(name: "api_secret", value: apiSecret)
+//        let api_key = URLQueryItem(name: "api_key", value: "ulOFUr6YXMGaejP39bgUDU7E2vpkRvYX")
+//        let api_secret = URLQueryItem(name: "api_secret", value: "DfMxthiqzEoKaLnTpxV8Lc0hFAAqHajG")
     
         components?.queryItems = [format, events, race_headings, race_links, include_waiver, include_event_days, page, results_per_page, sort, start_date, only_partner_races, search_start_date_only, only_races_with_results, state, min_distance, distance_units, api_key, api_secret]
         
