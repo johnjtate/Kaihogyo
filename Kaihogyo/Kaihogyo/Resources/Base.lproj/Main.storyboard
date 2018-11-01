@@ -54,39 +54,27 @@
                                         </constraints>
                                     </stackView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="amphora" translatesAutoresizingMaskIntoConstraints="NO" id="c5w-Tq-T0S">
-                                        <rect key="frame" x="53.5" y="85" width="181" height="240"/>
+                                        <rect key="frame" x="40" y="85" width="208" height="275"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="c5w-Tq-T0S" secondAttribute="height" multiplier="1:1.325" id="AUe-qg-diQ"/>
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="4ee-Zm-MUz">
-                                        <rect key="frame" x="45" y="345" width="198" height="75"/>
+                                        <rect key="frame" x="45" y="380" width="198" height="40"/>
                                         <subviews>
-                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmi-bs-OCj">
-                                                <rect key="frame" x="0.0" y="0.0" width="198" height="30"/>
-                                                <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="18"/>
-                                                <color key="tintColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <state key="normal" title="Sign Up">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="signUpButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NzF-xZ-Ky2"/>
-                                                </connections>
-                                            </button>
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yiv-h7-fpQ">
-                                                <rect key="frame" x="0.0" y="45" width="198" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="198" height="40"/>
                                                 <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="18"/>
                                                 <state key="normal" title="Log In">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="logInButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gkg-Ci-dBK"/>
+                                                    <action selector="logInButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TRj-ef-fw9"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="wmi-bs-OCj" firstAttribute="width" secondItem="4ee-Zm-MUz" secondAttribute="width" id="Kj4-XJ-z2B"/>
-                                            <constraint firstAttribute="height" constant="75" id="mDv-wi-pDn"/>
+                                            <constraint firstAttribute="height" constant="40" id="S3J-aM-KUB"/>
                                             <constraint firstItem="Yiv-h7-fpQ" firstAttribute="width" secondItem="4ee-Zm-MUz" secondAttribute="width" id="rOk-Lh-rc0"/>
                                         </constraints>
                                     </stackView>

@@ -7,13 +7,13 @@
 //
 
 import UIKit
+import CloudKit
 
 class LoginVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        NotificationCenter.default.addObserver(self, selector: #selector(segueToTabBarVC), name: UserController.shared.currentUserWasSetNotification, object: nil)
     }
     
     // MARK: - Helper Functions
@@ -23,57 +23,55 @@ class LoginVC: UIViewController {
         }
     }
     
-    // MARK: - Alert Controller
-    func presentSignUpAlertController() {
-        
-        let signUpAlertController = UIAlertController(title: "Sign Up for Kaihogyo", message: "Please enter your email address and a username below.", preferredStyle: .alert)
-        signUpAlertController.addTextField { (emailTextField) in
-            emailTextField.placeholder = "Email address"
+    // MARK: - Alert Controllers
+    
+    func presentErrorAlert(errorTitle: String, errorMessage: String) {
+       
+        let errorAlertController = UIAlertController(title: errorTitle, message: errorMessage, preferredStyle: .alert)
+        let goToSettingsAction = UIAlertAction(title: "Go to Settings", style: .default) { (_) in
+            UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
         }
-        signUpAlertController.addTextField { (userNameTextField) in
-            userNameTextField.placeholder = "Username"
-        }
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-        let signUpAction = UIAlertAction(title: "Sign Up", style: .default) { (_) in
-            
-            guard let emailAddress = signUpAlertController.textFields?.first?.text, let username = signUpAlertController.textFields?[1].text, !emailAddress.isEmpty, !username.isEmpty else { return }
-            UserController.shared.createUserWith(username: username, email: emailAddress, completion: { (success) in
-                
-                if success {
-                    self.segueToTabBarVC()
-                } else {
-                    DispatchQueue.main.async {
-                        self.presentAlertControllerWith(title: "Whoops--something went wrong", message: "Please make sure you are logged into iCloud in your phone settings.")
-                    }
-                }
-            })
-        }
-        signUpAlertController.addAction(cancelAction)
-        signUpAlertController.addAction(signUpAction)
-        self.present(signUpAlertController, animated: true)
+        errorAlertController.addAction(goToSettingsAction)
+        self.present(errorAlertController, animated: true)
     }
     
-    // MARK: - IBActions
-    @IBAction func signUpButtonTapped(_ sender: Any) {
-        
-        presentSignUpAlertController()
-    }
+    // MARK: - CloudKit Availability
     
-    @IBAction func logInButtonTapped(_ sender: Any) {
+    func checkAccountStatus(completion: @escaping (_ isLoggedIn: Bool) -> Void) {
         
-        guard UserController.shared.currentUser == nil else {
-            segueToTabBarVC()
-            return
-        }
-        
-        // if not a current user, then fetch
-        UserController.shared.fetchCurrentUser { (success) in
-            
-            if !success {
-                DispatchQueue.main.async {
-                    self.presentAlertControllerWith(title: "No iCloud account configured", message: "Please sign into your iCloud account.")
+        CKContainer.default().accountStatus { [weak self] (status, error) in
+            if let error = error {
+                print("Error checking account status \(error) \(error.localizedDescription)")
+                completion(false); return
+            } else {
+                let errorText = "Sign into iCloud in Settings"
+                switch status {
+                case .available:
+                    completion(true)
+                case .noAccount:
+                    let noAccount = "No iCloud account found"
+                    self?.presentErrorAlert(errorTitle: errorText, errorMessage: noAccount)
+                    completion(false)
+                case .couldNotDetermine:
+                    self?.presentErrorAlert(errorTitle: errorText, errorMessage: "Error with iCloud account status")
+                    completion(false)
+                case .restricted:
+                    self?.presentErrorAlert(errorTitle: errorText, errorMessage: "Restricted iCloud account")
+                    completion(false)
                 }
             }
         }
     }
+    
+    
+    // MARK: - IBActions
+    @IBAction func logInButtonTapped(_ sender: Any) {
+        
+        checkAccountStatus { (success) in
+            if success {
+                self.segueToTabBarVC()
+            }
+        }
+    }
 }
+
