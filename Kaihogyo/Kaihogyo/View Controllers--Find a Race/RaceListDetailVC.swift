@@ -55,6 +55,13 @@ class RaceListDetailVC: UIViewController {
         } else {
             externalURLButton.isHidden = true
         }
+        
+        // image fetch
+        RaceController.shared.fetchRaceLogoImage(race: race) { (image) in
+            DispatchQueue.main.async {
+                self.raceLogoImageView.image = image
+            }
+        }
     }
     
     // MARK: - Lifecycle Functions

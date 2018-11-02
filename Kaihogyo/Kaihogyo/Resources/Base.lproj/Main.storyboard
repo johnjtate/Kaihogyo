@@ -469,16 +469,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rds-1r-6Sz">
-                                <rect key="frame" x="110" y="74" width="100" height="100"/>
+                                <rect key="frame" x="70" y="74" width="180" height="180"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="Uzm-1i-JrT"/>
-                                    <constraint firstAttribute="height" constant="100" id="z6w-xa-mmx"/>
+                                    <constraint firstAttribute="width" constant="180" id="Uzm-1i-JrT"/>
+                                    <constraint firstAttribute="height" constant="180" id="z6w-xa-mmx"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9Wk-In-God">
                                 <rect key="frame" x="16" y="287" width="288" height="134"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(name)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXY-h4-M7k">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(name)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXY-h4-M7k">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="17"/>
                                         <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="14"/>
                                         <nil key="textColor"/>
