@@ -37,8 +37,8 @@ class RaceSearchVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
         
         RaceController.shared.fetchRaces(min_distance: minDistance, max_distance: maxDistance, distance_units: distanceUnits, radius: radius, zipcode: ZIPCode, city: city, state: state) { (races) in
          
-            self.activityIndicator.stopAnimating(navigationItem: self.navigationItem)
             DispatchQueue.main.async {
+                self.activityIndicator.stopAnimating(navigationItem: self.navigationItem)
                 self.performSegue(withIdentifier: "toRacesTableView", sender: nil)
             }
         }
@@ -162,7 +162,9 @@ class RaceSearchVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
     
     @IBAction func searchForRaceButtonTapped(_ sender: Any) {
         
-        activityIndicator.animateActivity(title: "Searching...", view: self.view, navigationItem: navigationItem)
+        DispatchQueue.main.async {
+            self.activityIndicator.animateActivity(title: "Searching...", view: self.view, navigationItem: self.navigationItem)
+        }
         
         if let minDistance = minDistanceTextField.text {
             self.minDistance = minDistance

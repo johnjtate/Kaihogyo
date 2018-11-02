@@ -19,7 +19,7 @@ class RaceMasterListCell: UITableViewCell {
     // MARK: - Properties
     var race: Race? {
         didSet {
-            updateView()
+            self.updateView()
         }
     }
 
