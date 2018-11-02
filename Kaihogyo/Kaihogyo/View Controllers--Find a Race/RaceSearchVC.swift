@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RaceSearchVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class RaceSearchVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate {
     
     // MARK: - IBOutlets
     @IBOutlet weak var minDistanceTextField: UITextField!
@@ -31,22 +31,43 @@ class RaceSearchVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
     var ZIPCode: String = ""
     var city: String = ""
     var state: String = ""
+    let activityIndicator = ActivityIndicator.shared
     
     func searchForRaces() {
         
         RaceController.shared.fetchRaces(min_distance: minDistance, max_distance: maxDistance, distance_units: distanceUnits, radius: radius, zipcode: ZIPCode, city: city, state: state) { (races) in
          
-            //TODO: segue to RaceSearchResultsTableVC
+            self.activityIndicator.stopAnimating(navigationItem: self.navigationItem)
+            DispatchQueue.main.async {
+                self.performSegue(withIdentifier: "toRacesTableView", sender: nil)
+            }
         }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        cityTextField.resignFirstResponder()
+        stateTextField.resignFirstResponder()
+        return true
     }
     
     // MARK: - Lifecycle Functions
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        cityTextField.delegate = self
         statePicker.dataSource = self
         statePicker.delegate = self
         stateTextField.inputView = statePicker
+        
+        //Tap anywhere on the screen to dismiss keyboard
+        let tap = UITapGestureRecognizer(target: self, action: #selector(handleScreenTap(sender:)))
+        self.view.addGestureRecognizer(tap)
+    }
+    
+    // MARK: - Tap Gesture Helper Function
+    @objc func handleScreenTap(sender: UITapGestureRecognizer) {
+        //this works with the UITapGesture Recognizer to help dismiss the keyboard
+        self.view.endEditing(true)
     }
     
     // MARK: - Data Arrays for Picker Views
@@ -93,7 +114,7 @@ class RaceSearchVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
     }
     
     func negativeMaximumDistanceAlert() {
-        let negativeMaximumDistanceAlert = UIAlertController(title: "Please enter a maxiumum distance of 0 or more.", message: nil, preferredStyle: .alert)
+        let negativeMaximumDistanceAlert = UIAlertController(title: "Please enter a maxiumum distance of more than 0.", message: nil, preferredStyle: .alert)
         let okayAction = UIAlertAction(title: "Okay", style: .default, handler: nil)
         negativeMaximumDistanceAlert.addAction(okayAction)
         self.present(negativeMaximumDistanceAlert, animated: true)
@@ -140,6 +161,9 @@ class RaceSearchVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
     }
     
     @IBAction func searchForRaceButtonTapped(_ sender: Any) {
+        
+        activityIndicator.animateActivity(title: "Searching...", view: self.view, navigationItem: navigationItem)
+        
         if let minDistance = minDistanceTextField.text {
             self.minDistance = minDistance
             if !minDistance.isEmpty {
@@ -152,9 +176,11 @@ class RaceSearchVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
         if let maxDistance = maxDistanceTextField.text {
             self.maxDistance = maxDistance
             if !maxDistance.isEmpty {
-                if Double(maxDistance)! < 0.0 {
+                if Double(maxDistance)! <= 0.0 {
                     negativeMaximumDistanceAlert()
                 }
+            }
+            if !maxDistance.isEmpty && !minDistance.isEmpty {
                 if Double(maxDistance)! < Double(minDistance)! {
                     reversedDistancesAlert()
                 }

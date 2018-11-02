@@ -15,7 +15,9 @@ class RaceController {
     var races: [Race] = []
     
     func fetchRaces(min_distance: String?, max_distance: String?, distance_units: String, radius: String?, zipcode: String?, city: String?, state: String?, completion: @escaping([Race]?) -> Void) {
-
+        
+        // blank out the array
+        self.races = []
         
         guard let baseURL = RaceController.baseURL else { return }
         var components = URLComponents(url: baseURL, resolvingAgainstBaseURL: true)

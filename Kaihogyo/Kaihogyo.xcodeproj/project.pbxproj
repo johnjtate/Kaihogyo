@@ -26,6 +26,9 @@
 		8786F0F1218A29A5007F43B0 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8786F0EF218A292F007F43B0 /* OpenSans-Regular.ttf */; };
 		87F94D58218B67B70051037A /* APIkeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F94D57218B67B70051037A /* APIkeys.swift */; };
 		87F94D5A218B9A5D0051037A /* RaceSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F94D59218B9A5D0051037A /* RaceSearchVC.swift */; };
+		87F94D5C218BC4310051037A /* RaceListMasterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F94D5B218BC4310051037A /* RaceListMasterVC.swift */; };
+		87F94D5E218BC57F0051037A /* RaceMasterListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F94D5D218BC57F0051037A /* RaceMasterListCell.swift */; };
+		87F94D60218BD2970051037A /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F94D5F218BD2970051037A /* ActivityIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +54,9 @@
 		8786F0EF218A292F007F43B0 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		87F94D57218B67B70051037A /* APIkeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIkeys.swift; sourceTree = "<group>"; };
 		87F94D59218B9A5D0051037A /* RaceSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceSearchVC.swift; sourceTree = "<group>"; };
+		87F94D5B218BC4310051037A /* RaceListMasterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListMasterVC.swift; sourceTree = "<group>"; };
+		87F94D5D218BC57F0051037A /* RaceMasterListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceMasterListCell.swift; sourceTree = "<group>"; };
+		87F94D5F218BD2970051037A /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +144,7 @@
 		873796B7218928FE004213CF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				87F94D5D218BC57F0051037A /* RaceMasterListCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -152,6 +159,7 @@
 				873796AE218928B8004213CF /* Info.plist */,
 				876F6EAA218A8A82002A8848 /* APIkeys.plist */,
 				87F94D57218B67B70051037A /* APIkeys.swift */,
+				87F94D5F218BD2970051037A /* ActivityIndicator.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -160,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				87F94D59218B9A5D0051037A /* RaceSearchVC.swift */,
+				87F94D5B218BC4310051037A /* RaceListMasterVC.swift */,
 			);
 			path = "View Controllers--Find a Race";
 			sourceTree = "<group>";
@@ -272,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87F94D58218B67B70051037A /* APIkeys.swift in Sources */,
+				87F94D60218BD2970051037A /* ActivityIndicator.swift in Sources */,
 				873796BF21892BCB004213CF /* Quote.xcdatamodeld in Sources */,
 				873796C121892C53004213CF /* Stack.swift in Sources */,
 				876F6EAD218A8AF1002A8848 /* RaceController.swift in Sources */,
@@ -281,7 +291,9 @@
 				873796C321893179004213CF /* QuoteVC.swift in Sources */,
 				873796BC218929C6004213CF /* Quote+Convenience.swift in Sources */,
 				873796A3218928B7004213CF /* AppDelegate.swift in Sources */,
+				87F94D5C218BC4310051037A /* RaceListMasterVC.swift in Sources */,
 				8786F0EC218A1FEB007F43B0 /* TabBarController.swift in Sources */,
+				87F94D5E218BC57F0051037A /* RaceMasterListCell.swift in Sources */,
 				87F94D5A218B9A5D0051037A /* RaceSearchVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

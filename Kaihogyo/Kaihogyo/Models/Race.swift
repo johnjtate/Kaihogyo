@@ -43,11 +43,11 @@ struct Race: Decodable {
 
         struct AddressDictionary: Decodable {
             
-            let street: String
-            let city: String
-            let state: String
-            let zipcode: String
-            let country: String
+            let street: String?
+            let city: String?
+            let state: String?
+            let zipcode: String?
+            let country: String?
             
             private enum CodingKeys: String, CodingKey {
                 case street
