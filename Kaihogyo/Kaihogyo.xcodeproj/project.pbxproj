@@ -18,6 +18,7 @@
 		873796C121892C53004213CF /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873796C021892C53004213CF /* Stack.swift */; };
 		873796C321893179004213CF /* QuoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873796C221893179004213CF /* QuoteVC.swift */; };
 		876F6859218CB2B60028767D /* RaceListDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876F6858218CB2B60028767D /* RaceListDetailVC.swift */; };
+		876F685B218CDFA80028767D /* InspiredMasterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876F685A218CDFA80028767D /* InspiredMasterVC.swift */; };
 		876F6EAB218A8A82002A8848 /* APIkeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 876F6EAA218A8A82002A8848 /* APIkeys.plist */; };
 		876F6EAD218A8AF1002A8848 /* RaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876F6EAC218A8AF1002A8848 /* RaceController.swift */; };
 		876F6EAF218A8B8E002A8848 /* Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876F6EAE218A8B8E002A8848 /* Race.swift */; };
@@ -47,6 +48,7 @@
 		873796C021892C53004213CF /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		873796C221893179004213CF /* QuoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteVC.swift; sourceTree = "<group>"; };
 		876F6858218CB2B60028767D /* RaceListDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListDetailVC.swift; sourceTree = "<group>"; };
+		876F685A218CDFA80028767D /* InspiredMasterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspiredMasterVC.swift; sourceTree = "<group>"; };
 		876F6EAA218A8A82002A8848 /* APIkeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = APIkeys.plist; sourceTree = "<group>"; };
 		876F6EAC218A8AF1002A8848 /* RaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceController.swift; sourceTree = "<group>"; };
 		876F6EAE218A8B8E002A8848 /* Race.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Race.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 		873796B6218928ED004213CF /* View Controllers--Be Inspired */ = {
 			isa = PBXGroup;
 			children = (
+				876F685A218CDFA80028767D /* InspiredMasterVC.swift */,
 				873796C221893179004213CF /* QuoteVC.swift */,
 			);
 			path = "View Controllers--Be Inspired";
@@ -296,6 +299,7 @@
 				873796BC218929C6004213CF /* Quote+Convenience.swift in Sources */,
 				873796A3218928B7004213CF /* AppDelegate.swift in Sources */,
 				87F94D5C218BC4310051037A /* RaceListMasterVC.swift in Sources */,
+				876F685B218CDFA80028767D /* InspiredMasterVC.swift in Sources */,
 				8786F0EC218A1FEB007F43B0 /* TabBarController.swift in Sources */,
 				87F94D5E218BC57F0051037A /* RaceMasterListCell.swift in Sources */,
 				87F94D5A218B9A5D0051037A /* RaceSearchVC.swift in Sources */,

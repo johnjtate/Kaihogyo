@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina3_5" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -22,17 +22,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginVC" customModule="Kaihogyo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2V9-Op-yjJ">
-                                <rect key="frame" x="16" y="40" width="288" height="420"/>
+                                <rect key="frame" x="20.666666666666657" y="40" width="372.66666666666674" height="676"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="c77-94-Svb">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="65"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="372.66666666666669" height="65"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KAIHOGYO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="op7-Ro-Ler">
-                                                <rect key="frame" x="0.0" y="0.0" width="288" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="372.66666666666669" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="VD9-Ue-bOZ"/>
                                                 </constraints>
@@ -40,7 +40,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find a Race.  Train Hard.  Be Inspired." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n8Y-WR-Bq1">
-                                                <rect key="frame" x="0.0" y="45" width="288" height="20"/>
+                                                <rect key="frame" x="0.0" y="45" width="372.66666666666669" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="1Lj-UA-TMR"/>
                                                 </constraints>
@@ -54,16 +54,16 @@
                                         </constraints>
                                     </stackView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="amphora" translatesAutoresizingMaskIntoConstraints="NO" id="c5w-Tq-T0S">
-                                        <rect key="frame" x="40" y="85" width="208" height="275"/>
+                                        <rect key="frame" x="0.0" y="103.66666666666666" width="372.66666666666669" height="493.66666666666674"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="c5w-Tq-T0S" secondAttribute="height" multiplier="1:1.325" id="AUe-qg-diQ"/>
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="4ee-Zm-MUz">
-                                        <rect key="frame" x="45" y="380" width="198" height="40"/>
+                                        <rect key="frame" x="53.333333333333314" y="636" width="266" height="40"/>
                                         <subviews>
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yiv-h7-fpQ">
-                                                <rect key="frame" x="0.0" y="0.0" width="198" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="266" height="40"/>
                                                 <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="18"/>
                                                 <state key="normal" title="Log In">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -96,6 +96,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="amphoraImageView" destination="c5w-Tq-T0S" id="HIb-VO-pYM"/>
                         <segue destination="2sb-rG-agN" kind="show" identifier="toTabBarVC" id="SAm-wA-bTa"/>
                     </connections>
                 </viewController>
@@ -103,17 +104,17 @@
             </objects>
             <point key="canvasLocation" x="-566.25" y="83.75"/>
         </scene>
-        <!--Training-->
+        <!--Train Hard-->
         <scene sceneID="Dx0-Wm-BDc">
             <objects>
                 <viewController id="n9a-23-bvv" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="boh-S5-UNR">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="8d7-hz-cmJ"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Training" id="d4g-K3-94b">
+                    <navigationItem key="navigationItem" title="Train Hard" id="d4g-K3-94b">
                         <barButtonItem key="rightBarButtonItem" image="gear_icon" id="ydz-Sv-XCr"/>
                     </navigationItem>
                 </viewController>
@@ -121,56 +122,162 @@
             </objects>
             <point key="canvasLocation" x="2201.25" y="82.5"/>
         </scene>
-        <!--Inspiration-->
+        <!--Be Inspired-->
         <scene sceneID="fa2-Tx-bJD">
             <objects>
-                <viewController id="z1A-tG-lOG" sceneMemberID="viewController">
+                <viewController id="z1A-tG-lOG" customClass="InspiredMasterVC" customModule="Kaihogyo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S04-AR-f2t">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Be Inspired" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q8U-Cb-7iR">
-                                <rect key="frame" x="136" y="174" width="86" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wys-Bt-vV9">
+                                <rect key="frame" x="5" y="69" width="404" height="613"/>
+                                <subviews>
+                                    <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pz-Oi-3n9">
+                                        <rect key="frame" x="0.0" y="0.0" width="404" height="118.66666666666667"/>
+                                        <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="20"/>
+                                        <state key="normal" image="mountain_button" backgroundImage="mountain_button">
+                                            <color key="titleColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TmW-xO-xXh">
+                                        <rect key="frame" x="0.0" y="123.66666666666666" width="404" height="118.66666666666666"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="marble_background_button">
+                                            <color key="titleColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXW-WN-5Ep">
+                                        <rect key="frame" x="0.0" y="247.33333333333334" width="404" height="118.33333333333334"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="parthenon_button">
+                                            <color key="titleColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0O-Sv-bvA">
+                                        <rect key="frame" x="0.0" y="370.66666666666669" width="404" height="118.66666666666669"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="20"/>
+                                        <state key="normal" backgroundImage="japanese_mountain_button">
+                                            <color key="titleColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYf-w1-7yH">
+                                        <rect key="frame" x="0.0" y="494.33333333333343" width="404" height="118.66666666666669"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="20"/>
+                                        <state key="normal" backgroundImage="modern_marathon_button">
+                                            <color key="titleColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Running Quotes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKA-ge-e1r">
+                                <rect key="frame" x="5" y="69" width="404" height="118.66666666666669"/>
+                                <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="24"/>
+                                <color key="textColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inspiration Wall" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uED-bW-SyF">
+                                <rect key="frame" x="5" y="192.66666666666666" width="404" height="118.66666666666666"/>
+                                <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="24"/>
+                                <color key="textColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The First Marathon" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHA-yv-oI9">
+                                <rect key="frame" x="5" y="316.33333333333331" width="404" height="118.33333333333331"/>
+                                <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="24"/>
+                                <color key="textColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Marathon Monks" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Glj-eU-0nK">
+                                <rect key="frame" x="5" y="439.66666666666669" width="404" height="118.66666666666669"/>
+                                <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="24"/>
+                                <color key="textColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Marathon in Modern Times" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAh-B1-7gP">
+                                <rect key="frame" x="5" y="563.33333333333337" width="404" height="118.66666666666663"/>
+                                <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="24"/>
+                                <color key="textColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uED-bW-SyF" firstAttribute="centerY" secondItem="TmW-xO-xXh" secondAttribute="centerY" id="065-ck-Fyy"/>
+                            <constraint firstItem="LAh-B1-7gP" firstAttribute="centerX" secondItem="yYf-w1-7yH" secondAttribute="centerX" id="53u-eo-WK3"/>
+                            <constraint firstItem="BHA-yv-oI9" firstAttribute="centerY" secondItem="sXW-WN-5Ep" secondAttribute="centerY" id="NRO-tK-mFO"/>
+                            <constraint firstItem="IKA-ge-e1r" firstAttribute="centerX" secondItem="S04-AR-f2t" secondAttribute="centerX" id="NsH-Oz-0NH"/>
+                            <constraint firstItem="wys-Bt-vV9" firstAttribute="centerX" secondItem="S04-AR-f2t" secondAttribute="centerX" id="Ore-aF-6sz"/>
+                            <constraint firstItem="LAh-B1-7gP" firstAttribute="height" secondItem="yYf-w1-7yH" secondAttribute="height" id="POU-TZ-eYQ"/>
+                            <constraint firstItem="Val-1W-qk2" firstAttribute="bottom" secondItem="wys-Bt-vV9" secondAttribute="bottom" constant="5" id="QTv-nB-Ta5"/>
+                            <constraint firstItem="uED-bW-SyF" firstAttribute="width" secondItem="TmW-xO-xXh" secondAttribute="width" id="S4a-dd-pD3"/>
+                            <constraint firstItem="uED-bW-SyF" firstAttribute="centerX" secondItem="S04-AR-f2t" secondAttribute="centerX" id="TPl-9f-niC"/>
+                            <constraint firstItem="IKA-ge-e1r" firstAttribute="centerY" secondItem="7pz-Oi-3n9" secondAttribute="centerY" id="XSS-zs-9Ga"/>
+                            <constraint firstItem="Glj-eU-0nK" firstAttribute="centerY" secondItem="o0O-Sv-bvA" secondAttribute="centerY" id="XwM-TZ-GQ3"/>
+                            <constraint firstItem="BHA-yv-oI9" firstAttribute="width" secondItem="sXW-WN-5Ep" secondAttribute="width" id="bLH-hd-I21"/>
+                            <constraint firstItem="Glj-eU-0nK" firstAttribute="width" secondItem="o0O-Sv-bvA" secondAttribute="width" id="dzu-TY-b90"/>
+                            <constraint firstItem="IKA-ge-e1r" firstAttribute="height" secondItem="7pz-Oi-3n9" secondAttribute="height" id="eV2-mJ-Obh"/>
+                            <constraint firstItem="BHA-yv-oI9" firstAttribute="centerX" secondItem="S04-AR-f2t" secondAttribute="centerX" id="hb5-p5-72W"/>
+                            <constraint firstItem="LAh-B1-7gP" firstAttribute="width" secondItem="yYf-w1-7yH" secondAttribute="width" id="iq8-6o-CkA"/>
+                            <constraint firstItem="LAh-B1-7gP" firstAttribute="centerY" secondItem="yYf-w1-7yH" secondAttribute="centerY" id="nMc-z8-P6b"/>
+                            <constraint firstItem="Glj-eU-0nK" firstAttribute="centerX" secondItem="S04-AR-f2t" secondAttribute="centerX" id="nV7-mA-PWm"/>
+                            <constraint firstItem="BHA-yv-oI9" firstAttribute="height" secondItem="sXW-WN-5Ep" secondAttribute="height" id="pbW-6m-nnk"/>
+                            <constraint firstItem="IKA-ge-e1r" firstAttribute="width" secondItem="7pz-Oi-3n9" secondAttribute="width" id="sHU-Zy-FqA"/>
+                            <constraint firstItem="uED-bW-SyF" firstAttribute="height" secondItem="TmW-xO-xXh" secondAttribute="height" id="tO7-Ay-TEj"/>
+                            <constraint firstItem="wys-Bt-vV9" firstAttribute="leading" secondItem="Val-1W-qk2" secondAttribute="leading" constant="5" id="tmT-fd-Wwv"/>
+                            <constraint firstItem="wys-Bt-vV9" firstAttribute="top" secondItem="Val-1W-qk2" secondAttribute="top" constant="5" id="vw8-rP-9es"/>
+                            <constraint firstItem="Glj-eU-0nK" firstAttribute="height" secondItem="o0O-Sv-bvA" secondAttribute="height" id="xIp-eh-Rho"/>
+                            <constraint firstItem="Val-1W-qk2" firstAttribute="trailing" secondItem="wys-Bt-vV9" secondAttribute="trailing" constant="5" id="xxe-dW-7ah"/>
+                            <constraint firstItem="LAh-B1-7gP" firstAttribute="centerX" secondItem="S04-AR-f2t" secondAttribute="centerX" id="ywi-J0-IZf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Val-1W-qk2"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Inspiration" id="NxX-qw-MNX">
+                    <navigationItem key="navigationItem" title="Be Inspired" id="NxX-qw-MNX">
                         <barButtonItem key="rightBarButtonItem" image="gear_icon" id="S9L-V4-YjG"/>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="inspirationWallButton" destination="TmW-xO-xXh" id="CPJ-3i-OrF"/>
+                        <outlet property="runningQuotesButton" destination="7pz-Oi-3n9" id="F18-6U-oX2"/>
+                        <outlet property="theFirstMarathonButton" destination="sXW-WN-5Ep" id="1OK-67-4MC"/>
+                        <outlet property="theMarathonInModernTimesButton" destination="yYf-w1-7yH" id="s9v-Ne-zWs"/>
+                        <outlet property="theMarathonMonksButton" destination="o0O-Sv-bvA" id="dsB-bi-LKJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AUf-eT-AF9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2201.25" y="912.5"/>
         </scene>
-        <!--Race Search-->
+        <!--Find a Race-->
         <scene sceneID="aK0-I1-CIF">
             <objects>
                 <viewController id="6Sm-ZJ-qf1" customClass="RaceSearchVC" customModule="Kaihogyo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sMg-IR-dut">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="0pc-Ly-Kvc">
-                                <rect key="frame" x="8.5" y="74" width="303" height="157"/>
+                                <rect key="frame" x="55.666666666666657" y="74" width="302.66666666666674" height="157"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I want to run an upcoming race between" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppb-4Y-oif">
-                                        <rect key="frame" x="0.0" y="0.0" width="301.5" height="22"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="301.66666666666669" height="22"/>
                                         <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="I0j-8b-Ojp">
-                                        <rect key="frame" x="0.0" y="37" width="303" height="30"/>
+                                        <rect key="frame" x="0.0" y="37" width="302.66666666666669" height="30"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="C8X-Zl-XwB">
-                                                <rect key="frame" x="0.0" y="0.0" width="139" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="138.66666666666666" height="30"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EFb-Ff-4lC">
                                                         <rect key="frame" x="0.0" y="0.0" width="45" height="30"/>
@@ -182,13 +289,13 @@
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="and" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQc-GC-Xas">
-                                                        <rect key="frame" x="55" y="0.0" width="29" height="30"/>
+                                                        <rect key="frame" x="55.000000000000007" y="0.0" width="28.666666666666664" height="30"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YVy-1k-ZO2">
-                                                        <rect key="frame" x="94" y="0.0" width="45" height="30"/>
+                                                        <rect key="frame" x="93.666666666666686" y="0.0" width="45" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="45" id="Uhx-IB-smh"/>
                                                         </constraints>
@@ -199,7 +306,7 @@
                                                 </subviews>
                                             </stackView>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ndA-Gb-UK1">
-                                                <rect key="frame" x="148" y="0.0" width="155" height="31"/>
+                                                <rect key="frame" x="147.66666666666669" y="0.0" width="155" height="31"/>
                                                 <segments>
                                                     <segment title="miles"/>
                                                     <segment title="kilometers"/>
@@ -260,25 +367,25 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wID-mQ-0Wg">
-                                <rect key="frame" x="8.5" y="261" width="303" height="61"/>
+                                <rect key="frame" x="55.666666666666657" y="261" width="302.66666666666674" height="61"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or in:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVa-vG-qF4">
-                                        <rect key="frame" x="0.0" y="0.0" width="38.5" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="38.333333333333336" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="4Ke-o3-fro">
-                                        <rect key="frame" x="48.5" y="0.0" width="94.5" height="55"/>
+                                        <rect key="frame" x="48.333333333333336" y="0.0" width="94.333333333333314" height="54.666666666666664"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="city" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BSI-TV-ITb">
-                                                <rect key="frame" x="0.0" y="0.0" width="28" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="27.666666666666668" height="20.333333333333332"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="state" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="inN-yQ-5px">
-                                                <rect key="frame" x="0.0" y="34.5" width="38.5" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="34.333333333333314" width="38.333333333333336" height="20.333333333333329"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -286,7 +393,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="iZg-In-RTZ">
-                                        <rect key="frame" x="153" y="0.0" width="150" height="61"/>
+                                        <rect key="frame" x="152.66666666666669" y="0.0" width="150" height="61"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9uV-1h-gbC">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
@@ -308,10 +415,10 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eIx-wF-2PO">
-                                <rect key="frame" x="32" y="343" width="256" height="78"/>
+                                <rect key="frame" x="41.333333333333343" y="599" width="331.33333333333326" height="78"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXm-2H-uHv">
-                                        <rect key="frame" x="0.0" y="0.0" width="256" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="331.33333333333331" height="34"/>
                                         <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="18"/>
                                         <state key="normal" title="Clear All">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -321,7 +428,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTa-uo-veN">
-                                        <rect key="frame" x="0.0" y="44" width="256" height="34"/>
+                                        <rect key="frame" x="0.0" y="44" width="331.33333333333331" height="34"/>
                                         <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="18"/>
                                         <state key="normal" title="Search for Race">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -350,7 +457,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nms-nd-6jo"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Race Search" id="5md-0H-90L">
+                    <navigationItem key="navigationItem" title="Find a Race" id="5md-0H-90L">
                         <barButtonItem key="rightBarButtonItem" image="gear_icon" id="XCg-7j-FC6"/>
                     </navigationItem>
                     <connections>
@@ -375,37 +482,37 @@
             <objects>
                 <viewController id="xnR-eN-goQ" customClass="RaceListMasterVC" customModule="Kaihogyo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q5R-UA-QdK">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="H0w-8u-l7v">
-                                <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="raceCell" rowHeight="83" id="Sn4-Q6-C7n" customClass="RaceMasterListCell" customModule="Kaihogyo" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="83"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="83"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Sn4-Q6-C7n" id="evE-CA-lGD">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="82.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="82.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="9yt-2l-2cd">
-                                                    <rect key="frame" x="15" y="12.5" width="202.5" height="58"/>
+                                                    <rect key="frame" x="16" y="12.333333333333332" width="201.33333333333334" height="58.333333333333343"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1PS-MU-4PA">
-                                                            <rect key="frame" x="0.0" y="0.0" width="202.5" height="17"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="201.33333333333334" height="17"/>
                                                             <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z5O-Mm-x4r">
-                                                            <rect key="frame" x="0.0" y="21" width="202.5" height="16.5"/>
+                                                            <rect key="frame" x="0.0" y="21" width="201.33333333333334" height="16.666666666666671"/>
                                                             <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="12"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3D-al-HbN">
-                                                            <rect key="frame" x="0.0" y="41.5" width="202.5" height="16.5"/>
+                                                            <rect key="frame" x="0.0" y="41.666666666666664" width="201.33333333333334" height="16.666666666666664"/>
                                                             <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="12"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -413,7 +520,7 @@
                                                     </subviews>
                                                 </stackView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="59x-ha-tK6">
-                                                    <rect key="frame" x="227.5" y="0.0" width="82.5" height="82.5"/>
+                                                    <rect key="frame" x="227.33333333333334" y="0.0" width="82.666666666666657" height="82.666666666666671"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="59x-ha-tK6" secondAttribute="height" multiplier="1:1" id="0OB-Mu-9U9"/>
                                                     </constraints>
@@ -465,39 +572,39 @@
             <objects>
                 <viewController id="fGd-By-XYK" customClass="RaceListDetailVC" customModule="Kaihogyo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ktk-E7-PDa">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rds-1r-6Sz">
-                                <rect key="frame" x="70" y="74" width="180" height="180"/>
+                                <rect key="frame" x="117" y="74" width="180" height="180"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="180" id="Uzm-1i-JrT"/>
                                     <constraint firstAttribute="height" constant="180" id="z6w-xa-mmx"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9Wk-In-God">
-                                <rect key="frame" x="16" y="287" width="288" height="134"/>
+                                <rect key="frame" x="20.666666666666657" y="542.66666666666663" width="372.66666666666674" height="134.33333333333337"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(name)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXY-h4-M7k">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="17"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="372.66666666666669" height="17"/>
                                         <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(date)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1d-6b-4LB">
-                                        <rect key="frame" x="0.0" y="22" width="288" height="16.5"/>
+                                        <rect key="frame" x="0.0" y="22" width="372.66666666666669" height="16.666666666666671"/>
                                         <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="12"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(address)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehy-fp-gJB">
-                                        <rect key="frame" x="0.0" y="43.5" width="288" height="16.5"/>
+                                        <rect key="frame" x="0.0" y="43.666666666666742" width="372.66666666666669" height="16.666666666666671"/>
                                         <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="12"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1RT-jb-L2c">
-                                        <rect key="frame" x="0.0" y="65" width="288" height="32"/>
+                                        <rect key="frame" x="0.0" y="65.333333333333371" width="372.66666666666669" height="32"/>
                                         <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
                                         <state key="normal" title="(RunSignUp URL)"/>
                                         <connections>
@@ -505,7 +612,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SMv-dR-yvR">
-                                        <rect key="frame" x="0.0" y="102" width="288" height="32"/>
+                                        <rect key="frame" x="0.0" y="102.33333333333337" width="372.66666666666669" height="32"/>
                                         <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
                                         <state key="normal" title="(External URL)"/>
                                         <connections>
@@ -571,7 +678,7 @@
                     <tabBarItem key="tabBarItem" title="FIND A RACE." image="finish_flag_icon" id="mpn-Hk-diP"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2rO-We-qEn">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -590,7 +697,7 @@
                     <tabBarItem key="tabBarItem" title="TRAIN HARD." image="runner_icon" id="5TC-Yj-UBr"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5k2-9i-waL">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -609,7 +716,7 @@
                     <tabBarItem key="tabBarItem" title="BE INSPIRED." image="face_sunglasses_icon" id="xVE-Re-abw"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wOV-Sw-7ga">
-                        <rect key="frame" x="0.0" y="20" width="320" height="50"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -627,6 +734,11 @@
         <image name="face_sunglasses_icon" width="30" height="30"/>
         <image name="finish_flag_icon" width="30" height="30"/>
         <image name="gear_icon" width="30" height="30"/>
+        <image name="japanese_mountain_button" width="1081" height="292"/>
+        <image name="marble_background_button" width="1081" height="292"/>
+        <image name="modern_marathon_button" width="1081" height="292"/>
+        <image name="mountain_button" width="1081" height="292"/>
+        <image name="parthenon_button" width="1081" height="292"/>
         <image name="runner_icon" width="30" height="30"/>
     </resources>
 </document>

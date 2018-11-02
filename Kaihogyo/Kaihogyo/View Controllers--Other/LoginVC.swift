@@ -11,8 +11,15 @@ import CloudKit
 
 class LoginVC: UIViewController {
 
+    // MARK: - IBOutlets
+    @IBOutlet weak var amphoraImageView: UIImageView!
+    
+    // MARK: - Lifecycle Functions
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        amphoraImageView.layer.cornerRadius = 10.0
+        amphoraImageView.layer.masksToBounds = true
     }
     
     // MARK: - Helper Functions
