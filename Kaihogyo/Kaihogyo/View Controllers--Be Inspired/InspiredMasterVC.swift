@@ -28,13 +28,6 @@ class InspiredMasterVC: UIViewController {
     
     func updateButtonLayout() {
         
-        // set alpha of background images to 0.3
-        runningQuotesButton.imageView?.alpha = 0.3
-        inspirationWallButton.imageView?.alpha = 0.3
-        theFirstMarathonButton.imageView?.alpha = 0.3
-        theMarathonMonksButton.imageView?.alpha = 0.3
-        theMarathonInModernTimesButton.imageView?.alpha = 0.3
-        
         // set rounded corners
         runningQuotesButton.layer.cornerRadius = 10.0
         runningQuotesButton.layer.masksToBounds = true
@@ -46,9 +39,5 @@ class InspiredMasterVC: UIViewController {
         theMarathonMonksButton.layer.masksToBounds = true
         theMarathonInModernTimesButton.layer.cornerRadius = 10.0
         theMarathonInModernTimesButton.layer.masksToBounds = true
-        
-        
     }
-    
-
 }

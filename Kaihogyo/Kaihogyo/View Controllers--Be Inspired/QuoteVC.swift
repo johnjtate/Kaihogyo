@@ -7,11 +7,60 @@
 //
 
 import UIKit
+import CoreData
 
-class QuoteVC: UIViewController {
+class QuoteVC: UIViewController, NSFetchedResultsControllerDelegate {
 
+    // MARK: - IBOutlets
+    @IBOutlet weak var mountainImageView: UIImageView!
+    @IBOutlet weak var quoteTextLabel: UILabel!
+    @IBOutlet weak var authorTextLabel: UILabel!
+    @IBOutlet weak var moreOnQuoteSourceButton: UIButton!
+    @IBOutlet weak var anotherQuoteButton: UIButton!
+    
+    // MARK: - Properties
+    var quoteURL: URL?
+    
+    // MARK: - Lifecycle Functions
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        fetchedResultsController.delegate = self
+        addInitialFiftyQuotes()
+        fetchQuotes()
+        loadQuote()
+    }
+    
+    let fetchedResultsController: NSFetchedResultsController<Quote> = {
+        
+        let fetchRequest: NSFetchRequest<Quote> = Quote.fetchRequest()
+        fetchRequest.sortDescriptors = [NSSortDescriptor(key: "author", ascending: true)]
+        
+        return NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: CoreDataStack.context, sectionNameKeyPath: nil, cacheName: nil)
+    }()
+    
+    func fetchQuotes() {
+        
+        do {
+            try fetchedResultsController.performFetch()
+        } catch {
+            print("There was an error in \(#function) : \(error) \(error.localizedDescription)")
+        }
+    }
+    
+    // MARK: - Quote Helper Functions
+    
+    func loadQuote() {
+        let quoteCount = fetchedResultsController.fetchedObjects?.count ?? 0
+        guard quoteCount > 0 else { return }
+        let index = Int.random(in: 0...quoteCount-1)
+        let quote = fetchedResultsController.fetchedObjects?[index]
+        
+        quoteTextLabel.text = quote?.text ?? ""
+        authorTextLabel.text = quote?.author ?? ""
+        if let url = quote?.url {
+            quoteURL = URL(string: url)
+        }
     }
     
     // populates with initial 50 quotes
@@ -116,5 +165,17 @@ class QuoteVC: UIViewController {
         QuoteController.sharedController.add(quote: quote49)
         let quote50 = Quote.init(text: "So many people crossing the finish line of a marathon look as happy as when I won.  They have tears in their eyes.  The sport is full of winners.", author: "Gary Muhrcke", url: "https://en.wikipedia.org/wiki/Gary_Muhrcke", userAdded: false)
         QuoteController.sharedController.add(quote: quote50)
+    }
+    
+    // MARK: - IBActions
+    @IBAction func moreOnQuoteSourceButtonTapped(_ sender: Any) {
+        guard let quoteURL = quoteURL else { return }
+        if UIApplication.shared.canOpenURL(quoteURL) {
+            UIApplication.shared.open(quoteURL, options: [:], completionHandler: nil)
+        }
+    }
+    
+    @IBAction func anotherQuoteButtonTapped(_ sender: Any) {
+        loadQuote()
     }
 }
