@@ -170,7 +170,11 @@ class RaceSearchVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
             self.minDistance = minDistance
             if !minDistance.isEmpty {
                 if Double(minDistance)! < 0.0 {
+                    DispatchQueue.main.async {
+                        self.activityIndicator.stopAnimating(navigationItem: self.navigationItem)
+                    }
                     negativeMinimumDistanceAlert()
+                    return
                 }
             }
         }
@@ -179,12 +183,20 @@ class RaceSearchVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
             self.maxDistance = maxDistance
             if !maxDistance.isEmpty {
                 if Double(maxDistance)! <= 0.0 {
+                    DispatchQueue.main.async {
+                        self.activityIndicator.stopAnimating(navigationItem: self.navigationItem)
+                    }
                     negativeMaximumDistanceAlert()
+                    return
                 }
             }
             if !maxDistance.isEmpty && !minDistance.isEmpty {
                 if Double(maxDistance)! < Double(minDistance)! {
                     reversedDistancesAlert()
+                    DispatchQueue.main.async {
+                        self.activityIndicator.stopAnimating(navigationItem: self.navigationItem)
+                    }
+                    return
                 }
             }
         }
@@ -194,6 +206,10 @@ class RaceSearchVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
             if !radius.isEmpty {
                 if Double(radius)! <= 0.0 {
                     negativeRadiusAlert()
+                    DispatchQueue.main.async {
+                        self.activityIndicator.stopAnimating(navigationItem: self.navigationItem)
+                    }
+                    return
                 }
             }
         }
@@ -203,6 +219,10 @@ class RaceSearchVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
             if !ZIPCode.isEmpty {
                 if ZIPCode.count != 5 {
                     invalidZIPCodeAlert()
+                    DispatchQueue.main.async {
+                        self.activityIndicator.stopAnimating(navigationItem: self.navigationItem)
+                    }
+                    return
                 }
             }
         }
