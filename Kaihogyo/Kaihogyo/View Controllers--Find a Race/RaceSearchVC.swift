@@ -199,7 +199,7 @@ class RaceSearchVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
         if let ZIPCode = ZIPCodeTextField.text {
             self.ZIPCode = ZIPCode
             if !ZIPCode.isEmpty {
-                if ZIPCode.count != 5 || Double(ZIPCode)! < 0 {
+                if ZIPCode.count != 5 {
                     invalidZIPCodeAlert()
                 }
             }
