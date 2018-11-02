@@ -19,6 +19,10 @@
 		873796C321893179004213CF /* QuoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873796C221893179004213CF /* QuoteVC.swift */; };
 		876F6859218CB2B60028767D /* RaceListDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876F6858218CB2B60028767D /* RaceListDetailVC.swift */; };
 		876F685B218CDFA80028767D /* InspiredMasterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876F685A218CDFA80028767D /* InspiredMasterVC.swift */; };
+		876F685D218D0FA80028767D /* BeInspired.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 876F685C218D0FA80028767D /* BeInspired.storyboard */; };
+		876F685F218D11A70028767D /* FindARace.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 876F685E218D11A70028767D /* FindARace.storyboard */; };
+		876F6861218D14BD0028767D /* TrainingMasterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876F6860218D14BD0028767D /* TrainingMasterVC.swift */; };
+		876F6863218D14D50028767D /* TrainHard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 876F6862218D14D50028767D /* TrainHard.storyboard */; };
 		876F6EAB218A8A82002A8848 /* APIkeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 876F6EAA218A8A82002A8848 /* APIkeys.plist */; };
 		876F6EAD218A8AF1002A8848 /* RaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876F6EAC218A8AF1002A8848 /* RaceController.swift */; };
 		876F6EAF218A8B8E002A8848 /* Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876F6EAE218A8B8E002A8848 /* Race.swift */; };
@@ -49,6 +53,10 @@
 		873796C221893179004213CF /* QuoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteVC.swift; sourceTree = "<group>"; };
 		876F6858218CB2B60028767D /* RaceListDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListDetailVC.swift; sourceTree = "<group>"; };
 		876F685A218CDFA80028767D /* InspiredMasterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspiredMasterVC.swift; sourceTree = "<group>"; };
+		876F685C218D0FA80028767D /* BeInspired.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BeInspired.storyboard; sourceTree = "<group>"; };
+		876F685E218D11A70028767D /* FindARace.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FindARace.storyboard; sourceTree = "<group>"; };
+		876F6860218D14BD0028767D /* TrainingMasterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingMasterVC.swift; sourceTree = "<group>"; };
+		876F6862218D14D50028767D /* TrainHard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TrainHard.storyboard; sourceTree = "<group>"; };
 		876F6EAA218A8A82002A8848 /* APIkeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = APIkeys.plist; sourceTree = "<group>"; };
 		876F6EAC218A8AF1002A8848 /* RaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceController.swift; sourceTree = "<group>"; };
 		876F6EAE218A8B8E002A8848 /* Race.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Race.swift; sourceTree = "<group>"; };
@@ -159,6 +167,9 @@
 			children = (
 				873796A2218928B7004213CF /* AppDelegate.swift */,
 				873796A6218928B7004213CF /* Main.storyboard */,
+				876F685E218D11A70028767D /* FindARace.storyboard */,
+				876F6862218D14D50028767D /* TrainHard.storyboard */,
+				876F685C218D0FA80028767D /* BeInspired.storyboard */,
 				873796A9218928B8004213CF /* Assets.xcassets */,
 				873796AB218928B8004213CF /* LaunchScreen.storyboard */,
 				873796AE218928B8004213CF /* Info.plist */,
@@ -182,6 +193,7 @@
 		8786F0E6218A09C7007F43B0 /* View Controllers--Train Hard */ = {
 			isa = PBXGroup;
 			children = (
+				876F6860218D14BD0028767D /* TrainingMasterVC.swift */,
 			);
 			path = "View Controllers--Train Hard";
 			sourceTree = "<group>";
@@ -270,8 +282,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				876F6863218D14D50028767D /* TrainHard.storyboard in Resources */,
+				876F685F218D11A70028767D /* FindARace.storyboard in Resources */,
 				8786F0F1218A29A5007F43B0 /* OpenSans-Regular.ttf in Resources */,
 				873796AD218928B8004213CF /* LaunchScreen.storyboard in Resources */,
+				876F685D218D0FA80028767D /* BeInspired.storyboard in Resources */,
 				873796AA218928B8004213CF /* Assets.xcassets in Resources */,
 				876F6EAB218A8A82002A8848 /* APIkeys.plist in Resources */,
 				873796A8218928B7004213CF /* Main.storyboard in Resources */,
@@ -298,6 +313,7 @@
 				873796C321893179004213CF /* QuoteVC.swift in Sources */,
 				873796BC218929C6004213CF /* Quote+Convenience.swift in Sources */,
 				873796A3218928B7004213CF /* AppDelegate.swift in Sources */,
+				876F6861218D14BD0028767D /* TrainingMasterVC.swift in Sources */,
 				87F94D5C218BC4310051037A /* RaceListMasterVC.swift in Sources */,
 				876F685B218CDFA80028767D /* InspiredMasterVC.swift in Sources */,
 				8786F0EC218A1FEB007F43B0 /* TabBarController.swift in Sources */,

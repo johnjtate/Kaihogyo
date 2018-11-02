@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CaesarDressing-Regular.ttf">
+            <string>CaesarDressing-Regular</string>
+        </array>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Be Inspired.-->
+        <scene sceneID="aht-54-c8G">
+            <objects>
+                <viewController storyboardIdentifier="InspiredMasterVC" id="Txs-JH-234" customClass="InspiredMasterVC" customModule="Kaihogyo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uno-1I-Zrs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="EzZ-40-fnv">
+                                <rect key="frame" x="5" y="25" width="365" height="588"/>
+                                <subviews>
+                                    <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJ9-4j-qbd">
+                                        <rect key="frame" x="0.0" y="0.0" width="365" height="113.5"/>
+                                        <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="20"/>
+                                        <state key="normal" image="mountain_button" backgroundImage="mountain_button">
+                                            <color key="titleColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="IAs-xp-o9m" kind="show" identifier="toQuoteVC" id="7SO-Wg-gmK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I4f-fk-wbY">
+                                        <rect key="frame" x="0.0" y="118.5" width="365" height="113.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="marble_background_button">
+                                            <color key="titleColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Art-9M-ZXz">
+                                        <rect key="frame" x="0.0" y="237" width="365" height="114"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="parthenon_button">
+                                            <color key="titleColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENg-zS-Ql0">
+                                        <rect key="frame" x="0.0" y="356" width="365" height="113.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="20"/>
+                                        <state key="normal" backgroundImage="japanese_mountain_button">
+                                            <color key="titleColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6f-0X-TBO">
+                                        <rect key="frame" x="0.0" y="474.5" width="365" height="113.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="20"/>
+                                        <state key="normal" backgroundImage="modern_marathon_button">
+                                            <color key="titleColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Running Quotes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NwB-rW-d4u">
+                                <rect key="frame" x="5" y="25" width="365" height="113.5"/>
+                                <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="24"/>
+                                <color key="textColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inspiration Wall" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Dq-fW-y8v">
+                                <rect key="frame" x="5" y="143.5" width="365" height="113.5"/>
+                                <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="24"/>
+                                <color key="textColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The First Marathon" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6k-o9-2en">
+                                <rect key="frame" x="5" y="262" width="365" height="114"/>
+                                <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="24"/>
+                                <color key="textColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Marathon Monks" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ag-fl-elP">
+                                <rect key="frame" x="5" y="381" width="365" height="113.5"/>
+                                <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="24"/>
+                                <color key="textColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Marathon in Modern Times" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fpb-SF-9wn">
+                                <rect key="frame" x="5" y="499.5" width="365" height="113.5"/>
+                                <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="24"/>
+                                <color key="textColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="h6k-o9-2en" firstAttribute="centerY" secondItem="Art-9M-ZXz" secondAttribute="centerY" id="4Oy-wk-qkm"/>
+                            <constraint firstItem="EzZ-40-fnv" firstAttribute="leading" secondItem="bW9-eL-cBn" secondAttribute="leading" constant="5" id="5Pi-W6-zhF"/>
+                            <constraint firstItem="bW9-eL-cBn" firstAttribute="bottom" secondItem="EzZ-40-fnv" secondAttribute="bottom" constant="5" id="5fk-fq-6em"/>
+                            <constraint firstItem="EzZ-40-fnv" firstAttribute="centerX" secondItem="Uno-1I-Zrs" secondAttribute="centerX" id="6DR-15-2mH"/>
+                            <constraint firstItem="NwB-rW-d4u" firstAttribute="centerX" secondItem="Uno-1I-Zrs" secondAttribute="centerX" id="6MZ-DN-IBR"/>
+                            <constraint firstItem="Fpb-SF-9wn" firstAttribute="width" secondItem="L6f-0X-TBO" secondAttribute="width" id="7io-7d-4FQ"/>
+                            <constraint firstItem="8Ag-fl-elP" firstAttribute="width" secondItem="ENg-zS-Ql0" secondAttribute="width" id="9xA-DM-lcg"/>
+                            <constraint firstItem="8Ag-fl-elP" firstAttribute="centerX" secondItem="Uno-1I-Zrs" secondAttribute="centerX" id="C4s-xL-CHh"/>
+                            <constraint firstItem="Fpb-SF-9wn" firstAttribute="height" secondItem="L6f-0X-TBO" secondAttribute="height" id="FI1-OK-bct"/>
+                            <constraint firstItem="h6k-o9-2en" firstAttribute="centerX" secondItem="Uno-1I-Zrs" secondAttribute="centerX" id="Gzx-Wi-CBq"/>
+                            <constraint firstItem="2Dq-fW-y8v" firstAttribute="width" secondItem="I4f-fk-wbY" secondAttribute="width" id="JE3-uQ-t0m"/>
+                            <constraint firstItem="h6k-o9-2en" firstAttribute="height" secondItem="Art-9M-ZXz" secondAttribute="height" id="K1t-cc-Hh5"/>
+                            <constraint firstItem="2Dq-fW-y8v" firstAttribute="height" secondItem="I4f-fk-wbY" secondAttribute="height" id="Kg4-dh-bah"/>
+                            <constraint firstItem="NwB-rW-d4u" firstAttribute="centerY" secondItem="yJ9-4j-qbd" secondAttribute="centerY" id="L9P-Fe-zi0"/>
+                            <constraint firstItem="Fpb-SF-9wn" firstAttribute="centerX" secondItem="Uno-1I-Zrs" secondAttribute="centerX" id="OzP-7E-uOZ"/>
+                            <constraint firstItem="EzZ-40-fnv" firstAttribute="top" secondItem="bW9-eL-cBn" secondAttribute="top" constant="5" id="X15-gd-Bjf"/>
+                            <constraint firstItem="NwB-rW-d4u" firstAttribute="height" secondItem="yJ9-4j-qbd" secondAttribute="height" id="ZYZ-Yg-2Jo"/>
+                            <constraint firstItem="bW9-eL-cBn" firstAttribute="trailing" secondItem="EzZ-40-fnv" secondAttribute="trailing" constant="5" id="c5J-ZI-qrl"/>
+                            <constraint firstItem="8Ag-fl-elP" firstAttribute="height" secondItem="ENg-zS-Ql0" secondAttribute="height" id="hYO-oF-eb9"/>
+                            <constraint firstItem="NwB-rW-d4u" firstAttribute="width" secondItem="yJ9-4j-qbd" secondAttribute="width" id="hm4-YQ-DG8"/>
+                            <constraint firstItem="Fpb-SF-9wn" firstAttribute="centerX" secondItem="L6f-0X-TBO" secondAttribute="centerX" id="lSn-t8-Ssw"/>
+                            <constraint firstItem="h6k-o9-2en" firstAttribute="width" secondItem="Art-9M-ZXz" secondAttribute="width" id="qgb-yB-ono"/>
+                            <constraint firstItem="Fpb-SF-9wn" firstAttribute="centerY" secondItem="L6f-0X-TBO" secondAttribute="centerY" id="x1g-j1-qxQ"/>
+                            <constraint firstItem="2Dq-fW-y8v" firstAttribute="centerX" secondItem="Uno-1I-Zrs" secondAttribute="centerX" id="xSR-7e-HFT"/>
+                            <constraint firstItem="8Ag-fl-elP" firstAttribute="centerY" secondItem="ENg-zS-Ql0" secondAttribute="centerY" id="xfY-eE-8yW"/>
+                            <constraint firstItem="2Dq-fW-y8v" firstAttribute="centerY" secondItem="I4f-fk-wbY" secondAttribute="centerY" id="ytg-zY-pq0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bW9-eL-cBn"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Be Inspired." id="erl-gP-fWE">
+                        <barButtonItem key="rightBarButtonItem" image="gear_icon" id="xQG-df-cN2"/>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="inspirationWallButton" destination="I4f-fk-wbY" id="Wgr-l9-VcL"/>
+                        <outlet property="runningQuotesButton" destination="yJ9-4j-qbd" id="HtQ-7I-ArF"/>
+                        <outlet property="theFirstMarathonButton" destination="Art-9M-ZXz" id="XTA-bE-rUe"/>
+                        <outlet property="theMarathonInModernTimesButton" destination="L6f-0X-TBO" id="esm-ae-uVx"/>
+                        <outlet property="theMarathonMonksButton" destination="ENg-zS-Ql0" id="D1a-ff-P5c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vZ1-HU-PhX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2201.25" y="912.5"/>
+        </scene>
+        <!--QuoteVC-->
+        <scene sceneID="Om1-wB-wo4">
+            <objects>
+                <viewController storyboardIdentifier="QuoteVC" id="IAs-xp-o9m" customClass="QuoteVC" customModule="Kaihogyo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FvT-c1-S3R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mountain" translatesAutoresizingMaskIntoConstraints="NO" id="Odx-Uw-3XA">
+                                <rect key="frame" x="10" y="30" width="355" height="236.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Odx-Uw-3XA" secondAttribute="height" multiplier="1.5:1" id="h2b-de-WBj"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="JPk-vQ-5D4">
+                                <rect key="frame" x="19" y="276.5" width="337.5" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(quote)" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBd-Os-JeL">
+                                        <rect key="frame" x="0.0" y="0.0" width="337.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(author)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3R-VG-5RN">
+                                        <rect key="frame" x="0.0" y="24.5" width="337.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kaihogyo-- &quot;circling the mountain&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dF-YV-RxX">
+                                <rect key="frame" x="10" y="60.5" width="355" height="19.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="4ke-tm-mdx">
+                                <rect key="frame" x="109" y="612" width="157" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IsE-3n-bzm">
+                                        <rect key="frame" x="0.0" y="0.0" width="157" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="Syo-Lv-Ypx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="14"/>
+                                        <state key="normal" title="More on the Quote Source">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="moreOnQuoteSourceButtonTapped:" destination="IAs-xp-o9m" eventType="touchUpInside" id="B1x-eE-whp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGd-hc-zGm">
+                                        <rect key="frame" x="34" y="25" width="89" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="2UJ-vb-ZhZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="14"/>
+                                        <state key="normal" title="Another Quote">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="anotherQuoteButtonTapped:" destination="IAs-xp-o9m" eventType="touchUpInside" id="Vb0-6A-WA5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Odx-Uw-3XA" firstAttribute="centerX" secondItem="FvT-c1-S3R" secondAttribute="centerX" id="6M9-eq-K0c"/>
+                            <constraint firstItem="Odx-Uw-3XA" firstAttribute="leading" secondItem="FvT-c1-S3R" secondAttribute="leading" constant="10" id="Ohr-0X-V4Q"/>
+                            <constraint firstItem="eqD-5B-iQA" firstAttribute="trailing" secondItem="2dF-YV-RxX" secondAttribute="trailing" constant="10" id="Qr9-ag-d43"/>
+                            <constraint firstItem="eqD-5B-iQA" firstAttribute="bottom" secondItem="4ke-tm-mdx" secondAttribute="bottom" constant="10" id="TaT-cH-5Yh"/>
+                            <constraint firstItem="Odx-Uw-3XA" firstAttribute="top" secondItem="eqD-5B-iQA" secondAttribute="top" constant="10" id="Xyn-8F-GYu"/>
+                            <constraint firstItem="JPk-vQ-5D4" firstAttribute="top" secondItem="Odx-Uw-3XA" secondAttribute="bottom" constant="10" id="a4I-Sz-aVA"/>
+                            <constraint firstAttribute="trailing" secondItem="Odx-Uw-3XA" secondAttribute="trailing" constant="10" id="bAG-O7-NyG"/>
+                            <constraint firstItem="JPk-vQ-5D4" firstAttribute="width" secondItem="FvT-c1-S3R" secondAttribute="width" multiplier="0.9" id="bvX-Oa-ZD3"/>
+                            <constraint firstItem="4ke-tm-mdx" firstAttribute="centerX" secondItem="FvT-c1-S3R" secondAttribute="centerX" id="cy4-th-PKU"/>
+                            <constraint firstItem="2dF-YV-RxX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="eqD-5B-iQA" secondAttribute="leading" symbolic="YES" id="is9-fL-vpT"/>
+                            <constraint firstItem="JPk-vQ-5D4" firstAttribute="centerX" secondItem="FvT-c1-S3R" secondAttribute="centerX" id="l54-zW-YvH"/>
+                            <constraint firstItem="2dF-YV-RxX" firstAttribute="width" secondItem="Odx-Uw-3XA" secondAttribute="width" id="qvt-4k-qZS"/>
+                            <constraint firstItem="Odx-Uw-3XA" firstAttribute="top" secondItem="2dF-YV-RxX" secondAttribute="bottom" constant="-50" id="rgy-Bu-Z9y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eqD-5B-iQA"/>
+                    </view>
+                    <connections>
+                        <outlet property="anotherQuoteButton" destination="dGd-hc-zGm" id="Cyn-9S-vDU"/>
+                        <outlet property="authorTextLabel" destination="y3R-VG-5RN" id="qFT-mP-NMT"/>
+                        <outlet property="moreOnQuoteSourceButton" destination="IsE-3n-bzm" id="0eL-ij-U3S"/>
+                        <outlet property="mountainImageView" destination="Odx-Uw-3XA" id="Igo-KN-i8m"/>
+                        <outlet property="quoteTextLabel" destination="yBd-Os-JeL" id="GNC-sZ-oBt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Au-Lj-oFb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3103" y="912"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gear_icon" width="30" height="30"/>
+        <image name="japanese_mountain_button" width="1081" height="292"/>
+        <image name="marble_background_button" width="1081" height="292"/>
+        <image name="modern_marathon_button" width="1081" height="292"/>
+        <image name="mountain" width="1232" height="816"/>
+        <image name="mountain_button" width="1081" height="292"/>
+        <image name="parthenon_button" width="1081" height="292"/>
+    </resources>
+</document>

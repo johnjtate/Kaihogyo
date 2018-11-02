@@ -25,6 +25,9 @@ class QuoteVC: UIViewController, NSFetchedResultsControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // set rounded corners
+        mountainImageView.layer.cornerRadius = 10.0
+        mountainImageView.layer.masksToBounds = true
         fetchedResultsController.delegate = self
         fetchQuotes()
         // in the case that a quote needs to be corrected, the following three functions below can be toggled following corrections to load a corrected array of 50 quotes into the CoreData stack
