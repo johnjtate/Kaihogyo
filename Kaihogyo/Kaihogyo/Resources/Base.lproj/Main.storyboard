@@ -476,7 +476,7 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9Wk-In-God">
-                                <rect key="frame" x="16" y="265.5" width="288" height="155.5"/>
+                                <rect key="frame" x="16" y="287" width="288" height="134"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(name)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXY-h4-M7k">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="17"/>
@@ -490,20 +490,14 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(address)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehy-fp-gJB">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(address)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehy-fp-gJB">
                                         <rect key="frame" x="0.0" y="43.5" width="288" height="16.5"/>
                                         <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="12"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(description)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dpT-tt-jq2">
-                                        <rect key="frame" x="0.0" y="65" width="288" height="16.5"/>
-                                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="12"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1RT-jb-L2c">
-                                        <rect key="frame" x="0.0" y="86.5" width="288" height="32"/>
+                                        <rect key="frame" x="0.0" y="65" width="288" height="32"/>
                                         <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
                                         <state key="normal" title="(RunSignUp URL)"/>
                                         <connections>
@@ -511,7 +505,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SMv-dR-yvR">
-                                        <rect key="frame" x="0.0" y="123.5" width="288" height="32"/>
+                                        <rect key="frame" x="0.0" y="102" width="288" height="32"/>
                                         <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
                                         <state key="normal" title="(External URL)"/>
                                         <connections>
@@ -521,7 +515,6 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Q1d-6b-4LB" firstAttribute="width" secondItem="9Wk-In-God" secondAttribute="width" id="0SW-j7-93S"/>
-                                    <constraint firstItem="dpT-tt-jq2" firstAttribute="width" secondItem="9Wk-In-God" secondAttribute="width" id="3vZ-y8-zwU"/>
                                     <constraint firstItem="1RT-jb-L2c" firstAttribute="width" secondItem="9Wk-In-God" secondAttribute="width" id="BMb-Pj-iEs"/>
                                     <constraint firstItem="SMv-dR-yvR" firstAttribute="width" secondItem="9Wk-In-God" secondAttribute="width" id="DQX-de-hrb"/>
                                     <constraint firstItem="WXY-h4-M7k" firstAttribute="width" secondItem="9Wk-In-God" secondAttribute="width" id="mQw-qT-yPq"/>
@@ -543,7 +536,6 @@
                         <outlet property="externalURLButton" destination="SMv-dR-yvR" id="9sn-CE-nlu"/>
                         <outlet property="raceAddressTextLabel" destination="ehy-fp-gJB" id="yyb-bn-6s1"/>
                         <outlet property="raceDateTextLabel" destination="Q1d-6b-4LB" id="IJU-rF-g1v"/>
-                        <outlet property="raceDescriptionTextLabel" destination="dpT-tt-jq2" id="DaB-ku-UBa"/>
                         <outlet property="raceLogoImageView" destination="rds-1r-6Sz" id="x0X-YQ-CKD"/>
                         <outlet property="raceNameTextLabel" destination="WXY-h4-M7k" id="GDd-f4-JGl"/>
                         <outlet property="runSignUpURLButton" destination="1RT-jb-L2c" id="9WK-UB-53c"/>

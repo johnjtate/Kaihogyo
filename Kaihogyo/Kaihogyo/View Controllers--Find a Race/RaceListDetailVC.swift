@@ -15,13 +15,13 @@ class RaceListDetailVC: UIViewController {
     @IBOutlet weak var raceNameTextLabel: UILabel!
     @IBOutlet weak var raceDateTextLabel: UILabel!
     @IBOutlet weak var raceAddressTextLabel: UILabel!
-    @IBOutlet weak var raceDescriptionTextLabel: UILabel!
     @IBOutlet weak var runSignUpURLButton: UIButton!
     @IBOutlet weak var externalURLButton: UIButton!
     
     // MARK: - Properties
     var race: Race? {
         didSet {
+            loadViewIfNeeded()
             updateViews()
         }
     }
@@ -32,14 +32,13 @@ class RaceListDetailVC: UIViewController {
     func updateViews() {
     
         guard let race = race else { return }
-        raceNameTextLabel.text = race.race.name
+        raceNameTextLabel.text = race.race.name ?? ""
         raceDateTextLabel.text = race.race.date ?? ""
         let raceStreet = race.race.address.street ?? ""
         let raceCity = race.race.address.city ?? ""
         let raceState = race.race.address.state ?? ""
         let raceZIP = race.race.address.zipcode ?? ""
         raceAddressTextLabel.text = "\(raceStreet)" + ", " + "\(raceCity)" + ", " + "\(raceState)" + ", " + "\(raceZIP)"
-        raceDescriptionTextLabel.text = race.race.description ?? ""
         
         if let url = race.race.url {
             runSignUpURLButton.isHidden = false
@@ -62,7 +61,7 @@ class RaceListDetailVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadViewIfNeeded()
+        updateViews()
     }
     
     // MARK: - IBActions
