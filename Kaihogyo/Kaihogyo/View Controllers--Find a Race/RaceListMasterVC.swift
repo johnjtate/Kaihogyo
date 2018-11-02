@@ -21,15 +21,16 @@ class RaceListMasterVC: UIViewController, UITableViewDataSource, UITableViewDele
         racesMasterTableView.delegate = self
     }
     
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "toRaceDetailView" {
+            let destinationVC = segue.destination as? RaceListDetailVC
+            guard let indexPath = racesMasterTableView.indexPathForSelectedRow else { return }
+            let race = RaceController.shared.races[indexPath.row]
+            destinationVC?.race = race
+        }
     }
-    */
 
     // MARK: - Table View Data Source
     
@@ -41,6 +42,12 @@ class RaceListMasterVC: UIViewController, UITableViewDataSource, UITableViewDele
         let cell = racesMasterTableView.dequeueReusableCell(withIdentifier: "raceCell", for: indexPath) as? RaceMasterListCell
         let race = RaceController.shared.races[indexPath.row]
         cell?.race = race
+        // image fetch
+        RaceController.shared.fetchRaceLogoImage(race: race) { (image) in
+            DispatchQueue.main.async {
+                cell?.raceLogoImageView.image = image
+            }
+        }
         return cell ?? UITableViewCell()
     }
     

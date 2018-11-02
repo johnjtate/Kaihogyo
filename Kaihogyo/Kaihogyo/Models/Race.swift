@@ -23,15 +23,17 @@ struct Race: Decodable {
     
     struct RaceDictionary: Decodable {
         
+        let race_id: Int?
         let name: String?
         let date: String?
         let description: String?
-        let url: String?
-        let externalURL: String?
-        let imageURL: String
+        let url: URL?
+        let externalURL: URL?
+        let imageURL: URL?
         let address: AddressDictionary
         
         private enum CodingKeys: String, CodingKey {
+            case race_id
             case name
             case date = "next_date"
             case description

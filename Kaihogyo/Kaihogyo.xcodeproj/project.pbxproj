@@ -17,6 +17,7 @@
 		873796BF21892BCB004213CF /* Quote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 873796BD21892BCB004213CF /* Quote.xcdatamodeld */; };
 		873796C121892C53004213CF /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873796C021892C53004213CF /* Stack.swift */; };
 		873796C321893179004213CF /* QuoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873796C221893179004213CF /* QuoteVC.swift */; };
+		876F6859218CB2B60028767D /* RaceListDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876F6858218CB2B60028767D /* RaceListDetailVC.swift */; };
 		876F6EAB218A8A82002A8848 /* APIkeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 876F6EAA218A8A82002A8848 /* APIkeys.plist */; };
 		876F6EAD218A8AF1002A8848 /* RaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876F6EAC218A8AF1002A8848 /* RaceController.swift */; };
 		876F6EAF218A8B8E002A8848 /* Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876F6EAE218A8B8E002A8848 /* Race.swift */; };
@@ -45,6 +46,7 @@
 		873796BE21892BCB004213CF /* Quote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Quote.xcdatamodel; sourceTree = "<group>"; };
 		873796C021892C53004213CF /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		873796C221893179004213CF /* QuoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteVC.swift; sourceTree = "<group>"; };
+		876F6858218CB2B60028767D /* RaceListDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListDetailVC.swift; sourceTree = "<group>"; };
 		876F6EAA218A8A82002A8848 /* APIkeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = APIkeys.plist; sourceTree = "<group>"; };
 		876F6EAC218A8AF1002A8848 /* RaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceController.swift; sourceTree = "<group>"; };
 		876F6EAE218A8B8E002A8848 /* Race.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Race.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 			children = (
 				87F94D59218B9A5D0051037A /* RaceSearchVC.swift */,
 				87F94D5B218BC4310051037A /* RaceListMasterVC.swift */,
+				876F6858218CB2B60028767D /* RaceListDetailVC.swift */,
 			);
 			path = "View Controllers--Find a Race";
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				87F94D60218BD2970051037A /* ActivityIndicator.swift in Sources */,
 				873796BF21892BCB004213CF /* Quote.xcdatamodeld in Sources */,
 				873796C121892C53004213CF /* Stack.swift in Sources */,
+				876F6859218CB2B60028767D /* RaceListDetailVC.swift in Sources */,
 				876F6EAD218A8AF1002A8848 /* RaceController.swift in Sources */,
 				8786F0EA218A0A0C007F43B0 /* LoginVC.swift in Sources */,
 				876F6EAF218A8B8E002A8848 /* Race.swift in Sources */,

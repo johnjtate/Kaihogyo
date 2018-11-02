@@ -6,7 +6,7 @@
 //  Copyright © 2018 John Tate. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class RaceController {
     
@@ -111,6 +111,23 @@ class RaceController {
             } catch let error {
                 print("Error with JSONDecoder: \(error) \(error.localizedDescription)")
                 completion([]); return
+            }
+        }.resume()
+    }
+    
+    func fetchRaceLogoImage(race: Race, completion: @escaping (UIImage?) -> Void) {
+
+        guard let imageURL = race.race.imageURL else { return }
+        
+        URLSession.shared.dataTask(with: imageURL) { (data, _, error) in
+            do {
+                if let error = error { throw error }
+                guard let data = data else { throw NSError() }
+                let image = UIImage(data: data)
+                completion(image)
+            } catch let error {
+                print("Error fetching race image \(error) \(error.localizedDescription)")
+                completion(nil); return
             }
         }.resume()
     }
