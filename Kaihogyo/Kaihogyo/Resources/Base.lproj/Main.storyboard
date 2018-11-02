@@ -267,31 +267,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Ark-Mi-vDp">
-                                <rect key="frame" x="59" y="426" width="202" height="73"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayv-73-99k">
-                                        <rect key="frame" x="0.0" y="0.0" width="202" height="34"/>
-                                        <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="18"/>
-                                        <state key="normal" title="More on the Quote Source">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="moreOnQuoteSourceButtonTapped:" destination="VS1-uK-yxl" eventType="touchUpInside" id="VVd-br-s8R"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zuN-eU-ojE">
-                                        <rect key="frame" x="44" y="39" width="114" height="34"/>
-                                        <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="18"/>
-                                        <state key="normal" title="Another Quote">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="anotherQuoteButtonTapped:" destination="VS1-uK-yxl" eventType="touchUpInside" id="ZTg-pg-OjC"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mountain" translatesAutoresizingMaskIntoConstraints="NO" id="Hqk-pf-9UN">
                                 <rect key="frame" x="10" y="74" width="300" height="200"/>
                                 <constraints>
@@ -301,7 +276,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="RPG-rT-Pmt">
                                 <rect key="frame" x="16" y="284" width="288" height="44"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(quote)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6F-PW-jdG">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(quote)" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6F-PW-jdG">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="19.5"/>
                                         <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
                                         <nil key="highlightedColor"/>
@@ -319,6 +294,37 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Ark-Mi-vDp">
+                                <rect key="frame" x="81.5" y="464" width="157" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayv-73-99k">
+                                        <rect key="frame" x="0.0" y="0.0" width="157" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="taF-3f-YWH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="14"/>
+                                        <state key="normal" title="More on the Quote Source">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="moreOnQuoteSourceButtonTapped:" destination="VS1-uK-yxl" eventType="touchUpInside" id="VVd-br-s8R"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zuN-eU-ojE">
+                                        <rect key="frame" x="34" y="25" width="89" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="3Ud-x9-rwF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="14"/>
+                                        <state key="normal" title="Another Quote">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="anotherQuoteButtonTapped:" destination="VS1-uK-yxl" eventType="touchUpInside" id="ZTg-pg-OjC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -327,7 +333,7 @@
                             <constraint firstAttribute="trailing" secondItem="Hqk-pf-9UN" secondAttribute="trailing" constant="10" id="Iyh-T4-I00"/>
                             <constraint firstItem="RPG-rT-Pmt" firstAttribute="top" secondItem="Hqk-pf-9UN" secondAttribute="bottom" constant="10" id="NTL-uZ-e8a"/>
                             <constraint firstItem="JRm-d4-dDG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="raG-fG-Jqh" secondAttribute="leading" symbolic="YES" id="OMu-cw-oFC"/>
-                            <constraint firstItem="raG-fG-Jqh" firstAttribute="bottom" secondItem="Ark-Mi-vDp" secondAttribute="bottom" constant="20" id="Ozv-8L-txC"/>
+                            <constraint firstItem="raG-fG-Jqh" firstAttribute="bottom" secondItem="Ark-Mi-vDp" secondAttribute="bottom" constant="10" id="Ozv-8L-txC"/>
                             <constraint firstItem="Ark-Mi-vDp" firstAttribute="centerX" secondItem="adx-OY-L2d" secondAttribute="centerX" id="T01-Nr-Bvi"/>
                             <constraint firstItem="Hqk-pf-9UN" firstAttribute="top" secondItem="raG-fG-Jqh" secondAttribute="top" constant="10" id="bCP-Ue-Mbm"/>
                             <constraint firstItem="RPG-rT-Pmt" firstAttribute="centerX" secondItem="adx-OY-L2d" secondAttribute="centerX" id="fmy-FC-2Dd"/>

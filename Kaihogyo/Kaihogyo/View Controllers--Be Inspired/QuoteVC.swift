@@ -26,8 +26,11 @@ class QuoteVC: UIViewController, NSFetchedResultsControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchedResultsController.delegate = self
-        addInitialFiftyQuotes()
         fetchQuotes()
+        // in the case that a quote needs to be corrected, the following three functions below can be toggled following corrections to load a corrected array of 50 quotes into the CoreData stack
+//        purgeQuotes()
+//        addInitialFiftyQuotes()
+//        fetchQuotes()
         loadQuote()
     }
     
@@ -60,6 +63,16 @@ class QuoteVC: UIViewController, NSFetchedResultsControllerDelegate {
         authorTextLabel.text = quote?.author ?? ""
         if let url = quote?.url {
             quoteURL = URL(string: url)
+        }
+    }
+    
+    // purges quotes
+    func purgeQuotes() {
+        let quoteCount = fetchedResultsController.fetchedObjects?.count ?? 0
+        guard quoteCount > 0 else { return }
+        for i in 0...quoteCount-1 {
+            let quote = fetchedResultsController.fetchedObjects?[i]
+            QuoteController.sharedController.remove(quote: quote!)
         }
     }
     
@@ -113,7 +126,7 @@ class QuoteVC: UIViewController, NSFetchedResultsControllerDelegate {
         QuoteController.sharedController.add(quote: quote23)
         let quote24 = Quote.init(text: "The real purpose of running isn't to win a race.  It's to test the limits of the human heart.", author: "Bill Bowerman", url: "https://en.wikipedia.org/wiki/Bill_Bowerman", userAdded: false)
         QuoteController.sharedController.add(quote: quote24)
-        let quote25 = Quote.init(text: "Our running shoes have magic in them.  The power to transform a bad day into a good day; frustration into speed; self-doubt into confidence; chocolate cake into muscle.", author: "Mina Samueals", url: "https://www.minasamuels.com/", userAdded: false)
+        let quote25 = Quote.init(text: "Our running shoes have magic in them.  The power to transform a bad day into a good day; frustration into speed; self-doubt into confidence; chocolate cake into muscle.", author: "Mina Samuels", url: "https://www.minasamuels.com/", userAdded: false)
         QuoteController.sharedController.add(quote: quote25)
         let quote26 = Quote.init(text: "The point is whether or not I improved over yesterday.  In long-distance running the only opponent you have to beat is yourself, the way you used to be.", author: "Haruki Murakami", url: "http://www.harukimurakami.com/", userAdded: false)
         QuoteController.sharedController.add(quote: quote26)
@@ -121,7 +134,7 @@ class QuoteVC: UIViewController, NSFetchedResultsControllerDelegate {
         QuoteController.sharedController.add(quote: quote27)
         let quote28 = Quote.init(text: "Crossing the starting line may be an act of courage, but crossing the finish line is an act of faith.  Faith is what keeps us going when nothing else will  Faith is the emotion that will give you victory over your past, the demons in your soul, and all of those voices that tell you what you can and cannot do and can and cannot be.", author: "John Bingham", url: "https://en.wikipedia.org/wiki/John_Bingham_(runner)", userAdded: false)
         QuoteController.sharedController.add(quote: quote28)
-        let quote29 = Quote.init(text: "Some seek the comfort of their therapist's office, others head to the corner pub and dive intop a pint, but I choose running as my therapy.", author: "Dean Karnazes", url: "https://en.wikipedia.org/wiki/Dean_Karnazes", userAdded: false)
+        let quote29 = Quote.init(text: "Some seek the comfort of their therapist's office, others head to the corner pub and dive into a pint, but I choose running as my therapy.", author: "Dean Karnazes", url: "https://en.wikipedia.org/wiki/Dean_Karnazes", userAdded: false)
         QuoteController.sharedController.add(quote: quote29)
         let quote30 = Quote.init(text: "Struggling and suffering are the essence of a life worth living.  If you're not pushing yourself beyond the comfort zone, if you're not demanding more from yourself--expanding and learning as you go--you're choosing a numb existence.  You're denying yourself an extraordinary trip.", author: "Dean Karnazes", url: "https://en.wikipedia.org/wiki/Dean_Karnazes", userAdded: false)
         QuoteController.sharedController.add(quote: quote30)
@@ -141,7 +154,7 @@ class QuoteVC: UIViewController, NSFetchedResultsControllerDelegate {
         QuoteController.sharedController.add(quote: quote37)
         let quote38 = Quote.init(text: "But I also realize that winning doesn't always mean getting first place; it means getting the best out of yourself.", author: "Meb Keflezighi", url: "https://en.wikipedia.org/wiki/Meb_Keflezighi", userAdded: false)
         QuoteController.sharedController.add(quote: quote38)
-        let quote39 = Quote.init(text: "When I go to the Boston Marathon now, I have wet shoulders--women fall into my arms crying  They're weeping for joy because running has changed their lives.  They feel they can do anything.", author: "Kathrine Switzer", url: "https://kathrineswitzer.com/", userAdded: false)
+        let quote39 = Quote.init(text: "When I go to the Boston Marathon now, I have wet shoulders--women fall into my arms crying.  They're weeping for joy because running has changed their lives.  They feel they can do anything.", author: "Kathrine Switzer", url: "https://kathrineswitzer.com/", userAdded: false)
         QuoteController.sharedController.add(quote: quote39)
         let quote40 = Quote.init(text: "I could feel my anger dissipating as the miles went by--you can't run and stay mad!", author: "Kathrine Switzer", url: "https://kathrineswitzer.com/", userAdded: false)
         QuoteController.sharedController.add(quote: quote40)
