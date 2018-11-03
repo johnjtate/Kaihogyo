@@ -122,7 +122,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dhY-3j-wpY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2202" y="912"/>
+            <point key="canvasLocation" x="2198" y="945"/>
         </scene>
         <!--RaceSearchVC-->
         <scene sceneID="Xso-dn-dcN">
@@ -208,7 +208,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="37o-Rk-3YS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1203.75" y="912.5"/>
+            <point key="canvasLocation" x="1204" y="946"/>
         </scene>
     </scenes>
     <resources>
