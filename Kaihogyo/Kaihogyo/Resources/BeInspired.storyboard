@@ -177,12 +177,37 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="modern_marathon" translatesAutoresizingMaskIntoConstraints="NO" id="hvd-hH-7qT">
                                 <rect key="frame" x="10" y="60" width="300" height="200"/>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="f47-fW-uV3">
+                                <rect key="frame" x="8" y="270" width="304" height="238"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Marathon in Modern Times" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDC-I3-suz">
+                                        <rect key="frame" x="0.0" y="0.0" width="304" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="PBt-iH-pxC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qeg-Ko-PNc">
+                                        <rect key="frame" x="0.0" y="40" width="304" height="198"/>
+                                        <mutableString key="text"> The first marathon competition in modern times took place at the Summer Olympic Games in 1896.  The Boston Marathon was first run on April 19, 1897.  In 1967, Kathrine Switzer was the first woman to officially complete the Boston Marathon.  Since the 1970s, running a marathon has shifted from an event generally only undertaken by elite runners to one with wide participation, and in recent years over 500,000 runners per year complete a marathon within the United States.  The current world record for the marathon was set by Eliud Kipchoge (Kenyan) at the 2018 Berlin Marathon with a time of 2:01:39.  </mutableString>
+                                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="hvd-hH-7qT" firstAttribute="top" secondItem="Ecg-7f-IZV" secondAttribute="top" constant="60" id="50Q-Mx-vbD"/>
                             <constraint firstItem="hvd-hH-7qT" firstAttribute="leading" secondItem="Ecg-7f-IZV" secondAttribute="leading" constant="10" id="C8S-5e-NsY"/>
+                            <constraint firstItem="f47-fW-uV3" firstAttribute="centerX" secondItem="Ecg-7f-IZV" secondAttribute="centerX" id="O9U-KW-aTz"/>
                             <constraint firstItem="hvd-hH-7qT" firstAttribute="width" secondItem="hvd-hH-7qT" secondAttribute="height" multiplier="1.5:1" id="TbR-TM-7e6"/>
+                            <constraint firstItem="f47-fW-uV3" firstAttribute="width" secondItem="AxR-0H-uTc" secondAttribute="width" multiplier="0.95" id="Z3B-Cj-qS7"/>
+                            <constraint firstAttribute="bottom" secondItem="f47-fW-uV3" secondAttribute="bottom" constant="60" id="cVh-41-VyZ"/>
+                            <constraint firstItem="f47-fW-uV3" firstAttribute="top" secondItem="hvd-hH-7qT" secondAttribute="bottom" constant="10" id="koT-Dk-vDe"/>
                             <constraint firstItem="AxR-0H-uTc" firstAttribute="trailing" secondItem="hvd-hH-7qT" secondAttribute="trailing" constant="10" id="ocK-MF-Agr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AxR-0H-uTc"/>
@@ -203,7 +228,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="japanese_mountain" translatesAutoresizingMaskIntoConstraints="NO" id="D2C-pj-wbl">
                                 <rect key="frame" x="10" y="60" width="300" height="200"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PRX-1h-npd">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PRX-1h-npd">
                                 <rect key="frame" x="8" y="270" width="304" height="238"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Marathon Monks of Mount Hiei" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gj3-5f-O3D">
@@ -216,7 +241,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OWh-3R-Pdi">
-                                        <rect key="frame" x="0.0" y="50" width="304" height="188"/>
+                                        <rect key="frame" x="0.0" y="40" width="304" height="198"/>
                                         <mutableString key="text">A group of Tendai Buddhist monks living on Mount Hiei in Japan are known for the marathon distances they cover on foot.  The quest is known as kaihogyo, which means "circling the mountain," and is part of a process believed to bring about enlightenment.  During the first four years of the seven-year quest, the monks run 30 km daily (about 18 miles) for consecutive days.  In year 5, the duration is increased to 200 days.  In year 6, the monks run 60 km daily (about 37 miles) for 100 consecutive days.  Finally, during the seventh year, they run 84 km daily (about 52 miles) for 100 consecutive days followed by 30 km for 100 consecutive days.   </mutableString>
                                         <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
                                         <nil key="textColor"/>
@@ -251,7 +276,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="C3j-kz-mL9">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="C3j-kz-mL9">
                                 <rect key="frame" x="8" y="80" width="304" height="468"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The First Marathon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sMV-vF-XO3">
@@ -264,7 +289,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L1y-EZ-wLr">
-                                        <rect key="frame" x="0.0" y="50" width="304" height="418"/>
+                                        <rect key="frame" x="0.0" y="41" width="304" height="427"/>
                                         <mutableString key="text">Legend has it that the first marathon was run by a messenger named Phidippides in 490 B.C.E.  The Greek city-state of Athens was being attacked by the Persian Empire.  The Athenians sent Phidippides approximately 140 miles each way on foot to seek military help from the Spartans, who could not immediately assist due to a religious festival.  He then returned to Marathon near Athens, where the Persians had assembled to attack.  Afterward, he quickly ran back to Athens to announce victory at Marathon and to warn the them that the Persians would soon attempt an attack by sea on the city.  The Persian ships arrived at Athens and saw a large army assembled, many of whom had just fought at Marathon, causing them to abandon their attack.  The Marathon-to-Athens distance Phidippides ran was approximately 26 miles, the distance which has become the current marathon.  Without his heroic run, the Persians may have defeated the Athenians, and the course of Western civilization would likely have been forever changed.  </mutableString>
                                         <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
                                         <nil key="textColor"/>
