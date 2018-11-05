@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -22,14 +22,14 @@
             <objects>
                 <viewController storyboardIdentifier="InspiredMasterVC" id="Txs-JH-234" customClass="InspiredMasterVC" customModule="Kaihogyo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uno-1I-Zrs">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="EzZ-40-fnv">
-                                <rect key="frame" x="5" y="25" width="365" height="588"/>
+                                <rect key="frame" x="5" y="25" width="310" height="489"/>
                                 <subviews>
                                     <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJ9-4j-qbd">
-                                        <rect key="frame" x="0.0" y="0.0" width="365" height="113.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="310" height="94"/>
                                         <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="20"/>
                                         <state key="normal" image="mountain_button" backgroundImage="mountain_button">
                                             <color key="titleColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -39,7 +39,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I4f-fk-wbY">
-                                        <rect key="frame" x="0.0" y="118.5" width="365" height="113.5"/>
+                                        <rect key="frame" x="0.0" y="99" width="310" height="93.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" image="marble_background_button">
                                             <color key="titleColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -49,7 +49,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Art-9M-ZXz">
-                                        <rect key="frame" x="0.0" y="237" width="365" height="114"/>
+                                        <rect key="frame" x="0.0" y="197.5" width="310" height="94"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" image="parthenon_button">
                                             <color key="titleColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -59,7 +59,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENg-zS-Ql0">
-                                        <rect key="frame" x="0.0" y="356" width="365" height="113.5"/>
+                                        <rect key="frame" x="0.0" y="296.5" width="310" height="93.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="20"/>
                                         <state key="normal" backgroundImage="japanese_mountain_button">
@@ -71,7 +71,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6f-0X-TBO">
-                                        <rect key="frame" x="0.0" y="474.5" width="365" height="113.5"/>
+                                        <rect key="frame" x="0.0" y="395" width="310" height="94"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="20"/>
                                         <state key="normal" backgroundImage="modern_marathon_button">
@@ -84,35 +84,35 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Running Quotes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NwB-rW-d4u">
-                                <rect key="frame" x="5" y="25" width="365" height="113.5"/>
+                                <rect key="frame" x="5" y="25" width="310" height="94"/>
                                 <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="24"/>
                                 <color key="textColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inspiration Wall" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Dq-fW-y8v">
-                                <rect key="frame" x="5" y="143.5" width="365" height="113.5"/>
+                                <rect key="frame" x="5" y="124" width="310" height="93.5"/>
                                 <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="24"/>
                                 <color key="textColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The First Marathon" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6k-o9-2en">
-                                <rect key="frame" x="5" y="262" width="365" height="114"/>
+                                <rect key="frame" x="5" y="222.5" width="310" height="94"/>
                                 <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="24"/>
                                 <color key="textColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Marathon Monks" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ag-fl-elP">
-                                <rect key="frame" x="5" y="381" width="365" height="113.5"/>
+                                <rect key="frame" x="5" y="321.5" width="310" height="93.5"/>
                                 <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="24"/>
                                 <color key="textColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Marathon in Modern Times" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fpb-SF-9wn">
-                                <rect key="frame" x="5" y="499.5" width="365" height="113.5"/>
+                                <rect key="frame" x="5" y="420" width="310" height="94"/>
                                 <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="24"/>
                                 <color key="textColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -171,9 +171,20 @@
             <objects>
                 <viewController storyboardIdentifier="ModernMarathonVC" id="Bpi-FB-ow8" customClass="ModernMarathonVC" customModule="Kaihogyo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ecg-7f-IZV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="modern_marathon" translatesAutoresizingMaskIntoConstraints="NO" id="hvd-hH-7qT">
+                                <rect key="frame" x="10" y="60" width="300" height="200"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hvd-hH-7qT" firstAttribute="top" secondItem="Ecg-7f-IZV" secondAttribute="top" constant="60" id="50Q-Mx-vbD"/>
+                            <constraint firstItem="hvd-hH-7qT" firstAttribute="leading" secondItem="Ecg-7f-IZV" secondAttribute="leading" constant="10" id="C8S-5e-NsY"/>
+                            <constraint firstItem="hvd-hH-7qT" firstAttribute="width" secondItem="hvd-hH-7qT" secondAttribute="height" multiplier="1.5:1" id="TbR-TM-7e6"/>
+                            <constraint firstItem="AxR-0H-uTc" firstAttribute="trailing" secondItem="hvd-hH-7qT" secondAttribute="trailing" constant="10" id="ocK-MF-Agr"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="AxR-0H-uTc"/>
                     </view>
                 </viewController>
@@ -186,9 +197,45 @@
             <objects>
                 <viewController storyboardIdentifier="MarathonMonksVC" id="U43-fZ-KrO" customClass="MarathonMonksVC" customModule="Kaihogyo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J06-IZ-tdo">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="japanese_mountain" translatesAutoresizingMaskIntoConstraints="NO" id="D2C-pj-wbl">
+                                <rect key="frame" x="10" y="60" width="300" height="200"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PRX-1h-npd">
+                                <rect key="frame" x="8" y="270" width="304" height="238"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Marathon Monks of Mount Hiei" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gj3-5f-O3D">
+                                        <rect key="frame" x="0.0" y="0.0" width="304" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="jaS-zH-ryF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OWh-3R-Pdi">
+                                        <rect key="frame" x="0.0" y="50" width="304" height="188"/>
+                                        <mutableString key="text">A group of Tendai Buddhist monks living on Mount Hiei in Japan are known for the marathon distances they cover on foot.  The quest is known as kaihogyo, which means "circling the mountain," and is part of a process believed to bring about enlightenment.  During the first four years of the seven-year quest, the monks run 30 km daily (about 18 miles) for consecutive days.  In year 5, the duration is increased to 200 days.  In year 6, the monks run 60 km daily (about 37 miles) for 100 consecutive days.  Finally, during the seventh year, they run 84 km daily (about 52 miles) for 100 consecutive days followed by 30 km for 100 consecutive days.   </mutableString>
+                                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3RZ-fM-nns" firstAttribute="trailing" secondItem="D2C-pj-wbl" secondAttribute="trailing" constant="10" id="IIv-4z-O4o"/>
+                            <constraint firstItem="D2C-pj-wbl" firstAttribute="leading" secondItem="J06-IZ-tdo" secondAttribute="leading" constant="10" id="Nyg-J9-Vc0"/>
+                            <constraint firstAttribute="bottom" secondItem="PRX-1h-npd" secondAttribute="bottom" constant="60" id="OQ4-6C-uSM"/>
+                            <constraint firstItem="PRX-1h-npd" firstAttribute="width" secondItem="3RZ-fM-nns" secondAttribute="width" multiplier="0.95" id="RrI-TB-jY4"/>
+                            <constraint firstItem="D2C-pj-wbl" firstAttribute="top" secondItem="J06-IZ-tdo" secondAttribute="top" constant="60" id="dvg-hD-ckQ"/>
+                            <constraint firstItem="D2C-pj-wbl" firstAttribute="width" secondItem="D2C-pj-wbl" secondAttribute="height" multiplier="1.5:1" id="eaW-dS-TAl"/>
+                            <constraint firstItem="PRX-1h-npd" firstAttribute="centerX" secondItem="J06-IZ-tdo" secondAttribute="centerX" id="j65-tt-r2e"/>
+                            <constraint firstItem="PRX-1h-npd" firstAttribute="top" secondItem="D2C-pj-wbl" secondAttribute="bottom" constant="10" id="qwx-d4-ubu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="3RZ-fM-nns"/>
                     </view>
                 </viewController>
@@ -201,9 +248,38 @@
             <objects>
                 <viewController storyboardIdentifier="FirstMarathonVC" id="iOR-ND-JTl" customClass="FirstMarathonVC" customModule="Kaihogyo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fdB-Io-Sgu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="C3j-kz-mL9">
+                                <rect key="frame" x="8" y="80" width="304" height="468"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The First Marathon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sMV-vF-XO3">
+                                        <rect key="frame" x="0.0" y="0.0" width="304" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Zzr-yW-1IO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L1y-EZ-wLr">
+                                        <rect key="frame" x="0.0" y="50" width="304" height="418"/>
+                                        <mutableString key="text">Legend has it that the first marathon was run by a messenger named Phidippides in 490 B.C.E.  The Greek city-state of Athens was being attacked by the Persian Empire.  The Athenians sent Phidippides approximately 140 miles each way on foot to seek military help from the Spartans, who could not immediately assist due to a religious festival.  He then returned to Marathon near Athens, where the Persians had assembled to attack.  Afterward, he quickly ran back to Athens to announce victory at Marathon and to warn the them that the Persians would soon attempt an attack by sea on the city.  The Persian ships arrived at Athens and saw a large army assembled, many of whom had just fought at Marathon, causing them to abandon their attack.  The Marathon-to-Athens distance Phidippides ran was approximately 26 miles, the distance which has become the current marathon.  Without his heroic run, the Persians may have defeated the Athenians, and the course of Western civilization would likely have been forever changed.  </mutableString>
+                                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="C3j-kz-mL9" firstAttribute="centerX" secondItem="fdB-Io-Sgu" secondAttribute="centerX" id="3cZ-D4-Z1h"/>
+                            <constraint firstItem="C3j-kz-mL9" firstAttribute="width" secondItem="6cg-Sn-zJO" secondAttribute="width" multiplier="0.95" id="VZo-K1-yIn"/>
+                            <constraint firstItem="6cg-Sn-zJO" firstAttribute="bottom" secondItem="C3j-kz-mL9" secondAttribute="bottom" constant="20" id="grO-Lh-0Kj"/>
+                            <constraint firstItem="C3j-kz-mL9" firstAttribute="top" secondItem="6cg-Sn-zJO" secondAttribute="top" constant="60" id="xAb-Wz-N2B"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6cg-Sn-zJO"/>
                     </view>
                 </viewController>
@@ -216,7 +292,7 @@
             <objects>
                 <viewController storyboardIdentifier="InspirationWallVC" id="Edt-zr-a1X" customClass="InspirationWallVC" customModule="Kaihogyo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bti-I5-QVL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="gfB-eZ-AZC"/>
@@ -231,38 +307,38 @@
             <objects>
                 <viewController storyboardIdentifier="QuoteVC" id="IAs-xp-o9m" customClass="QuoteVC" customModule="Kaihogyo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FvT-c1-S3R">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mountain" translatesAutoresizingMaskIntoConstraints="NO" id="Odx-Uw-3XA">
-                                <rect key="frame" x="10" y="30" width="355" height="236.5"/>
+                                <rect key="frame" x="10" y="30" width="300" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Odx-Uw-3XA" secondAttribute="height" multiplier="1.5:1" id="h2b-de-WBj"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="JPk-vQ-5D4">
-                                <rect key="frame" x="19" y="276.5" width="337.5" height="44"/>
+                                <rect key="frame" x="16" y="240" width="288" height="44"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(quote)" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBd-Os-JeL">
-                                        <rect key="frame" x="0.0" y="0.0" width="337.5" height="19.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="19.5"/>
                                         <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(author)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3R-VG-5RN">
-                                        <rect key="frame" x="0.0" y="24.5" width="337.5" height="19.5"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="288" height="19.5"/>
                                         <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kaihogyo-- &quot;circling the mountain&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dF-YV-RxX">
-                                <rect key="frame" x="10" y="60.5" width="355" height="19.5"/>
+                                <rect key="frame" x="10" y="60.5" width="300" height="19.5"/>
                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="4ke-tm-mdx">
-                                <rect key="frame" x="109" y="612" width="157" height="45"/>
+                                <rect key="frame" x="81.5" y="513" width="157" height="45"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IsE-3n-bzm">
                                         <rect key="frame" x="0.0" y="0.0" width="157" height="20"/>
@@ -326,8 +402,10 @@
     </scenes>
     <resources>
         <image name="gear_icon" width="30" height="30"/>
+        <image name="japanese_mountain" width="1232" height="816"/>
         <image name="japanese_mountain_button" width="1081" height="292"/>
         <image name="marble_background_button" width="1081" height="292"/>
+        <image name="modern_marathon" width="1232" height="816"/>
         <image name="modern_marathon_button" width="1081" height="292"/>
         <image name="mountain" width="1232" height="816"/>
         <image name="mountain_button" width="1081" height="292"/>
