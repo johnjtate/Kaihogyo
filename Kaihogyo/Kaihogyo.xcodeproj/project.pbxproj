@@ -26,6 +26,10 @@
 		876F6EAB218A8A82002A8848 /* APIkeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 876F6EAA218A8A82002A8848 /* APIkeys.plist */; };
 		876F6EAD218A8AF1002A8848 /* RaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876F6EAC218A8AF1002A8848 /* RaceController.swift */; };
 		876F6EAF218A8B8E002A8848 /* Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876F6EAE218A8B8E002A8848 /* Race.swift */; };
+		877762B12190C8E800085F3A /* InspirationWallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877762B02190C8E800085F3A /* InspirationWallVC.swift */; };
+		877762B32190C90F00085F3A /* FirstMarathonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877762B22190C90F00085F3A /* FirstMarathonVC.swift */; };
+		877762B52190C93400085F3A /* MarathonMonksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877762B42190C93400085F3A /* MarathonMonksVC.swift */; };
+		877762B72190C95C00085F3A /* ModernMarathonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877762B62190C95C00085F3A /* ModernMarathonVC.swift */; };
 		8786F0EA218A0A0C007F43B0 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8786F0E9218A0A0C007F43B0 /* LoginVC.swift */; };
 		8786F0EC218A1FEB007F43B0 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8786F0EB218A1FEB007F43B0 /* TabBarController.swift */; };
 		8786F0F0218A299E007F43B0 /* CaesarDressing-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8786F0EE218A2921007F43B0 /* CaesarDressing-Regular.ttf */; };
@@ -60,6 +64,10 @@
 		876F6EAA218A8A82002A8848 /* APIkeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = APIkeys.plist; sourceTree = "<group>"; };
 		876F6EAC218A8AF1002A8848 /* RaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceController.swift; sourceTree = "<group>"; };
 		876F6EAE218A8B8E002A8848 /* Race.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Race.swift; sourceTree = "<group>"; };
+		877762B02190C8E800085F3A /* InspirationWallVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationWallVC.swift; sourceTree = "<group>"; };
+		877762B22190C90F00085F3A /* FirstMarathonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstMarathonVC.swift; sourceTree = "<group>"; };
+		877762B42190C93400085F3A /* MarathonMonksVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarathonMonksVC.swift; sourceTree = "<group>"; };
+		877762B62190C95C00085F3A /* ModernMarathonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernMarathonVC.swift; sourceTree = "<group>"; };
 		8786F0E9218A0A0C007F43B0 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		8786F0EB218A1FEB007F43B0 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		8786F0EE218A2921007F43B0 /* CaesarDressing-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CaesarDressing-Regular.ttf"; sourceTree = "<group>"; };
@@ -150,6 +158,10 @@
 			children = (
 				876F685A218CDFA80028767D /* InspiredMasterVC.swift */,
 				873796C221893179004213CF /* QuoteVC.swift */,
+				877762B02190C8E800085F3A /* InspirationWallVC.swift */,
+				877762B22190C90F00085F3A /* FirstMarathonVC.swift */,
+				877762B42190C93400085F3A /* MarathonMonksVC.swift */,
+				877762B62190C95C00085F3A /* ModernMarathonVC.swift */,
 			);
 			path = "View Controllers--Be Inspired";
 			sourceTree = "<group>";
@@ -304,6 +316,7 @@
 				87F94D58218B67B70051037A /* APIkeys.swift in Sources */,
 				87F94D60218BD2970051037A /* ActivityIndicator.swift in Sources */,
 				873796BF21892BCB004213CF /* Quote.xcdatamodeld in Sources */,
+				877762B52190C93400085F3A /* MarathonMonksVC.swift in Sources */,
 				873796C121892C53004213CF /* Stack.swift in Sources */,
 				876F6859218CB2B60028767D /* RaceListDetailVC.swift in Sources */,
 				876F6EAD218A8AF1002A8848 /* RaceController.swift in Sources */,
@@ -313,12 +326,15 @@
 				873796C321893179004213CF /* QuoteVC.swift in Sources */,
 				873796BC218929C6004213CF /* Quote+Convenience.swift in Sources */,
 				873796A3218928B7004213CF /* AppDelegate.swift in Sources */,
+				877762B72190C95C00085F3A /* ModernMarathonVC.swift in Sources */,
 				876F6861218D14BD0028767D /* TrainingMasterVC.swift in Sources */,
 				87F94D5C218BC4310051037A /* RaceListMasterVC.swift in Sources */,
 				876F685B218CDFA80028767D /* InspiredMasterVC.swift in Sources */,
+				877762B32190C90F00085F3A /* FirstMarathonVC.swift in Sources */,
 				8786F0EC218A1FEB007F43B0 /* TabBarController.swift in Sources */,
 				87F94D5E218BC57F0051037A /* RaceMasterListCell.swift in Sources */,
 				87F94D5A218B9A5D0051037A /* RaceSearchVC.swift in Sources */,
+				877762B12190C8E800085F3A /* InspirationWallVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
