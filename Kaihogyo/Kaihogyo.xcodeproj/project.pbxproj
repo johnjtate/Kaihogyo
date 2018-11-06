@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8703CE9721923D93002A4D7A /* ImageSelectorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8703CE9621923D93002A4D7A /* ImageSelectorVC.swift */; };
 		8729C5C5218A4D5300DA1298 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8729C5C4218A4D5300DA1298 /* CloudKit.framework */; };
 		873796A3218928B7004213CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873796A2218928B7004213CF /* AppDelegate.swift */; };
 		873796A8218928B7004213CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873796A6218928B7004213CF /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8703CE9621923D93002A4D7A /* ImageSelectorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectorVC.swift; sourceTree = "<group>"; };
 		8729C5C2218A4D4D00DA1298 /* Kaihogyo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Kaihogyo.entitlements; sourceTree = "<group>"; };
 		8729C5C4218A4D5300DA1298 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		8737969F218928B7004213CF /* Kaihogyo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kaihogyo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,6 +175,7 @@
 				877762B42190C93400085F3A /* MarathonMonksVC.swift */,
 				877762B62190C95C00085F3A /* ModernMarathonVC.swift */,
 				877762B82190FD9F00085F3A /* InspirationDetailVC.swift */,
+				8703CE9621923D93002A4D7A /* ImageSelectorVC.swift */,
 			);
 			path = "View Controllers--Be Inspired";
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				876F685B218CDFA80028767D /* InspiredMasterVC.swift in Sources */,
 				877762B32190C90F00085F3A /* FirstMarathonVC.swift in Sources */,
 				8786F0EC218A1FEB007F43B0 /* TabBarController.swift in Sources */,
+				8703CE9721923D93002A4D7A /* ImageSelectorVC.swift in Sources */,
 				87F94D5E218BC57F0051037A /* RaceMasterListCell.swift in Sources */,
 				87F94D5A218B9A5D0051037A /* RaceSearchVC.swift in Sources */,
 				877762B12190C8E800085F3A /* InspirationWallVC.swift in Sources */,

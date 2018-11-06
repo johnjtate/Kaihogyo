@@ -8,15 +8,15 @@
 
 import UIKit
 
-class InspirationDetailVC: UIViewController {
+class InspirationDetailVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     // MARK: - IBOutlets
-    @IBOutlet weak var inspirationItemImage: UIImageView!
     @IBOutlet weak var inspirationItemText: UITextView!
     @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var deleteButton: UIButton!
     
     // MARK: - Properties
+    var image: UIImage?
     var inspirationItem: InspirationItem? {
         didSet {
             loadViewIfNeeded()
@@ -25,9 +25,6 @@ class InspirationDetailVC: UIViewController {
     }
     
     func updateView() {
-        if let image = inspirationItem?.image {
-            inspirationItemImage.image = image
-        }
         if let caption = inspirationItem?.caption {
             inspirationItemText.text = caption
         }
@@ -39,13 +36,19 @@ class InspirationDetailVC: UIViewController {
         super.viewDidLoad()
     }
     
-    // TODO: save function
-    // TODO: photo picker
+    // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toImageSelectorVC" {
+            guard let destinationVC = segue.destination as? ImageSelectorVC else { return }
+            destinationVC.delegate = self
+        }
+    }
     
     // MARK: - IBActions
     @IBAction func saveButtonTapped(_ sender: Any) {
         
-        guard let caption = inspirationItemText.text, let image = inspirationItemImage.image else { return }
+        guard let caption = inspirationItemText.text, let image = image, !caption.isEmpty else { return }
         // if existing item was passed by segue and updating item
         if let item = inspirationItem {
             
@@ -91,5 +94,12 @@ class InspirationDetailVC: UIViewController {
                 }
             }
         }
+    }
+}
+
+extension InspirationDetailVC: ImageSelectorVCDelegate {
+    
+    func imageSelected(_ image: UIImage) {
+        self.image = image
     }
 }

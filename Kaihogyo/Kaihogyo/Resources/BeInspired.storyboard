@@ -404,13 +404,15 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Whw-P3-qAq">
                                 <rect key="frame" x="16" y="30" width="288" height="518"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="japanese_mountain" translatesAutoresizingMaskIntoConstraints="NO" id="P3S-RY-z5y">
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hNE-u2-3Yf">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="288"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="P3S-RY-z5y" secondAttribute="height" multiplier="1:1" id="L3J-CH-FR6"/>
+                                            <constraint firstAttribute="width" secondItem="hNE-u2-3Yf" secondAttribute="height" multiplier="1:1" id="OWA-GK-rvk"/>
                                         </constraints>
-                                    </imageView>
+                                        <connections>
+                                            <segue destination="1vI-3h-d8C" kind="embed" identifier="toImageSelectorVC" id="gqn-pG-Ooa"/>
+                                        </connections>
+                                    </containerView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="LYQ-8Q-Mrh">
                                         <rect key="frame" x="0.0" y="298" width="288" height="181"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -448,7 +450,7 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="AGm-G1-09K" firstAttribute="width" secondItem="Whw-P3-qAq" secondAttribute="width" id="3gh-He-SVp"/>
-                                    <constraint firstItem="P3S-RY-z5y" firstAttribute="width" secondItem="Whw-P3-qAq" secondAttribute="width" id="c6C-m2-NHG"/>
+                                    <constraint firstItem="hNE-u2-3Yf" firstAttribute="width" secondItem="Whw-P3-qAq" secondAttribute="width" id="BFz-a6-203"/>
                                     <constraint firstItem="LYQ-8Q-Mrh" firstAttribute="width" secondItem="Whw-P3-qAq" secondAttribute="width" id="vKA-aF-Vw9"/>
                                 </constraints>
                             </stackView>
@@ -464,7 +466,6 @@
                     </view>
                     <connections>
                         <outlet property="deleteButton" destination="e81-Zp-Sqq" id="HNS-42-Qrf"/>
-                        <outlet property="inspirationItemImage" destination="P3S-RY-z5y" id="7vI-9y-wjC"/>
                         <outlet property="inspirationItemText" destination="LYQ-8Q-Mrh" id="YGi-Eb-WoN"/>
                         <outlet property="saveButton" destination="bJg-JJ-zW1" id="45f-hX-hMI"/>
                     </connections>
@@ -569,6 +570,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Au-Lj-oFb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3034" y="238"/>
+        </scene>
+        <!--Image SelectorVC-->
+        <scene sceneID="cBX-Yp-2LB">
+            <objects>
+                <viewController storyboardIdentifier="ImageSelectorVC" id="1vI-3h-d8C" customClass="ImageSelectorVC" customModule="Kaihogyo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nNO-Ea-L1v">
+                        <rect key="frame" x="0.0" y="0.0" width="288" height="288"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pgn-CE-fjI">
+                                <rect key="frame" x="0.0" y="0.0" width="288" height="288"/>
+                                <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="18"/>
+                                <state key="normal" title="Select an Image"/>
+                                <connections>
+                                    <action selector="selectImageButtonTapped:" destination="1vI-3h-d8C" eventType="touchUpInside" id="cIM-vl-wYf"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lHr-dT-1hy">
+                                <rect key="frame" x="0.0" y="0.0" width="288" height="288"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="pgn-CE-fjI" secondAttribute="bottom" id="6xe-CR-md3"/>
+                            <constraint firstItem="lHr-dT-1hy" firstAttribute="leading" secondItem="nNO-Ea-L1v" secondAttribute="leading" id="BKN-Za-bSt"/>
+                            <constraint firstItem="pgn-CE-fjI" firstAttribute="leading" secondItem="nNO-Ea-L1v" secondAttribute="leading" id="PwA-ir-Ryd"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="lHr-dT-1hy" secondAttribute="bottom" id="bMQ-Ui-Nrt"/>
+                            <constraint firstAttribute="trailing" secondItem="lHr-dT-1hy" secondAttribute="trailing" id="d4L-hx-5i1"/>
+                            <constraint firstItem="lHr-dT-1hy" firstAttribute="top" secondItem="nNO-Ea-L1v" secondAttribute="topMargin" id="kpC-pI-Klv"/>
+                            <constraint firstItem="pgn-CE-fjI" firstAttribute="top" secondItem="nNO-Ea-L1v" secondAttribute="top" id="m6X-ea-RFI"/>
+                            <constraint firstAttribute="trailing" secondItem="pgn-CE-fjI" secondAttribute="trailing" id="w0a-zm-Nve"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="lHr-dT-1hy" id="eKD-F7-760"/>
+                        <outlet property="selectImageButton" destination="pgn-CE-fjI" id="t7K-HY-GgE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a15-Ii-aZB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5505" y="-16"/>
         </scene>
     </scenes>
     <resources>
