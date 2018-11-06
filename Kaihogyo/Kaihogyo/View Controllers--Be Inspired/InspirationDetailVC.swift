@@ -25,11 +25,11 @@ class InspirationDetailVC: UIViewController {
     }
     
     func updateView() {
-        if let imageData = inspirationItem?.imageData {
-            inspirationItemImage.image = UIImage(data: imageData)
+        if let image = inspirationItem?.image {
+            inspirationItemImage.image = image
         }
-        if let text = inspirationItem?.text {
-            inspirationItemText.text = text
+        if let caption = inspirationItem?.caption {
+            inspirationItemText.text = caption
         }
     }
     
@@ -45,11 +45,11 @@ class InspirationDetailVC: UIViewController {
     // MARK: - IBActions
     @IBAction func saveButtonTapped(_ sender: Any) {
         
-        guard let text = inspirationItemText.text, let image = inspirationItemImage.image else { return }
+        guard let caption = inspirationItemText.text, let image = inspirationItemImage.image else { return }
         // if existing item was passed by segue and updating item
         if let item = inspirationItem {
             
-            InspirationItemController.shared.updateEntry(item: item, text: text, imageData: image.pngData()) { (success) in
+            InspirationItemController.shared.updateEntry(item: item, caption: caption, image: image) { (success) in
                 if success {
                     print("success updating item")
                     DispatchQueue.main.async {
@@ -62,15 +62,16 @@ class InspirationDetailVC: UIViewController {
             
         // if creating new item
         } else {
-            
-            InspirationItemController.shared.addItemWith(text: text, imageData: image.pngData()) { (success) in
-                if success {
-                    print("success creating new entry")
+
+            InspirationItemController.shared.createInspirationItemWith(caption: caption, image: image) { (item) in
+           
+                if item != nil {
+                    print("success creating new item")
                     DispatchQueue.main.async {
                         self.navigationController?.popViewController(animated: true)
                     }
                 } else {
-                    print("failure creating new entry")
+                    print("failure creating new item")
                 }
             }
         }

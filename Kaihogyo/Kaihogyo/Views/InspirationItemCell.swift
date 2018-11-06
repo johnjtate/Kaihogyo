@@ -19,11 +19,11 @@ class InspirationItemCell: UICollectionViewCell {
     
     var item: InspirationItem? {
         didSet {
-            if let imageData = item?.imageData {
-                cellImageView.image = UIImage(data: imageData)
+            if let caption = item?.caption {
+                cellTextLabel.text = caption
             }
-            if let text = item?.text {
-                cellTextLabel.text = text
+            if let image = item?.image {
+                cellImageView.image = image
             }
         }
     }

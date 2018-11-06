@@ -6,7 +6,7 @@
 //  Copyright © 2018 John Tate. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import CloudKit
 
 class InspirationItemController {
@@ -18,9 +18,29 @@ class InspirationItemController {
     
     let privateDB = CKContainer.default().privateCloudDatabase
     
+    // MARK: - Create InspirationItem
+    func createInspirationItemWith(caption: String, image: UIImage, completion: @escaping (InspirationItem?) -> Void) {
+        
+        let item = InspirationItem(caption: caption, image: image)
+        self.inspirationItems.append(item)
+        privateDB.save(CKRecord(item)) { (_, error) in
+            if let error = error {
+                print("Error saving inspiration item record \(error) \(error.localizedDescription)")
+                completion(nil)
+                return
+            }
+            completion(item)
+        }
+    }
+    
+    
+    
+    
+    
+    
     func save(inspirationItem: InspirationItem, completion: @escaping (Bool) -> ()) {
         
-        let itemRecord = CKRecord(inspirationItem: inspirationItem)
+        let itemRecord = CKRecord(inspirationItem)
         CKContainer.default().privateCloudDatabase.save(itemRecord) { (record, error) in
             
             if let error = error {
@@ -29,7 +49,7 @@ class InspirationItemController {
                 return
             }
             
-            guard let record = record, let item = InspirationItem(ckRecord: record) else {
+            guard let record = record, let item = InspirationItem(record: record) else {
                 completion(false)
                 return
             }
@@ -38,25 +58,16 @@ class InspirationItemController {
         }
     }
     
-    func addItemWith(text: String?, imageData: Data?, completion: @escaping (Bool) -> Void) {
-        let item = InspirationItem(text: text, imageData: imageData)
-        self.save(inspirationItem: item) { (success) in
-            if success {
-                completion(true)
-            } else {
-                completion(false)
-            }
-        }
-    }
-    
-    func updateEntry(item: InspirationItem, text: String?, imageData: Data?, completion: @escaping (Bool) -> Void) {
+    func updateEntry(item: InspirationItem, caption: String, image: UIImage, completion: @escaping (Bool) -> Void) {
+        
+        var imageAsset: Data?
         
         // update the local item
-        item.text = text
-        item.imageData = imageData
+        item.caption = caption
+        item.image = image
         
         // update the item's remote record in CloudKit
-        privateDB.fetch(withRecordID: item.ckRecordID) { (record, error) in
+        privateDB.fetch(withRecordID: item.recordID) { (record, error) in
             if let error = error {
                 print("\(error.localizedDescription) \(error) in function: \(#function)")
                 completion(false)
@@ -68,8 +79,10 @@ class InspirationItemController {
                 return
             }
             
-            record[Constants.textKey] = text
-            record[Constants.imageKey] = imageData
+            record[Constants.captionKey] = caption
+            // convert the image to data
+            imageAsset = image.jpegData(compressionQuality: 0.4)
+            record[Constants.imageDataKey] = imageAsset
             
             let operation = CKModifyRecordsOperation(recordsToSave: [record], recordIDsToDelete: nil)
             operation.savePolicy = .changedKeys
@@ -89,7 +102,7 @@ class InspirationItemController {
         InspirationItemController.shared.inspirationItems.remove(at: index)
         
         // delete the item from CloudKit
-        privateDB.delete(withRecordID: item.ckRecordID) { (_, error) in
+        privateDB.delete(withRecordID: item.recordID) { (_, error) in
             if let error = error {
                 print("\(error.localizedDescription) \(error) in function: \(#function)")
                 completion(false)
@@ -103,7 +116,7 @@ class InspirationItemController {
     
     func fetchItems(completion: @escaping (Bool) -> Void) {
         let predicate = NSPredicate(value: true)
-        let query = CKQuery(recordType: Constants.recordKey, predicate: predicate)
+        let query = CKQuery(recordType: Constants.recordTypeKey, predicate: predicate)
         
         privateDB.perform(query, inZoneWith: nil) { (records, error) in
             if let error = error {
@@ -116,7 +129,7 @@ class InspirationItemController {
                 completion(false)
                 return
             }
-            let items = records.compactMap{ InspirationItem(ckRecord: $0) }
+            let items = records.compactMap{ InspirationItem(record: $0) }
             self.inspirationItems = items
             completion(true)
         }
