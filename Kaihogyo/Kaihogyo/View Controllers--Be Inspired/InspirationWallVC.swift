@@ -27,6 +27,13 @@ class InspirationWallVC: UIViewController, UICollectionViewDataSource, UICollect
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpNavigationBar()
+        InspirationItemController.shared.fetchItems { (success) in
+            if success {
+                DispatchQueue.main.async {
+                    self.inspirationCollectionView.reloadData()
+                }
+            }
+        }
         inspirationCollectionView.dataSource = self
         inspirationCollectionView.delegate = self
     }

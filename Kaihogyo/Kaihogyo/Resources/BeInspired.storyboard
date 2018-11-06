@@ -191,7 +191,7 @@
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qeg-Ko-PNc">
                                         <rect key="frame" x="0.0" y="40" width="304" height="198"/>
-                                        <mutableString key="text"> The first marathon competition in modern times took place at the Summer Olympic Games in 1896.  The Boston Marathon was first run on April 19, 1897.  In 1967, Kathrine Switzer was the first woman to officially complete the Boston Marathon.  Since the 1970s, running a marathon has shifted from an event generally only undertaken by elite runners to one with wide participation, and in recent years over 500,000 runners per year complete a marathon within the United States.  The current world record for the marathon was set by Eliud Kipchoge (Kenyan) at the 2018 Berlin Marathon with a time of 2:01:39.  </mutableString>
+                                        <string key="text"> The first marathon competition in modern times took place at the Summer Olympic Games in 1896.  The Boston Marathon was first run on April 19, 1897.  In 1967, Kathrine Switzer was the first woman to officially complete the Boston Marathon.  Since the 1970s, running a marathon has shifted from an event generally only undertaken by elite runners to one with wide participation, and in recent years over 500,000 runners per year complete a marathon within the United States.  The current world record for the marathon was set by Eliud Kipchoge (Kenyan) at the 2018 Berlin Marathon with a time of 2:01:39.  </string>
                                         <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -242,7 +242,7 @@
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OWh-3R-Pdi">
                                         <rect key="frame" x="0.0" y="40" width="304" height="198"/>
-                                        <mutableString key="text">A group of Tendai Buddhist monks living on Mount Hiei in Japan are known for the marathon distances they cover on foot.  The quest is known as kaihogyo, which means "circling the mountain," and is part of a process believed to bring about enlightenment.  During the first four years of the seven-year quest, the monks run 30 km daily (about 18 miles) for consecutive days.  In year 5, the duration is increased to 200 days.  In year 6, the monks run 60 km daily (about 37 miles) for 100 consecutive days.  Finally, during the seventh year, they run 84 km daily (about 52 miles) for 100 consecutive days followed by 30 km for 100 consecutive days.   </mutableString>
+                                        <string key="text">A group of Tendai Buddhist monks living on Mount Hiei in Japan are known for the marathon distances they cover on foot.  The quest is known as kaihogyo, which means "circling the mountain," and is part of a process believed to bring about enlightenment.  During the first four years of the seven-year quest, the monks run 30 km daily (about 18 miles) for consecutive days.  In year 5, the duration is increased to 200 days.  In year 6, the monks run 60 km daily (about 37 miles) for 100 consecutive days.  Finally, during the seventh year, they run 84 km daily (about 52 miles) for 100 consecutive days followed by 30 km for 100 consecutive days.   </string>
                                         <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -290,7 +290,7 @@
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L1y-EZ-wLr">
                                         <rect key="frame" x="0.0" y="41" width="304" height="427"/>
-                                        <mutableString key="text">Legend has it that the first marathon was run by a messenger named Phidippides in 490 B.C.E.  The Greek city-state of Athens was being attacked by the Persian Empire.  The Athenians sent Phidippides approximately 140 miles each way on foot to seek military help from the Spartans, who could not immediately assist due to a religious festival.  He then returned to Marathon near Athens, where the Persians had assembled to attack.  Afterward, he quickly ran back to Athens to announce victory at Marathon and to warn the them that the Persians would soon attempt an attack by sea on the city.  The Persian ships arrived at Athens and saw a large army assembled, many of whom had just fought at Marathon, causing them to abandon their attack.  The Marathon-to-Athens distance Phidippides ran was approximately 26 miles, the distance which has become the current marathon.  Without his heroic run, the Persians may have defeated the Athenians, and the course of Western civilization would likely have been forever changed.  </mutableString>
+                                        <string key="text">Legend has it that the first marathon was run by a messenger named Phidippides in 490 B.C.E.  The Greek city-state of Athens was being attacked by the Persian Empire.  The Athenians sent Phidippides approximately 140 miles each way on foot to seek military help from the Spartans, who could not immediately assist due to a religious festival.  He then returned to Marathon near Athens, where the Persians had assembled to attack.  Afterward, he quickly ran back to Athens to announce victory at Marathon and to warn the them that the Persians would soon attempt an attack by sea on the city.  The Persian ships arrived at Athens and saw a large army assembled, many of whom had just fought at Marathon, causing them to abandon their attack.  The Marathon-to-Athens distance Phidippides ran was approximately 26 miles, the distance which has become the current marathon.  Without his heroic run, the Persians may have defeated the Athenians, and the course of Western civilization would likely have been forever changed.  </string>
                                         <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -404,7 +404,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Whw-P3-qAq">
                                 <rect key="frame" x="16" y="30" width="288" height="518"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="P3S-RY-z5y">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="japanese_mountain" translatesAutoresizingMaskIntoConstraints="NO" id="P3S-RY-z5y">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="288"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -412,14 +412,42 @@
                                         </constraints>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="LYQ-8Q-Mrh">
-                                        <rect key="frame" x="0.0" y="298" width="288" height="220"/>
+                                        <rect key="frame" x="0.0" y="298" width="288" height="181"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AGm-G1-09K">
+                                        <rect key="frame" x="0.0" y="489" width="288" height="29"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJg-JJ-zW1">
+                                                <rect key="frame" x="0.0" y="0.0" width="139" height="29"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="14"/>
+                                                <state key="normal" title="Save">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="saveButtonTapped:" destination="Tss-x5-XPR" eventType="touchUpInside" id="4GS-7B-S5i"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e81-Zp-Sqq">
+                                                <rect key="frame" x="149" y="0.0" width="139" height="29"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="14"/>
+                                                <state key="normal" title="Delete">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="deleteButtonTapped:" destination="Tss-x5-XPR" eventType="touchUpInside" id="QFT-lS-2ca"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="AGm-G1-09K" firstAttribute="width" secondItem="Whw-P3-qAq" secondAttribute="width" id="3gh-He-SVp"/>
                                     <constraint firstItem="P3S-RY-z5y" firstAttribute="width" secondItem="Whw-P3-qAq" secondAttribute="width" id="c6C-m2-NHG"/>
                                     <constraint firstItem="LYQ-8Q-Mrh" firstAttribute="width" secondItem="Whw-P3-qAq" secondAttribute="width" id="vKA-aF-Vw9"/>
                                 </constraints>
@@ -435,8 +463,10 @@
                         <viewLayoutGuide key="safeArea" id="SoC-7t-p1D"/>
                     </view>
                     <connections>
+                        <outlet property="deleteButton" destination="e81-Zp-Sqq" id="HNS-42-Qrf"/>
                         <outlet property="inspirationItemImage" destination="P3S-RY-z5y" id="7vI-9y-wjC"/>
                         <outlet property="inspirationItemText" destination="LYQ-8Q-Mrh" id="YGi-Eb-WoN"/>
+                        <outlet property="saveButton" destination="bJg-JJ-zW1" id="45f-hX-hMI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wjb-tI-BcW" userLabel="First Responder" sceneMemberID="firstResponder"/>
