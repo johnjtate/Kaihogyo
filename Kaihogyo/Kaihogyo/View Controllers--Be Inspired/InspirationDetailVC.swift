@@ -42,6 +42,9 @@ class InspirationDetailVC: UIViewController, UIImagePickerControllerDelegate, UI
         if segue.identifier == "toImageSelectorVC" {
             guard let destinationVC = segue.destination as? ImageSelectorVC else { return }
             destinationVC.delegate = self
+            if let image = inspirationItem?.image {
+                destinationVC.existingItemImage = image
+            }
         }
     }
     

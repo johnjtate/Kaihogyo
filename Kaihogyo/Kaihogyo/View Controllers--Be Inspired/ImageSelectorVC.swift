@@ -21,11 +21,15 @@ class ImageSelectorVC: UIViewController {
     
     // MARK: - Properties
     weak var delegate: ImageSelectorVCDelegate?
+    var existingItemImage: UIImage?
     
     // MARK: - Lifecycle Functions
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let image = existingItemImage {
+            imageView.image = image
+        }
     }
     
     override func viewDidDisappear(_ animated: Bool) {
