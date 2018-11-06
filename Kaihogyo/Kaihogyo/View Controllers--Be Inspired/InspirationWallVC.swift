@@ -8,7 +8,7 @@
 
 import UIKit
 
-class InspirationWallVC: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class InspirationWallVC: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource, UICollectionViewDelegate {
 
     // MARK: - IBOutlet
     @IBOutlet weak var inspirationCollectionView: UICollectionView!
@@ -38,6 +38,11 @@ class InspirationWallVC: UIViewController, UICollectionViewDataSource, UICollect
         inspirationCollectionView.delegate = self
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        inspirationCollectionView.reloadData()
+    }
+    
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -61,6 +66,8 @@ class InspirationWallVC: UIViewController, UICollectionViewDataSource, UICollect
         
         let inspirationItem = InspirationItemController.shared.inspirationItems[indexPath.row]
         cell?.item = inspirationItem
+        cell?.layer.masksToBounds = true
+        cell?.layer.cornerRadius = 10.0
         return cell ?? UICollectionViewCell()
     }
 }

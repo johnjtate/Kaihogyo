@@ -34,7 +34,7 @@ class InspirationItem {
             return UIImage(data: imageData)
         }
         set {
-            imageData = newValue?.jpegData(compressionQuality: 0.4)
+            imageData = newValue?.jpegData(compressionQuality: 0.1)
         }
     }
     

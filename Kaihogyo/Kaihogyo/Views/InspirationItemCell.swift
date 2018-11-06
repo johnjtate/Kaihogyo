@@ -19,12 +19,17 @@ class InspirationItemCell: UICollectionViewCell {
     
     var item: InspirationItem? {
         didSet {
-            if let caption = item?.caption {
-                cellTextLabel.text = caption
-            }
-            if let image = item?.image {
-                cellImageView.image = image
-            }
+            updateViews()
         }
+    }
+    
+    func updateViews() {
+        guard let item = item else { return }
+        
+        cellTextLabel.text = item.caption
+        cellImageView.image = item.image
+        
+        cellImageView.layer.masksToBounds = true
+        cellImageView.layer.cornerRadius = 5.0
     }
 }

@@ -33,11 +33,6 @@ class InspirationItemController {
         }
     }
     
-    
-    
-    
-    
-    
     func save(inspirationItem: InspirationItem, completion: @escaping (Bool) -> ()) {
         
         let itemRecord = CKRecord(inspirationItem)
@@ -81,7 +76,7 @@ class InspirationItemController {
             
             record[Constants.captionKey] = caption
             // convert the image to data
-            imageAsset = image.jpegData(compressionQuality: 0.4)
+            imageAsset = image.jpegData(compressionQuality: 0.1)
             record[Constants.imageDataKey] = imageAsset
             
             let operation = CKModifyRecordsOperation(recordsToSave: [record], recordIDsToDelete: nil)
