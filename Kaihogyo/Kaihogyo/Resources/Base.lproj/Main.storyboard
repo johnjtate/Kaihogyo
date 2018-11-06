@@ -118,6 +118,7 @@
         <scene sceneID="AsN-cS-1Vv">
             <objects>
                 <viewControllerPlaceholder storyboardIdentifier="InspiredMasterVC" storyboardName="BeInspired" referencedIdentifier="InspiredMasterVC" id="euK-L8-bo9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="TeW-6i-AvC"/>
                     <navigationItem key="navigationItem" id="XJF-Rw-3Zf"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dhY-3j-wpY" userLabel="First Responder" sceneMemberID="firstResponder"/>

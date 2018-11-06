@@ -30,6 +30,10 @@
 		877762B32190C90F00085F3A /* FirstMarathonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877762B22190C90F00085F3A /* FirstMarathonVC.swift */; };
 		877762B52190C93400085F3A /* MarathonMonksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877762B42190C93400085F3A /* MarathonMonksVC.swift */; };
 		877762B72190C95C00085F3A /* ModernMarathonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877762B62190C95C00085F3A /* ModernMarathonVC.swift */; };
+		877762B92190FD9F00085F3A /* InspirationDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877762B82190FD9F00085F3A /* InspirationDetailVC.swift */; };
+		877762BB2190FE6700085F3A /* InspirationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877762BA2190FE6700085F3A /* InspirationItem.swift */; };
+		877762BD2191027B00085F3A /* InspirationItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877762BC2191027B00085F3A /* InspirationItemController.swift */; };
+		877762BF219103A800085F3A /* InspirationItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877762BE219103A800085F3A /* InspirationItemCell.swift */; };
 		8786F0EA218A0A0C007F43B0 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8786F0E9218A0A0C007F43B0 /* LoginVC.swift */; };
 		8786F0EC218A1FEB007F43B0 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8786F0EB218A1FEB007F43B0 /* TabBarController.swift */; };
 		8786F0F0218A299E007F43B0 /* CaesarDressing-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8786F0EE218A2921007F43B0 /* CaesarDressing-Regular.ttf */; };
@@ -68,6 +72,10 @@
 		877762B22190C90F00085F3A /* FirstMarathonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstMarathonVC.swift; sourceTree = "<group>"; };
 		877762B42190C93400085F3A /* MarathonMonksVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarathonMonksVC.swift; sourceTree = "<group>"; };
 		877762B62190C95C00085F3A /* ModernMarathonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernMarathonVC.swift; sourceTree = "<group>"; };
+		877762B82190FD9F00085F3A /* InspirationDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationDetailVC.swift; sourceTree = "<group>"; };
+		877762BA2190FE6700085F3A /* InspirationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationItem.swift; sourceTree = "<group>"; };
+		877762BC2191027B00085F3A /* InspirationItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationItemController.swift; sourceTree = "<group>"; };
+		877762BE219103A800085F3A /* InspirationItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationItemCell.swift; sourceTree = "<group>"; };
 		8786F0E9218A0A0C007F43B0 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		8786F0EB218A1FEB007F43B0 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		8786F0EE218A2921007F43B0 /* CaesarDressing-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CaesarDressing-Regular.ttf"; sourceTree = "<group>"; };
@@ -140,6 +148,7 @@
 				873796C021892C53004213CF /* Stack.swift */,
 				873796BD21892BCB004213CF /* Quote.xcdatamodeld */,
 				876F6EAE218A8B8E002A8848 /* Race.swift */,
+				877762BA2190FE6700085F3A /* InspirationItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -149,6 +158,7 @@
 			children = (
 				873796B921892987004213CF /* QuoteController.swift */,
 				876F6EAC218A8AF1002A8848 /* RaceController.swift */,
+				877762BC2191027B00085F3A /* InspirationItemController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -162,6 +172,7 @@
 				877762B22190C90F00085F3A /* FirstMarathonVC.swift */,
 				877762B42190C93400085F3A /* MarathonMonksVC.swift */,
 				877762B62190C95C00085F3A /* ModernMarathonVC.swift */,
+				877762B82190FD9F00085F3A /* InspirationDetailVC.swift */,
 			);
 			path = "View Controllers--Be Inspired";
 			sourceTree = "<group>";
@@ -170,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				87F94D5D218BC57F0051037A /* RaceMasterListCell.swift */,
+				877762BE219103A800085F3A /* InspirationItemCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -316,10 +328,13 @@
 				87F94D58218B67B70051037A /* APIkeys.swift in Sources */,
 				87F94D60218BD2970051037A /* ActivityIndicator.swift in Sources */,
 				873796BF21892BCB004213CF /* Quote.xcdatamodeld in Sources */,
+				877762B92190FD9F00085F3A /* InspirationDetailVC.swift in Sources */,
 				877762B52190C93400085F3A /* MarathonMonksVC.swift in Sources */,
 				873796C121892C53004213CF /* Stack.swift in Sources */,
 				876F6859218CB2B60028767D /* RaceListDetailVC.swift in Sources */,
+				877762BB2190FE6700085F3A /* InspirationItem.swift in Sources */,
 				876F6EAD218A8AF1002A8848 /* RaceController.swift in Sources */,
+				877762BD2191027B00085F3A /* InspirationItemController.swift in Sources */,
 				8786F0EA218A0A0C007F43B0 /* LoginVC.swift in Sources */,
 				876F6EAF218A8B8E002A8848 /* Race.swift in Sources */,
 				873796BA21892987004213CF /* QuoteController.swift in Sources */,
@@ -327,6 +342,7 @@
 				873796BC218929C6004213CF /* Quote+Convenience.swift in Sources */,
 				873796A3218928B7004213CF /* AppDelegate.swift in Sources */,
 				877762B72190C95C00085F3A /* ModernMarathonVC.swift in Sources */,
+				877762BF219103A800085F3A /* InspirationItemCell.swift in Sources */,
 				876F6861218D14BD0028767D /* TrainingMasterVC.swift in Sources */,
 				87F94D5C218BC4310051037A /* RaceListMasterVC.swift in Sources */,
 				876F685B218CDFA80028767D /* InspiredMasterVC.swift in Sources */,
