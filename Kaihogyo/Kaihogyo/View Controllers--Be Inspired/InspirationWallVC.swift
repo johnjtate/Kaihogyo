@@ -13,6 +13,9 @@ class InspirationWallVC: UIViewController, UICollectionViewDelegateFlowLayout, U
     // MARK: - IBOutlet
     @IBOutlet weak var inspirationCollectionView: UICollectionView!
     
+    // MARK: - Properties
+    let activityIndicator = ActivityIndicator.shared
+    
     // MARK: - Set Up Navigation Bar
     func setUpNavigationBar() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addTapped))
@@ -27,10 +30,14 @@ class InspirationWallVC: UIViewController, UICollectionViewDelegateFlowLayout, U
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpNavigationBar()
+        DispatchQueue.main.async {
+            self.activityIndicator.animateActivity(title: "Loading...", view: self.view, navigationItem: self.navigationItem)
+        }
         InspirationItemController.shared.fetchItems { (success) in
             if success {
                 DispatchQueue.main.async {
                     self.inspirationCollectionView.reloadData()
+                    self.activityIndicator.stopAnimating(navigationItem: self.navigationItem)
                 }
             }
         }
