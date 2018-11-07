@@ -58,6 +58,7 @@ class InspirationWallVC: UIViewController, UICollectionViewDelegateFlowLayout, U
             guard let indexPath = inspirationCollectionView.indexPathsForSelectedItems?.first else { return }
             let inspirationItem = InspirationItemController.shared.inspirationItems[indexPath.row]
             destinationVC?.inspirationItem = inspirationItem
+            destinationVC?.updating = true 
         }
     }
 
