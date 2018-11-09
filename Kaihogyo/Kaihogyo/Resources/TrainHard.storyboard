@@ -36,7 +36,7 @@
                                             <constraint firstAttribute="height" constant="40" id="Rqd-zW-4ca"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="18"/>
-                                        <state key="normal" title="Start New Workout">
+                                        <state key="normal" title="Start New Run">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -55,14 +55,14 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="(Date)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zl5-3F-RBG">
-                                                            <rect key="frame" x="15" y="12" width="44.5" height="20"/>
+                                                            <rect key="frame" x="15" y="10" width="47.5" height="23.5"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="(Duration)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lDM-kk-pd3">
-                                                            <rect key="frame" x="249" y="12" width="73.5" height="20"/>
+                                                            <rect key="frame" x="242.5" y="10" width="80" height="23.5"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
                                                             <nil key="textColor"/>
@@ -137,11 +137,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="d5g-bj-DC5">
-                                <rect key="frame" x="19" y="150.5" width="337.5" height="366.5"/>
+                                <rect key="frame" x="19" y="144.5" width="337.5" height="378.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sik-8I-CAx">
-                                        <rect key="frame" x="0.0" y="0.0" width="337.5" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="337.5" height="40"/>
                                         <color key="backgroundColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="X6U-Tq-78d"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="18"/>
                                         <state key="normal" title="Start Run Workout">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -151,14 +154,17 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(timer)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVx-Qb-VYU">
-                                        <rect key="frame" x="0.0" y="134" width="337.5" height="98.5"/>
+                                        <rect key="frame" x="0.0" y="140" width="337.5" height="98.5"/>
                                         <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="72"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehA-ei-ef8">
-                                        <rect key="frame" x="0.0" y="332.5" width="337.5" height="34"/>
+                                        <rect key="frame" x="0.0" y="338.5" width="337.5" height="40"/>
                                         <color key="backgroundColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="5Kn-cg-neD"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="18"/>
                                         <state key="normal" title="Finish and Save Workout">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

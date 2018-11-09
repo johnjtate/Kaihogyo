@@ -7,12 +7,23 @@
 //
 
 import UIKit
+import HealthKit
 
-class TrainingMasterVC: UIViewController {
-
+class TrainingMasterVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
     // MARK: - IBOutlets
     @IBOutlet weak var startNewWorkoutButton: UIButton!
     @IBOutlet weak var workoutsTableView: UITableView!
+    
+    // MARK: - Properties
+    var runWorkouts: [HKWorkout]?
+    
+    lazy var dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.timeStyle = .short
+        formatter.dateStyle = .medium
+        return formatter
+    }()
     
     // MARK: - Lifecycle Functions
     
@@ -20,6 +31,9 @@ class TrainingMasterVC: UIViewController {
         super.viewDidLoad()
         setUpUI()
         authorizeHealthKit()
+        fetchWorkouts()
+        workoutsTableView.dataSource = self
+        workoutsTableView.delegate = self
     }
     
     // MARK: - Helper Functions
@@ -45,14 +59,35 @@ class TrainingMasterVC: UIViewController {
         }
     }
     
-    /*
+    // fetch workouts from HealthKit
+    func fetchWorkouts() {
+        WorkoutController.shared.loadRunningWorkouts { (workouts, error) in
+            self.runWorkouts = workouts
+            self.workoutsTableView.reloadData()
+        }
+    }
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    // TODO: segue to WorkoutDetailVC from table view cell
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        
     }
-    */
 
+    // MARK: - Table View Data Source
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return runWorkouts?.count ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    
+        guard let workouts = runWorkouts else {
+            fatalError("No workouts found!")
+        }
+        let cell = workoutsTableView.dequeueReusableCell(withIdentifier: "workoutCell", for: indexPath)
+        let workout = workouts[indexPath.row]
+        cell.textLabel?.text = dateFormatter.string(from: workout.startDate)
+        cell.detailTextLabel?.text = "\(String(describing: workout.duration))"
+        return cell
+    }
 }
