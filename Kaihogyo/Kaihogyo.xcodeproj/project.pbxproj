@@ -38,6 +38,8 @@
 		877762BF219103A800085F3A /* InspirationItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877762BE219103A800085F3A /* InspirationItemCell.swift */; };
 		87818E202195F54600E44626 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87818E1F2195F54600E44626 /* Workout.swift */; };
 		87818E222196025E00E44626 /* RunWorkoutSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87818E212196025E00E44626 /* RunWorkoutSession.swift */; };
+		87818E242196055500E44626 /* WorkoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87818E232196055500E44626 /* WorkoutController.swift */; };
+		87818E26219605EB00E44626 /* SetupHealthKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87818E25219605EB00E44626 /* SetupHealthKit.swift */; };
 		8786F0EA218A0A0C007F43B0 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8786F0E9218A0A0C007F43B0 /* LoginVC.swift */; };
 		8786F0EC218A1FEB007F43B0 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8786F0EB218A1FEB007F43B0 /* TabBarController.swift */; };
 		8786F0F0218A299E007F43B0 /* CaesarDressing-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8786F0EE218A2921007F43B0 /* CaesarDressing-Regular.ttf */; };
@@ -84,6 +86,8 @@
 		877762BE219103A800085F3A /* InspirationItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationItemCell.swift; sourceTree = "<group>"; };
 		87818E1F2195F54600E44626 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
 		87818E212196025E00E44626 /* RunWorkoutSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunWorkoutSession.swift; sourceTree = "<group>"; };
+		87818E232196055500E44626 /* WorkoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutController.swift; sourceTree = "<group>"; };
+		87818E25219605EB00E44626 /* SetupHealthKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupHealthKit.swift; sourceTree = "<group>"; };
 		8786F0E9218A0A0C007F43B0 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		8786F0EB218A1FEB007F43B0 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		8786F0EE218A2921007F43B0 /* CaesarDressing-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CaesarDressing-Regular.ttf"; sourceTree = "<group>"; };
@@ -171,6 +175,7 @@
 				877762BC2191027B00085F3A /* InspirationItemController.swift */,
 				873796B921892987004213CF /* QuoteController.swift */,
 				876F6EAC218A8AF1002A8848 /* RaceController.swift */,
+				87818E232196055500E44626 /* WorkoutController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -213,6 +218,7 @@
 				876F6EAA218A8A82002A8848 /* APIkeys.plist */,
 				87F94D57218B67B70051037A /* APIkeys.swift */,
 				87F94D5F218BD2970051037A /* ActivityIndicator.swift */,
+				87818E25219605EB00E44626 /* SetupHealthKit.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -349,6 +355,7 @@
 				873796C121892C53004213CF /* Stack.swift in Sources */,
 				876F6859218CB2B60028767D /* RaceListDetailVC.swift in Sources */,
 				877762BB2190FE6700085F3A /* InspirationItem.swift in Sources */,
+				87818E26219605EB00E44626 /* SetupHealthKit.swift in Sources */,
 				876F6EAD218A8AF1002A8848 /* RaceController.swift in Sources */,
 				877762BD2191027B00085F3A /* InspirationItemController.swift in Sources */,
 				8786F0EA218A0A0C007F43B0 /* LoginVC.swift in Sources */,
@@ -360,6 +367,7 @@
 				877762B72190C95C00085F3A /* ModernMarathonVC.swift in Sources */,
 				877762BF219103A800085F3A /* InspirationItemCell.swift in Sources */,
 				876F6861218D14BD0028767D /* TrainingMasterVC.swift in Sources */,
+				87818E242196055500E44626 /* WorkoutController.swift in Sources */,
 				87F94D5C218BC4310051037A /* RaceListMasterVC.swift in Sources */,
 				876F685B218CDFA80028767D /* InspiredMasterVC.swift in Sources */,
 				877762B32190C90F00085F3A /* FirstMarathonVC.swift in Sources */,
