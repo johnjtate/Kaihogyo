@@ -107,7 +107,7 @@
         <!--TrainingMasterVC-->
         <scene sceneID="6TA-yi-aRM">
             <objects>
-                <viewControllerPlaceholder storyboardName="TrainHard" referencedIdentifier="TrainingMasterVC" id="hqp-ch-ToR" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="TrainingMasterVC" storyboardName="TrainHard" referencedIdentifier="TrainingMasterVC" id="hqp-ch-ToR" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="xSv-na-TWe"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K1F-Fp-WAC" userLabel="First Responder" sceneMemberID="firstResponder"/>
