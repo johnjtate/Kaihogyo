@@ -12,8 +12,24 @@ class TrainingMasterVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        authorizeHealthKit()
+    }
+    
+    // authorize HealthKit the first time this view is loaded
+    func authorizeHealthKit() {
+     
+        SetupHealthKit.authorizeHK { (authorized, error) in
+            
+            if authorized {
+                print("HealthKit successfully authorized.")
+                return
+            }
+            
+            if let error = error {
+                print("HealthKit authorization failed.  \(error.localizedDescription)")
+                return
+            }
+        }
     }
     
 
