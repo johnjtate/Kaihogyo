@@ -55,8 +55,6 @@ class InspirationItemController {
     
     func updateEntry(item: InspirationItem, caption: String, image: UIImage, completion: @escaping (Bool) -> Void) {
         
-        var imageAsset: Data?
-        
         // update the local item
         item.caption = caption
         item.image = image
