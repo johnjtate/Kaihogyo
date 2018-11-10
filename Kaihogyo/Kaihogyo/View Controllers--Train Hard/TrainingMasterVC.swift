@@ -21,7 +21,7 @@ class TrainingMasterVC: UIViewController, UITableViewDataSource, UITableViewDele
     lazy var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.timeStyle = .short
-        formatter.dateStyle = .medium
+        formatter.dateStyle = .short
         return formatter
     }()
     
@@ -34,6 +34,12 @@ class TrainingMasterVC: UIViewController, UITableViewDataSource, UITableViewDele
         fetchWorkouts()
         workoutsTableView.dataSource = self
         workoutsTableView.delegate = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setUpUI()
+        fetchWorkouts()
     }
     
     // MARK: - Helper Functions
@@ -71,7 +77,12 @@ class TrainingMasterVC: UIViewController, UITableViewDataSource, UITableViewDele
 
     // TODO: segue to WorkoutDetailVC from table view cell
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        if segue.identifier == "toWorkoutDetail" {
+            let destinationVC = segue.destination as? WorkoutDetailVC
+            guard let indexPath = workoutsTableView.indexPathForSelectedRow else { return }
+            let workout = runWorkouts?[indexPath.row]
+            destinationVC?.workout = workout
+        }
     }
 
     // MARK: - Table View Data Source
@@ -87,7 +98,7 @@ class TrainingMasterVC: UIViewController, UITableViewDataSource, UITableViewDele
         let cell = workoutsTableView.dequeueReusableCell(withIdentifier: "workoutCell", for: indexPath)
         let workout = workouts[indexPath.row]
         cell.textLabel?.text = dateFormatter.string(from: workout.startDate)
-        cell.detailTextLabel?.text = "\(String(describing: workout.duration))"
+        cell.detailTextLabel?.text = String(format: "%.01f", workout.duration) + "s"
         return cell
     }
 }

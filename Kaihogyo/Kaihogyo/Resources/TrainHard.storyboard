@@ -55,14 +55,14 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="(Date)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zl5-3F-RBG">
-                                                            <rect key="frame" x="15" y="10" width="47.5" height="23.5"/>
+                                                            <rect key="frame" x="15" y="12" width="44.5" height="20"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="(Duration)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lDM-kk-pd3">
-                                                            <rect key="frame" x="242.5" y="10" width="80" height="23.5"/>
+                                                            <rect key="frame" x="249" y="12" width="73.5" height="20"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
                                                             <nil key="textColor"/>
@@ -112,17 +112,81 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="workout detail..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ti-1T-3Tr">
-                                <rect key="frame" x="120" y="197" width="122" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="qYy-d6-gvc">
+                                <rect key="frame" x="19" y="278.5" width="337.5" height="110.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wMs-cA-M0Z">
+                                        <rect key="frame" x="0.0" y="0.0" width="337.5" height="23.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNZ-gN-MuX">
+                                                <rect key="frame" x="0.0" y="0.0" width="163.5" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(start time)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18h-jr-g7s">
+                                                <rect key="frame" x="173.5" y="0.0" width="164" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mVn-hp-Ozq">
+                                        <rect key="frame" x="0.0" y="43.5" width="337.5" height="23.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1AG-on-AFl">
+                                                <rect key="frame" x="0.0" y="0.0" width="163.5" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(end time)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6S6-cl-uDf">
+                                                <rect key="frame" x="173.5" y="0.0" width="164" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hOG-0l-R9R">
+                                        <rect key="frame" x="0.0" y="87" width="337.5" height="23.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgb-LF-wMY">
+                                                <rect key="frame" x="0.0" y="0.0" width="163.5" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(duration)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWK-hN-e4g">
+                                                <rect key="frame" x="173.5" y="0.0" width="164" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="hOG-0l-R9R" firstAttribute="width" secondItem="qYy-d6-gvc" secondAttribute="width" id="9q3-tM-2n8"/>
+                                    <constraint firstItem="mVn-hp-Ozq" firstAttribute="width" secondItem="qYy-d6-gvc" secondAttribute="width" id="T7y-En-H0i"/>
+                                    <constraint firstItem="wMs-cA-M0Z" firstAttribute="width" secondItem="qYy-d6-gvc" secondAttribute="width" id="XcA-kK-hjJ"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qYy-d6-gvc" firstAttribute="centerY" secondItem="3cs-zo-ksk" secondAttribute="centerY" id="Giv-SO-HP0"/>
+                            <constraint firstItem="qYy-d6-gvc" firstAttribute="width" secondItem="3cs-zo-ksk" secondAttribute="width" multiplier="0.9" id="aiv-8T-Ltl"/>
+                            <constraint firstItem="qYy-d6-gvc" firstAttribute="centerX" secondItem="3cs-zo-ksk" secondAttribute="centerX" id="eux-17-r6m"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dvo-Tt-q8C"/>
                     </view>
+                    <connections>
+                        <outlet property="durationTextLabel" destination="xWK-hN-e4g" id="hwC-Aj-GwR"/>
+                        <outlet property="endTimeLabel" destination="6S6-cl-uDf" id="5tE-K9-l9h"/>
+                        <outlet property="startTimeLabel" destination="18h-jr-g7s" id="l19-c3-oUX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zx2-2j-Dbe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -153,7 +217,7 @@
                                             <action selector="startRunWorkoutButtonTapped:" destination="Rrp-ry-ssW" eventType="touchUpInside" id="eBT-UC-nFP"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(timer)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVx-Qb-VYU">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVx-Qb-VYU">
                                         <rect key="frame" x="0.0" y="140" width="337.5" height="98.5"/>
                                         <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="72"/>
                                         <nil key="textColor"/>

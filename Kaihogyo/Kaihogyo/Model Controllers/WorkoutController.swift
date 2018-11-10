@@ -37,8 +37,13 @@ class WorkoutController {
                 return
             }
         }
+        
+        workoutBuilder.finishWorkout { (workout, error) in
+            let success = error == nil
+            completion(success, error)
+        }
     }
-
+    
     func loadRunningWorkouts(completion: @escaping ([HKWorkout]?, Error?) -> Void) {
      
         // in future versions, need to extend beyond just running workouts
