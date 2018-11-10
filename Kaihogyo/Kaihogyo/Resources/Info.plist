@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSCameraUsageDescription</key>
-	<string>Kaihogyo would like to access your camera to add photos to the Inspiration Wall.</string>
 	<key>NSHealthUpdateUsageDescription</key>
 	<string>Kaihogyo updates HealthKit with information from your Train Hard workouts.</string>
 	<key>NSHealthShareUsageDescription</key>
