@@ -12,7 +12,6 @@ class InspiredMasterVC: UIViewController {
 
     // MARK: - IBOutlets
     @IBOutlet weak var runningQuotesButton: UIButton!
-    @IBOutlet weak var inspirationWallButton: UIButton!
     @IBOutlet weak var theFirstMarathonButton: UIButton!
     @IBOutlet weak var theMarathonMonksButton: UIButton!
     @IBOutlet weak var theMarathonInModernTimesButton: UIButton!
@@ -31,8 +30,6 @@ class InspiredMasterVC: UIViewController {
         // set rounded corners
         runningQuotesButton.layer.cornerRadius = 10.0
         runningQuotesButton.layer.masksToBounds = true
-        inspirationWallButton.layer.cornerRadius = 10.0
-        inspirationWallButton.layer.masksToBounds = true
         theFirstMarathonButton.layer.cornerRadius = 10.0
         theFirstMarathonButton.layer.masksToBounds = true
         theMarathonMonksButton.layer.cornerRadius = 10.0

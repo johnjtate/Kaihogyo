@@ -29,7 +29,7 @@
                                 <rect key="frame" x="5" y="25" width="310" height="489"/>
                                 <subviews>
                                     <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJ9-4j-qbd">
-                                        <rect key="frame" x="0.0" y="0.0" width="310" height="94"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="310" height="118.5"/>
                                         <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="20"/>
                                         <state key="normal" image="mountain_button" backgroundImage="mountain_button">
                                             <color key="titleColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -38,18 +38,8 @@
                                             <segue destination="IAs-xp-o9m" kind="show" identifier="toQuoteVC" id="7SO-Wg-gmK"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I4f-fk-wbY">
-                                        <rect key="frame" x="0.0" y="99" width="310" height="93.5"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" image="marble_background_button">
-                                            <color key="titleColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="Edt-zr-a1X" kind="show" id="3t7-g2-kOf"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Art-9M-ZXz">
-                                        <rect key="frame" x="0.0" y="197.5" width="310" height="94"/>
+                                        <rect key="frame" x="0.0" y="123.5" width="310" height="118.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" image="parthenon_button">
                                             <color key="titleColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -59,7 +49,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENg-zS-Ql0">
-                                        <rect key="frame" x="0.0" y="296.5" width="310" height="93.5"/>
+                                        <rect key="frame" x="0.0" y="247" width="310" height="118.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="20"/>
                                         <state key="normal" backgroundImage="japanese_mountain_button">
@@ -71,7 +61,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6f-0X-TBO">
-                                        <rect key="frame" x="0.0" y="395" width="310" height="94"/>
+                                        <rect key="frame" x="0.0" y="370.5" width="310" height="118.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="20"/>
                                         <state key="normal" backgroundImage="modern_marathon_button">
@@ -84,35 +74,28 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Running Quotes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NwB-rW-d4u">
-                                <rect key="frame" x="5" y="25" width="310" height="94"/>
-                                <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="24"/>
-                                <color key="textColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                                <size key="shadowOffset" width="0.0" height="0.0"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inspiration Wall" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Dq-fW-y8v">
-                                <rect key="frame" x="5" y="124" width="310" height="93.5"/>
+                                <rect key="frame" x="5" y="25" width="310" height="118.5"/>
                                 <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="24"/>
                                 <color key="textColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The First Marathon" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6k-o9-2en">
-                                <rect key="frame" x="5" y="222.5" width="310" height="94"/>
+                                <rect key="frame" x="5" y="148.5" width="310" height="118.5"/>
                                 <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="24"/>
                                 <color key="textColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Marathon Monks" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ag-fl-elP">
-                                <rect key="frame" x="5" y="321.5" width="310" height="93.5"/>
+                                <rect key="frame" x="5" y="272" width="310" height="118.5"/>
                                 <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="24"/>
                                 <color key="textColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Marathon in Modern Times" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fpb-SF-9wn">
-                                <rect key="frame" x="5" y="420" width="310" height="94"/>
+                                <rect key="frame" x="5" y="395.5" width="310" height="118.5"/>
                                 <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="24"/>
                                 <color key="textColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -131,9 +114,7 @@
                             <constraint firstItem="8Ag-fl-elP" firstAttribute="centerX" secondItem="Uno-1I-Zrs" secondAttribute="centerX" id="C4s-xL-CHh"/>
                             <constraint firstItem="Fpb-SF-9wn" firstAttribute="height" secondItem="L6f-0X-TBO" secondAttribute="height" id="FI1-OK-bct"/>
                             <constraint firstItem="h6k-o9-2en" firstAttribute="centerX" secondItem="Uno-1I-Zrs" secondAttribute="centerX" id="Gzx-Wi-CBq"/>
-                            <constraint firstItem="2Dq-fW-y8v" firstAttribute="width" secondItem="I4f-fk-wbY" secondAttribute="width" id="JE3-uQ-t0m"/>
                             <constraint firstItem="h6k-o9-2en" firstAttribute="height" secondItem="Art-9M-ZXz" secondAttribute="height" id="K1t-cc-Hh5"/>
-                            <constraint firstItem="2Dq-fW-y8v" firstAttribute="height" secondItem="I4f-fk-wbY" secondAttribute="height" id="Kg4-dh-bah"/>
                             <constraint firstItem="NwB-rW-d4u" firstAttribute="centerY" secondItem="yJ9-4j-qbd" secondAttribute="centerY" id="L9P-Fe-zi0"/>
                             <constraint firstItem="Fpb-SF-9wn" firstAttribute="centerX" secondItem="Uno-1I-Zrs" secondAttribute="centerX" id="OzP-7E-uOZ"/>
                             <constraint firstItem="EzZ-40-fnv" firstAttribute="top" secondItem="bW9-eL-cBn" secondAttribute="top" constant="5" id="X15-gd-Bjf"/>
@@ -144,9 +125,7 @@
                             <constraint firstItem="Fpb-SF-9wn" firstAttribute="centerX" secondItem="L6f-0X-TBO" secondAttribute="centerX" id="lSn-t8-Ssw"/>
                             <constraint firstItem="h6k-o9-2en" firstAttribute="width" secondItem="Art-9M-ZXz" secondAttribute="width" id="qgb-yB-ono"/>
                             <constraint firstItem="Fpb-SF-9wn" firstAttribute="centerY" secondItem="L6f-0X-TBO" secondAttribute="centerY" id="x1g-j1-qxQ"/>
-                            <constraint firstItem="2Dq-fW-y8v" firstAttribute="centerX" secondItem="Uno-1I-Zrs" secondAttribute="centerX" id="xSR-7e-HFT"/>
                             <constraint firstItem="8Ag-fl-elP" firstAttribute="centerY" secondItem="ENg-zS-Ql0" secondAttribute="centerY" id="xfY-eE-8yW"/>
-                            <constraint firstItem="2Dq-fW-y8v" firstAttribute="centerY" secondItem="I4f-fk-wbY" secondAttribute="centerY" id="ytg-zY-pq0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bW9-eL-cBn"/>
                     </view>
@@ -155,7 +134,6 @@
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="inspirationWallButton" destination="I4f-fk-wbY" id="Wgr-l9-VcL"/>
                         <outlet property="runningQuotesButton" destination="yJ9-4j-qbd" id="HtQ-7I-ArF"/>
                         <outlet property="theFirstMarathonButton" destination="Art-9M-ZXz" id="XTA-bE-rUe"/>
                         <outlet property="theMarathonInModernTimesButton" destination="L6f-0X-TBO" id="esm-ae-uVx"/>
@@ -312,167 +290,6 @@
             </objects>
             <point key="canvasLocation" x="4604" y="912"/>
         </scene>
-        <!--Inspiration WallVC-->
-        <scene sceneID="epb-7N-eyn">
-            <objects>
-                <viewController storyboardIdentifier="InspirationWallVC" id="Edt-zr-a1X" customClass="InspirationWallVC" customModule="Kaihogyo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="bti-I5-QVL">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uLC-h2-GcM">
-                                <rect key="frame" x="10" y="30" width="300" height="528"/>
-                                <color key="backgroundColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TLD-4X-ISB">
-                                    <size key="itemSize" width="260" height="180"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="inspirationItemCell" id="vpT-Ix-id5" customClass="InspirationItemCell" customModule="Kaihogyo" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="0.0" width="260" height="180"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="260" height="180"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CfO-s9-Ke3">
-                                                    <rect key="frame" x="80" y="10" width="100" height="100"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="100" id="IBB-KW-ceO"/>
-                                                        <constraint firstAttribute="width" constant="100" id="O6P-XZ-sfN"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qEu-1m-jPl">
-                                                    <rect key="frame" x="13" y="120" width="234" height="50"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="50" id="aup-9w-e26"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="12"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </view>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="qEu-1m-jPl" firstAttribute="centerX" secondItem="vpT-Ix-id5" secondAttribute="centerX" id="6Mv-eo-8Ax"/>
-                                            <constraint firstItem="qEu-1m-jPl" firstAttribute="top" secondItem="CfO-s9-Ke3" secondAttribute="bottom" constant="10" id="H6d-JJ-2Oc"/>
-                                            <constraint firstItem="CfO-s9-Ke3" firstAttribute="top" secondItem="vpT-Ix-id5" secondAttribute="top" constant="10" id="IZu-c1-D3k"/>
-                                            <constraint firstItem="CfO-s9-Ke3" firstAttribute="centerX" secondItem="vpT-Ix-id5" secondAttribute="centerX" id="L54-vD-XAX"/>
-                                            <constraint firstItem="qEu-1m-jPl" firstAttribute="centerX" secondItem="vpT-Ix-id5" secondAttribute="centerX" id="QXs-Wi-Kgt"/>
-                                            <constraint firstAttribute="bottom" secondItem="qEu-1m-jPl" secondAttribute="bottom" constant="10" id="aS3-Z5-wIK"/>
-                                            <constraint firstItem="qEu-1m-jPl" firstAttribute="width" secondItem="vpT-Ix-id5" secondAttribute="width" multiplier="0.9" id="jmF-8H-7rj"/>
-                                        </constraints>
-                                        <size key="customSize" width="260" height="180"/>
-                                        <connections>
-                                            <outlet property="cellImageView" destination="CfO-s9-Ke3" id="xPV-eJ-Ydb"/>
-                                            <outlet property="cellTextLabel" destination="qEu-1m-jPl" id="bNd-qg-ZdN"/>
-                                            <segue destination="Tss-x5-XPR" kind="show" identifier="toInspirationDetailView" id="Kad-EV-Uk7"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="uLC-h2-GcM" firstAttribute="leading" secondItem="gfB-eZ-AZC" secondAttribute="leading" constant="10" id="Pso-3g-imp"/>
-                            <constraint firstItem="uLC-h2-GcM" firstAttribute="top" secondItem="gfB-eZ-AZC" secondAttribute="top" constant="10" id="chQ-C4-p04"/>
-                            <constraint firstItem="uLC-h2-GcM" firstAttribute="centerX" secondItem="bti-I5-QVL" secondAttribute="centerX" id="ePu-Pj-Bho"/>
-                            <constraint firstItem="gfB-eZ-AZC" firstAttribute="bottom" secondItem="uLC-h2-GcM" secondAttribute="bottom" constant="10" id="uHE-8t-DX6"/>
-                            <constraint firstItem="gfB-eZ-AZC" firstAttribute="trailing" secondItem="uLC-h2-GcM" secondAttribute="trailing" constant="10" id="vGw-gO-CpH"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="gfB-eZ-AZC"/>
-                    </view>
-                    <connections>
-                        <outlet property="inspirationCollectionView" destination="uLC-h2-GcM" id="X0B-Zx-16s"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jc5-tH-VSx" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3785.625" y="615.84507042253517"/>
-        </scene>
-        <!--Inspiration DetailVC-->
-        <scene sceneID="lrt-C9-Pr8">
-            <objects>
-                <viewController storyboardIdentifier="InspirationDetailVC" id="Tss-x5-XPR" customClass="InspirationDetailVC" customModule="Kaihogyo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="06Y-nw-NFI">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Whw-P3-qAq">
-                                <rect key="frame" x="16" y="30" width="288" height="518"/>
-                                <subviews>
-                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hNE-u2-3Yf">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="288"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="hNE-u2-3Yf" secondAttribute="height" multiplier="1:1" id="OWA-GK-rvk"/>
-                                        </constraints>
-                                        <connections>
-                                            <segue destination="1vI-3h-d8C" kind="embed" identifier="toImageSelectorVC" id="gqn-pG-Ooa"/>
-                                        </connections>
-                                    </containerView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Insert caption here" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="LYQ-8Q-Mrh">
-                                        <rect key="frame" x="0.0" y="298" width="288" height="181"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AGm-G1-09K">
-                                        <rect key="frame" x="0.0" y="489" width="288" height="29"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJg-JJ-zW1">
-                                                <rect key="frame" x="0.0" y="0.0" width="139" height="29"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="14"/>
-                                                <state key="normal" title="Save">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="saveButtonTapped:" destination="Tss-x5-XPR" eventType="touchUpInside" id="4GS-7B-S5i"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e81-Zp-Sqq">
-                                                <rect key="frame" x="149" y="0.0" width="139" height="29"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="14"/>
-                                                <state key="normal" title="Delete">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="deleteButtonTapped:" destination="Tss-x5-XPR" eventType="touchUpInside" id="QFT-lS-2ca"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="AGm-G1-09K" firstAttribute="width" secondItem="Whw-P3-qAq" secondAttribute="width" id="3gh-He-SVp"/>
-                                    <constraint firstItem="hNE-u2-3Yf" firstAttribute="width" secondItem="Whw-P3-qAq" secondAttribute="width" id="BFz-a6-203"/>
-                                    <constraint firstItem="LYQ-8Q-Mrh" firstAttribute="width" secondItem="Whw-P3-qAq" secondAttribute="width" id="vKA-aF-Vw9"/>
-                                </constraints>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="Whw-P3-qAq" firstAttribute="top" secondItem="SoC-7t-p1D" secondAttribute="top" constant="10" id="81T-3Y-lba"/>
-                            <constraint firstItem="Whw-P3-qAq" firstAttribute="centerX" secondItem="06Y-nw-NFI" secondAttribute="centerX" id="Hm6-p4-kHc"/>
-                            <constraint firstItem="SoC-7t-p1D" firstAttribute="bottom" secondItem="Whw-P3-qAq" secondAttribute="bottom" constant="20" id="U0O-hA-1Ug"/>
-                            <constraint firstItem="Whw-P3-qAq" firstAttribute="width" secondItem="06Y-nw-NFI" secondAttribute="width" multiplier="0.9" id="dzP-CO-Eiy"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="SoC-7t-p1D"/>
-                    </view>
-                    <connections>
-                        <outlet property="deleteButton" destination="e81-Zp-Sqq" id="HNS-42-Qrf"/>
-                        <outlet property="inspirationItemText" destination="LYQ-8Q-Mrh" id="YGi-Eb-WoN"/>
-                        <outlet property="saveButton" destination="bJg-JJ-zW1" id="45f-hX-hMI"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wjb-tI-BcW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4603" y="101"/>
-        </scene>
         <!--QuoteVC-->
         <scene sceneID="Om1-wB-wo4">
             <objects>
@@ -570,54 +387,11 @@
             </objects>
             <point key="canvasLocation" x="3034" y="238"/>
         </scene>
-        <!--Image SelectorVC-->
-        <scene sceneID="cBX-Yp-2LB">
-            <objects>
-                <viewController storyboardIdentifier="ImageSelectorVC" id="1vI-3h-d8C" customClass="ImageSelectorVC" customModule="Kaihogyo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="nNO-Ea-L1v">
-                        <rect key="frame" x="0.0" y="0.0" width="288" height="288"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pgn-CE-fjI">
-                                <rect key="frame" x="0.0" y="0.0" width="288" height="288"/>
-                                <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="18"/>
-                                <state key="normal" title="Select an Image"/>
-                                <connections>
-                                    <action selector="selectImageButtonTapped:" destination="1vI-3h-d8C" eventType="touchUpInside" id="cIM-vl-wYf"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lHr-dT-1hy">
-                                <rect key="frame" x="0.0" y="0.0" width="288" height="288"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="pgn-CE-fjI" secondAttribute="bottom" id="6xe-CR-md3"/>
-                            <constraint firstItem="lHr-dT-1hy" firstAttribute="leading" secondItem="nNO-Ea-L1v" secondAttribute="leading" id="BKN-Za-bSt"/>
-                            <constraint firstItem="pgn-CE-fjI" firstAttribute="leading" secondItem="nNO-Ea-L1v" secondAttribute="leading" id="PwA-ir-Ryd"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="lHr-dT-1hy" secondAttribute="bottom" id="bMQ-Ui-Nrt"/>
-                            <constraint firstAttribute="trailing" secondItem="lHr-dT-1hy" secondAttribute="trailing" id="d4L-hx-5i1"/>
-                            <constraint firstItem="lHr-dT-1hy" firstAttribute="top" secondItem="nNO-Ea-L1v" secondAttribute="topMargin" id="kpC-pI-Klv"/>
-                            <constraint firstItem="pgn-CE-fjI" firstAttribute="top" secondItem="nNO-Ea-L1v" secondAttribute="top" id="m6X-ea-RFI"/>
-                            <constraint firstAttribute="trailing" secondItem="pgn-CE-fjI" secondAttribute="trailing" id="w0a-zm-Nve"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="VBY-qP-beG"/>
-                    </view>
-                    <connections>
-                        <outlet property="imageView" destination="lHr-dT-1hy" id="eKD-F7-760"/>
-                        <outlet property="selectImageButton" destination="pgn-CE-fjI" id="t7K-HY-GgE"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="a15-Ii-aZB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5505" y="-16"/>
-        </scene>
     </scenes>
     <resources>
         <image name="gear_icon" width="30" height="30"/>
         <image name="japanese_mountain" width="1232" height="816"/>
         <image name="japanese_mountain_button" width="1081" height="292"/>
-        <image name="marble_background_button" width="1081" height="292"/>
         <image name="modern_marathon" width="1232" height="816"/>
         <image name="modern_marathon_button" width="1081" height="292"/>
         <image name="mountain" width="1232" height="816"/>

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8703CE9721923D93002A4D7A /* ImageSelectorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8703CE9621923D93002A4D7A /* ImageSelectorVC.swift */; };
 		8729C5C5218A4D5300DA1298 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8729C5C4218A4D5300DA1298 /* CloudKit.framework */; };
 		873796A3218928B7004213CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873796A2218928B7004213CF /* AppDelegate.swift */; };
 		873796A8218928B7004213CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873796A6218928B7004213CF /* Main.storyboard */; };
@@ -15,7 +14,7 @@
 		873796AD218928B8004213CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873796AB218928B8004213CF /* LaunchScreen.storyboard */; };
 		873796BA21892987004213CF /* QuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873796B921892987004213CF /* QuoteController.swift */; };
 		873796BC218929C6004213CF /* Quote+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873796BB218929C6004213CF /* Quote+Convenience.swift */; };
-		873796BF21892BCB004213CF /* Quote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 873796BD21892BCB004213CF /* Quote.xcdatamodeld */; };
+		873796BF21892BCB004213CF /* Kaihogyo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 873796BD21892BCB004213CF /* Kaihogyo.xcdatamodeld */; };
 		873796C121892C53004213CF /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873796C021892C53004213CF /* Stack.swift */; };
 		873796C321893179004213CF /* QuoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873796C221893179004213CF /* QuoteVC.swift */; };
 		8738B1612193B947008A53EC /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8738B1602193B947008A53EC /* HealthKit.framework */; };
@@ -28,14 +27,9 @@
 		876F6EAB218A8A82002A8848 /* APIkeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 876F6EAA218A8A82002A8848 /* APIkeys.plist */; };
 		876F6EAD218A8AF1002A8848 /* RaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876F6EAC218A8AF1002A8848 /* RaceController.swift */; };
 		876F6EAF218A8B8E002A8848 /* Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876F6EAE218A8B8E002A8848 /* Race.swift */; };
-		877762B12190C8E800085F3A /* InspirationWallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877762B02190C8E800085F3A /* InspirationWallVC.swift */; };
 		877762B32190C90F00085F3A /* FirstMarathonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877762B22190C90F00085F3A /* FirstMarathonVC.swift */; };
 		877762B52190C93400085F3A /* MarathonMonksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877762B42190C93400085F3A /* MarathonMonksVC.swift */; };
 		877762B72190C95C00085F3A /* ModernMarathonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877762B62190C95C00085F3A /* ModernMarathonVC.swift */; };
-		877762B92190FD9F00085F3A /* InspirationDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877762B82190FD9F00085F3A /* InspirationDetailVC.swift */; };
-		877762BB2190FE6700085F3A /* InspirationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877762BA2190FE6700085F3A /* InspirationItem.swift */; };
-		877762BD2191027B00085F3A /* InspirationItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877762BC2191027B00085F3A /* InspirationItemController.swift */; };
-		877762BF219103A800085F3A /* InspirationItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877762BE219103A800085F3A /* InspirationItemCell.swift */; };
 		87818E202195F54600E44626 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87818E1F2195F54600E44626 /* Workout.swift */; };
 		87818E222196025E00E44626 /* RunWorkoutSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87818E212196025E00E44626 /* RunWorkoutSession.swift */; };
 		87818E242196055500E44626 /* WorkoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87818E232196055500E44626 /* WorkoutController.swift */; };
@@ -54,7 +48,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8703CE9621923D93002A4D7A /* ImageSelectorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectorVC.swift; sourceTree = "<group>"; };
 		8729C5C2218A4D4D00DA1298 /* Kaihogyo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Kaihogyo.entitlements; sourceTree = "<group>"; };
 		8729C5C4218A4D5300DA1298 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		8737969F218928B7004213CF /* Kaihogyo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kaihogyo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,14 +71,9 @@
 		876F6EAA218A8A82002A8848 /* APIkeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = APIkeys.plist; sourceTree = "<group>"; };
 		876F6EAC218A8AF1002A8848 /* RaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceController.swift; sourceTree = "<group>"; };
 		876F6EAE218A8B8E002A8848 /* Race.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Race.swift; sourceTree = "<group>"; };
-		877762B02190C8E800085F3A /* InspirationWallVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationWallVC.swift; sourceTree = "<group>"; };
 		877762B22190C90F00085F3A /* FirstMarathonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstMarathonVC.swift; sourceTree = "<group>"; };
 		877762B42190C93400085F3A /* MarathonMonksVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarathonMonksVC.swift; sourceTree = "<group>"; };
 		877762B62190C95C00085F3A /* ModernMarathonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernMarathonVC.swift; sourceTree = "<group>"; };
-		877762B82190FD9F00085F3A /* InspirationDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationDetailVC.swift; sourceTree = "<group>"; };
-		877762BA2190FE6700085F3A /* InspirationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationItem.swift; sourceTree = "<group>"; };
-		877762BC2191027B00085F3A /* InspirationItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationItemController.swift; sourceTree = "<group>"; };
-		877762BE219103A800085F3A /* InspirationItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationItemCell.swift; sourceTree = "<group>"; };
 		87818E1F2195F54600E44626 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
 		87818E212196025E00E44626 /* RunWorkoutSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunWorkoutSession.swift; sourceTree = "<group>"; };
 		87818E232196055500E44626 /* WorkoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutController.swift; sourceTree = "<group>"; };
@@ -162,8 +150,7 @@
 		873796B4218928DE004213CF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				877762BA2190FE6700085F3A /* InspirationItem.swift */,
-				873796BD21892BCB004213CF /* Quote.xcdatamodeld */,
+				873796BD21892BCB004213CF /* Kaihogyo.xcdatamodeld */,
 				873796BB218929C6004213CF /* Quote+Convenience.swift */,
 				876F6EAE218A8B8E002A8848 /* Race.swift */,
 				873796C021892C53004213CF /* Stack.swift */,
@@ -176,7 +163,6 @@
 		873796B5218928E5004213CF /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				877762BC2191027B00085F3A /* InspirationItemController.swift */,
 				873796B921892987004213CF /* QuoteController.swift */,
 				876F6EAC218A8AF1002A8848 /* RaceController.swift */,
 				87818E232196055500E44626 /* WorkoutController.swift */,
@@ -189,12 +175,9 @@
 			children = (
 				876F685A218CDFA80028767D /* InspiredMasterVC.swift */,
 				873796C221893179004213CF /* QuoteVC.swift */,
-				877762B02190C8E800085F3A /* InspirationWallVC.swift */,
 				877762B22190C90F00085F3A /* FirstMarathonVC.swift */,
 				877762B42190C93400085F3A /* MarathonMonksVC.swift */,
 				877762B62190C95C00085F3A /* ModernMarathonVC.swift */,
-				877762B82190FD9F00085F3A /* InspirationDetailVC.swift */,
-				8703CE9621923D93002A4D7A /* ImageSelectorVC.swift */,
 			);
 			path = "View Controllers--Be Inspired";
 			sourceTree = "<group>";
@@ -203,7 +186,6 @@
 			isa = PBXGroup;
 			children = (
 				87F94D5D218BC57F0051037A /* RaceMasterListCell.swift */,
-				877762BE219103A800085F3A /* InspirationItemCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -355,16 +337,13 @@
 			files = (
 				87F94D58218B67B70051037A /* APIkeys.swift in Sources */,
 				87F94D60218BD2970051037A /* ActivityIndicator.swift in Sources */,
-				873796BF21892BCB004213CF /* Quote.xcdatamodeld in Sources */,
-				877762B92190FD9F00085F3A /* InspirationDetailVC.swift in Sources */,
+				873796BF21892BCB004213CF /* Kaihogyo.xcdatamodeld in Sources */,
 				877762B52190C93400085F3A /* MarathonMonksVC.swift in Sources */,
 				873796C121892C53004213CF /* Stack.swift in Sources */,
 				876F6859218CB2B60028767D /* RaceListDetailVC.swift in Sources */,
-				877762BB2190FE6700085F3A /* InspirationItem.swift in Sources */,
 				87818E26219605EB00E44626 /* SetupHealthKit.swift in Sources */,
 				876F6EAD218A8AF1002A8848 /* RaceController.swift in Sources */,
 				87818E2C219640DC00E44626 /* WorkoutDetailVC.swift in Sources */,
-				877762BD2191027B00085F3A /* InspirationItemController.swift in Sources */,
 				87818E2A2196402D00E44626 /* NewWorkoutVC.swift in Sources */,
 				8786F0EA218A0A0C007F43B0 /* LoginVC.swift in Sources */,
 				876F6EAF218A8B8E002A8848 /* Race.swift in Sources */,
@@ -373,7 +352,6 @@
 				873796BC218929C6004213CF /* Quote+Convenience.swift in Sources */,
 				873796A3218928B7004213CF /* AppDelegate.swift in Sources */,
 				877762B72190C95C00085F3A /* ModernMarathonVC.swift in Sources */,
-				877762BF219103A800085F3A /* InspirationItemCell.swift in Sources */,
 				876F6861218D14BD0028767D /* TrainingMasterVC.swift in Sources */,
 				87818E242196055500E44626 /* WorkoutController.swift in Sources */,
 				87F94D5C218BC4310051037A /* RaceListMasterVC.swift in Sources */,
@@ -381,11 +359,9 @@
 				877762B32190C90F00085F3A /* FirstMarathonVC.swift in Sources */,
 				8786F0EC218A1FEB007F43B0 /* TabBarController.swift in Sources */,
 				87818E202195F54600E44626 /* Workout.swift in Sources */,
-				8703CE9721923D93002A4D7A /* ImageSelectorVC.swift in Sources */,
 				87818E222196025E00E44626 /* RunWorkoutSession.swift in Sources */,
 				87F94D5E218BC57F0051037A /* RaceMasterListCell.swift in Sources */,
 				87F94D5A218B9A5D0051037A /* RaceSearchVC.swift in Sources */,
-				877762B12190C8E800085F3A /* InspirationWallVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,13 +565,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		873796BD21892BCB004213CF /* Quote.xcdatamodeld */ = {
+		873796BD21892BCB004213CF /* Kaihogyo.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				873796BE21892BCB004213CF /* Quote.xcdatamodel */,
 			);
 			currentVersion = 873796BE21892BCB004213CF /* Quote.xcdatamodel */;
-			path = Quote.xcdatamodeld;
+			path = Kaihogyo.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
