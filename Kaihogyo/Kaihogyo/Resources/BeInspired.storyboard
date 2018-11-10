@@ -288,7 +288,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L1y-EZ-wLr">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L1y-EZ-wLr">
                                         <rect key="frame" x="0.0" y="41" width="304" height="427"/>
                                         <string key="text">Legend has it that the first marathon was run by a messenger named Phidippides in 490 B.C.E.  The Greek city-state of Athens was being attacked by the Persian Empire.  The Athenians sent Phidippides approximately 140 miles each way on foot to seek military help from the Spartans, who could not immediately assist due to a religious festival.  He then returned to Marathon near Athens, where the Persians had assembled to attack.  Afterward, he quickly ran back to Athens to announce victory at Marathon and to warn the them that the Persians would soon attempt an attack by sea on the city.  The Persian ships arrived at Athens and saw a large army assembled, many of whom had just fought at Marathon, causing them to abandon their attack.  The Marathon-to-Athens distance Phidippides ran was approximately 26 miles, the distance which has become the current marathon.  Without his heroic run, the Persians may have defeated the Athenians, and the course of Western civilization would likely have been forever changed.  </string>
                                         <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
@@ -601,6 +601,7 @@
                             <constraint firstItem="pgn-CE-fjI" firstAttribute="top" secondItem="nNO-Ea-L1v" secondAttribute="top" id="m6X-ea-RFI"/>
                             <constraint firstAttribute="trailing" secondItem="pgn-CE-fjI" secondAttribute="trailing" id="w0a-zm-Nve"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="VBY-qP-beG"/>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="lHr-dT-1hy" id="eKD-F7-760"/>
