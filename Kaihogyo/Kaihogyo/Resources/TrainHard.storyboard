@@ -17,6 +17,14 @@
         </array>
     </customFonts>
     <scenes>
+        <!--FinePrintVC-->
+        <scene sceneID="TFb-jU-640">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="FinePrintVC" id="05i-6q-ve9" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yeE-P3-iSR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3137" y="-413"/>
+        </scene>
         <!--Train Hard.-->
         <scene sceneID="VCv-LY-eMD">
             <objects>
@@ -93,7 +101,12 @@
                         <viewLayoutGuide key="safeArea" id="7NS-ve-uJt"/>
                     </view>
                     <navigationItem key="navigationItem" title="Train Hard." id="zVl-hz-6iL">
-                        <barButtonItem key="rightBarButtonItem" image="gear_icon" id="9if-gv-j7i"/>
+                        <barButtonItem key="rightBarButtonItem" image="gear_icon" id="9if-gv-j7i">
+                            <connections>
+                                <action selector="settingsButtonTapped:" destination="x8j-ZZ-4uI" id="qd0-PZ-9aE"/>
+                                <segue destination="05i-6q-ve9" kind="show" identifier="toFinePrintVC" id="K15-fz-RuZ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="startNewWorkoutButton" destination="2B6-qH-1fG" id="5Y2-1N-gnE"/>

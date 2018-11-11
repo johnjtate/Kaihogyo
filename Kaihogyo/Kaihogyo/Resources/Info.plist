@@ -2,10 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSHealthUpdateUsageDescription</key>
-	<string>Kaihogyo updates HealthKit with information from your Train Hard workouts.</string>
-	<key>NSHealthShareUsageDescription</key>
-	<string>Kaihogyo accesses HealthKit for your Train Hard workouts.</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -21,9 +17,13 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>3</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSHealthShareUsageDescription</key>
+	<string>Kaihogyo accesses HealthKit for your Train Hard workouts.</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>Kaihogyo updates HealthKit with information from your Train Hard workouts.</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>CaesarDressing-Regular.ttf</string>

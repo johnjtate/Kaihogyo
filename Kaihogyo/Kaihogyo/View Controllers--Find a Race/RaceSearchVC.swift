@@ -227,5 +227,10 @@ class RaceSearchVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
 
         searchForRaces()
     }
+    
+    @IBAction func settingsButtonTapped(_ sender: Any) {
+
+        self.performSegue(withIdentifier: "toFinePrintVC", sender: nil)
+    }
 }
 

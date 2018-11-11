@@ -37,4 +37,10 @@ class InspiredMasterVC: UIViewController {
         theMarathonInModernTimesButton.layer.cornerRadius = 10.0
         theMarathonInModernTimesButton.layer.masksToBounds = true
     }
+    
+    // MARK: - IBActions
+    
+    @IBAction func settingsButtonTapped(_ sender: Any) {
+        self.performSegue(withIdentifier: "toFinePrintVC", sender: nil)
+    }
 }

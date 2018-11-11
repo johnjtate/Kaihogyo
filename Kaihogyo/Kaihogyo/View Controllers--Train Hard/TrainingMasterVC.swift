@@ -101,4 +101,11 @@ class TrainingMasterVC: UIViewController, UITableViewDataSource, UITableViewDele
         cell.detailTextLabel?.text = String(format: "%.01f", workout.duration) + "s"
         return cell
     }
+    
+    // MARK: - IBAction
+    
+    @IBAction func settingsButtonTapped(_ sender: Any) {
+        
+        self.performSegue(withIdentifier: "toFinePrintVC", sender: nil)
+    }
 }

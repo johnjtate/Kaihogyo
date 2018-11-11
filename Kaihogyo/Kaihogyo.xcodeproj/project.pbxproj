@@ -18,6 +18,7 @@
 		873796C121892C53004213CF /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873796C021892C53004213CF /* Stack.swift */; };
 		873796C321893179004213CF /* QuoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873796C221893179004213CF /* QuoteVC.swift */; };
 		8738B1612193B947008A53EC /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8738B1602193B947008A53EC /* HealthKit.framework */; };
+		8767DADC2198B35C002548D9 /* FinePrintVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8767DADB2198B35C002548D9 /* FinePrintVC.swift */; };
 		876F6859218CB2B60028767D /* RaceListDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876F6858218CB2B60028767D /* RaceListDetailVC.swift */; };
 		876F685B218CDFA80028767D /* InspiredMasterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876F685A218CDFA80028767D /* InspiredMasterVC.swift */; };
 		876F685D218D0FA80028767D /* BeInspired.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 876F685C218D0FA80028767D /* BeInspired.storyboard */; };
@@ -62,6 +63,7 @@
 		873796C021892C53004213CF /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		873796C221893179004213CF /* QuoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteVC.swift; sourceTree = "<group>"; };
 		8738B1602193B947008A53EC /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		8767DADB2198B35C002548D9 /* FinePrintVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinePrintVC.swift; sourceTree = "<group>"; };
 		876F6858218CB2B60028767D /* RaceListDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListDetailVC.swift; sourceTree = "<group>"; };
 		876F685A218CDFA80028767D /* InspiredMasterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspiredMasterVC.swift; sourceTree = "<group>"; };
 		876F685C218D0FA80028767D /* BeInspired.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BeInspired.storyboard; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 			children = (
 				8786F0E9218A0A0C007F43B0 /* LoginVC.swift */,
 				8786F0EB218A1FEB007F43B0 /* TabBarController.swift */,
+				8767DADB2198B35C002548D9 /* FinePrintVC.swift */,
 			);
 			path = "View Controllers--Other";
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				876F6861218D14BD0028767D /* TrainingMasterVC.swift in Sources */,
 				87818E242196055500E44626 /* WorkoutController.swift in Sources */,
 				87F94D5C218BC4310051037A /* RaceListMasterVC.swift in Sources */,
+				8767DADC2198B35C002548D9 /* FinePrintVC.swift in Sources */,
 				876F685B218CDFA80028767D /* InspiredMasterVC.swift in Sources */,
 				877762B32190C90F00085F3A /* FirstMarathonVC.swift in Sources */,
 				8786F0EC218A1FEB007F43B0 /* TabBarController.swift in Sources */,

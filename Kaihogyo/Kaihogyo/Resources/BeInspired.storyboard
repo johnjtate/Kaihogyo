@@ -17,6 +17,14 @@
         </array>
     </customFonts>
     <scenes>
+        <!--FinePrintVC-->
+        <scene sceneID="O0E-be-NVL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="FinePrintVC" id="OQr-ew-RKJ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QPC-tz-vad" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2215" y="428"/>
+        </scene>
         <!--Be Inspired.-->
         <scene sceneID="aht-54-c8G">
             <objects>
@@ -130,7 +138,12 @@
                         <viewLayoutGuide key="safeArea" id="bW9-eL-cBn"/>
                     </view>
                     <navigationItem key="navigationItem" title="Be Inspired." id="erl-gP-fWE">
-                        <barButtonItem key="rightBarButtonItem" image="gear_icon" id="xQG-df-cN2"/>
+                        <barButtonItem key="rightBarButtonItem" image="gear_icon" id="xQG-df-cN2">
+                            <connections>
+                                <action selector="settingsButtonTapped:" destination="Txs-JH-234" id="I4B-0w-djp"/>
+                                <segue destination="OQr-ew-RKJ" kind="show" identifier="toFinePrintVC" id="yCE-5H-g4k"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>

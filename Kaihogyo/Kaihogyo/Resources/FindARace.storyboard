@@ -17,6 +17,14 @@
         </array>
     </customFonts>
     <scenes>
+        <!--FinePrintVC-->
+        <scene sceneID="Rav-eF-jVS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="FinePrintVC" id="lmb-zn-UD0" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k3D-kd-hbx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2318" y="-1274"/>
+        </scene>
         <!--Find a Race.-->
         <scene sceneID="cvV-pa-oqj">
             <objects>
@@ -219,7 +227,12 @@
                         <viewLayoutGuide key="safeArea" id="q7D-lo-qNh"/>
                     </view>
                     <navigationItem key="navigationItem" title="Find a Race." id="HEu-gj-pZs">
-                        <barButtonItem key="rightBarButtonItem" image="gear_icon" id="CuI-fj-hwE"/>
+                        <barButtonItem key="rightBarButtonItem" image="gear_icon" id="CuI-fj-hwE">
+                            <connections>
+                                <action selector="settingsButtonTapped:" destination="9kW-SW-tbL" id="9yr-6l-jei"/>
+                                <segue destination="lmb-zn-UD0" kind="show" identifier="toFinePrintVC" id="yuF-GC-vck"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="ZIPCodeTextField" destination="Czd-JJ-vcL" id="oLb-DK-QHf"/>
@@ -258,22 +271,22 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="fA4-16-7ff">
-                                                    <rect key="frame" x="15" y="12.5" width="202.5" height="58"/>
+                                                    <rect key="frame" x="15" y="12.5" width="257.5" height="58"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFp-7Q-9GW">
-                                                            <rect key="frame" x="0.0" y="0.0" width="202.5" height="17"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="257.5" height="17"/>
                                                             <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t59-ai-fDI">
-                                                            <rect key="frame" x="0.0" y="21" width="202.5" height="16.5"/>
+                                                            <rect key="frame" x="0.0" y="21" width="257.5" height="16.5"/>
                                                             <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="12"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPf-0I-hyp">
-                                                            <rect key="frame" x="0.0" y="41.5" width="202.5" height="16.5"/>
+                                                            <rect key="frame" x="0.0" y="41.5" width="257.5" height="16.5"/>
                                                             <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="12"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -281,7 +294,7 @@
                                                     </subviews>
                                                 </stackView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ly3-cR-FS0">
-                                                    <rect key="frame" x="227.5" y="0.0" width="82.5" height="82.5"/>
+                                                    <rect key="frame" x="282.5" y="0.0" width="82.5" height="82.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="ly3-cR-FS0" secondAttribute="height" multiplier="1:1" id="0uM-Sl-dz0"/>
                                                     </constraints>
