@@ -3,40 +3,6 @@ November 11, 2018
 
 Upon use of the Kaihogyo application, the user hereby agrees to the Terms of Service herein.  
 
-This document herein shall be referred to as the End-User License Agreement (EULA).  You, the user, shall herein be referred to as the End-User.  Kaihogyo shall herein be referred to as the Licensed Application.  
-
-Acknowledgement
-This EULA is concluded between the developers of the Licensed Application and not with Apple.  The developers of the Licensed Application are solely responsible for the Licensed Application and the content thereof.
-
-Scope of License 
-This license is granted to the End-User for the Licensed Application and is limited to a non-transferrable license to use the Licensed Application on any Apple-branded Products that the End-User owns or controls and as permitted by the Usage Rules set forth in the App Store Terms of Service, except that such Licensed Application may be accessed and used by other accounts associated with the purchaser via Family Sharing or volume purchasing.  
-
-Maintenance and Support
-The developers of the License Application are responsible for providing any maintenance and support services with respect to the Licensed Application, as specified in this EULA, or as required under applicable law.  The developers and the End-User hereby acknowledge that Apple has no obligation whatsoever to furnish any maintenance and support services with respect to the License Application.  
-
-Warranty
-The Licensed application is provided “as is,” without warranty of any kind, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose and noninfringement.  In no event shall the developers or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the user or other dealings in the software.
-
-In the event of failure of the Licensed Application to perform to the warranty, the End-User may notify Apple, and Apple will refund the purchase price for the Licensed Application to that End-User; and that, to the maximum extent permitted by applicable law, Apple will have no other warranty obligation whatsoever with respect to the License Application, and any other claims, losses, liabilities, damages, costs, or expenses attributable to any failure to confirm to any warranty will be the sole responsibility of the developers.  
-
-Product Claims
-The developer and the End-User hereby acknowledge that the developer, not Apple, is responsible for addressing any claims of the End-User or any third party relating to the Licensed Application or the end-user’s passion and/or use of the Licensed Application, including, but not limited to: (i) product liability claims, (ii) any claim that the Licensed Application fails to conform to any applicable legal or regulatory requirement; and (iii) claims arising under consumer protection, privacy, or similar legislation, including in connection with the Licensed Application’s use of the HealthKit framework.  
-
-Intellectual Property Rights
-The developer and the End-User acknowledge that, in the event of any third party claim that the License Application or the End-User’s possession and use of that Licensed Application infringes that third party’s intellectual property rights, the developer, not Apple, is solely responsible for the investigation, defense, settlement and discharge of any such intellectual property claim.
-
-Legal Complaince
-The End-User hereby represents and warrants that (i) he/she is not located in a country that is subject to a U.S. Government embargo, or that has been designated by the U.S. Government as a “terrorist supporting” country; and (ii) he/she is not listed on any U.S. Government list of prohibited or restricted parties.  
-
-Developer Information
-The developer, John Tate, may be contacted at tatejohnj@gmail.com, to which any End-User questions, complaints, or claims with respect to the Licensed Application should be directed.  
-
-Third Party Terms of Agreement
-The End-User must comply with applicable third party terms of agreement when using the Licensed Application.  These include any agreement made with the provider of a wireless or cellular Internet connection.  The Licensed Application uses the RunSignUp API in the “Find A Race” section of the app.  More information about the API is available at https://runsignup.com/api.  
-
-Third Party Beneficiary 
-The developer and the End-User acknowledge and agree that Apple, and Apple’s subsidiaries, are third party beneficiaries of this EULA, and that, upon the End-User’s acceptance of the terms and conditions of this EULA, Apple will have the right (and will be deemed to have accepted the right) to enforce this EULA against the End-User as a third party beneficiary thereof.  
-
 Disclaimer
 Training for a marathon or other footrace is an inherently dangerous activity.  By performing any exercise activities, you are performing them at your own risk.  You should consult your physician or other health care professional before starting a fitness program, including training for a marathon or other footrace using the Kaihogyo app.  Kaihogyo will not be responsible or liable for any injury or harm you sustain as a result of training using this app.  Do not begin training if your physician or health care provider advises against it.  If you experience pain, faintness, dizziness, or shortness of breath at any time while exercising, you should stop immediately.  
 
@@ -74,3 +40,5 @@ Link to photo: https://www.pexels.com/photo/parthenon-greece-landmark-951531/
 5.	Modern marathon photo
 License: CC0 (free for personal and commercial use; no attribution required)
 Link to photo: https://www.pexels.com/photo/jogger-jogging-sport-marathon-3629/
+
+The Licensed Application uses the RunSignUp API in the “Find A Race” section of the app.  More information about the API is available at https://runsignup.com/api.  
