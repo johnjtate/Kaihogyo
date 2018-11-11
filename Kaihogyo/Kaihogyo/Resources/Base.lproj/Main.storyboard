@@ -1,24 +1,347 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="CaesarDressing-Regular.ttf">
+            <string>CaesarDressing-Regular</string>
+        </array>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginVC" customModule="Kaihogyo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2V9-Op-yjJ">
+                                <rect key="frame" x="16" y="40" width="288" height="508"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="c77-94-Svb">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="65"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KAIHOGYO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="op7-Ro-Ler">
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="VD9-Ue-bOZ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="36"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find a Race.  Train Hard.  Be Inspired." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n8Y-WR-Bq1">
+                                                <rect key="frame" x="0.0" y="45" width="288" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="1Lj-UA-TMR"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="op7-Ro-Ler" firstAttribute="width" secondItem="c77-94-Svb" secondAttribute="width" id="8ut-ND-hDf"/>
+                                            <constraint firstItem="n8Y-WR-Bq1" firstAttribute="width" secondItem="c77-94-Svb" secondAttribute="width" id="NWG-z3-eo2"/>
+                                        </constraints>
+                                    </stackView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="amphora" translatesAutoresizingMaskIntoConstraints="NO" id="c5w-Tq-T0S">
+                                        <rect key="frame" x="7" y="85" width="274" height="363"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="c5w-Tq-T0S" secondAttribute="height" multiplier="1:1.325" id="AUe-qg-diQ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="4ee-Zm-MUz">
+                                        <rect key="frame" x="45" y="468" width="198" height="40"/>
+                                        <subviews>
+                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yiv-h7-fpQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="198" height="40"/>
+                                                <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="24"/>
+                                                <state key="normal" title="Log In">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="logInButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TRj-ef-fw9"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="S3J-aM-KUB"/>
+                                            <constraint firstItem="Yiv-h7-fpQ" firstAttribute="width" secondItem="4ee-Zm-MUz" secondAttribute="width" id="rOk-Lh-rc0"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="c77-94-Svb" firstAttribute="width" secondItem="2V9-Op-yjJ" secondAttribute="width" id="PNw-go-dH8"/>
+                                    <constraint firstItem="4ee-Zm-MUz" firstAttribute="width" secondItem="2V9-Op-yjJ" secondAttribute="width" multiplier="0.8" constant="-32" id="QWl-uC-K8o"/>
+                                    <constraint firstItem="c77-94-Svb" firstAttribute="centerX" secondItem="2V9-Op-yjJ" secondAttribute="centerX" id="bDH-Ln-eS7"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2V9-Op-yjJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="0w3-f8-vvJ"/>
+                            <constraint firstAttribute="bottom" secondItem="2V9-Op-yjJ" secondAttribute="bottom" constant="20" id="cKT-PY-NTK"/>
+                            <constraint firstItem="2V9-Op-yjJ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="cww-Ql-JP2"/>
+                            <constraint firstItem="2V9-Op-yjJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pya-gN-cav"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="amphoraImageView" destination="c5w-Tq-T0S" id="HIb-VO-pYM"/>
+                        <segue destination="2sb-rG-agN" kind="show" identifier="toTabBarVC" id="SAm-wA-bTa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-566.25" y="83.75"/>
+        </scene>
+        <!--TrainingMasterVC-->
+        <scene sceneID="6TA-yi-aRM">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="TrainingMasterVC" storyboardName="TrainHard" referencedIdentifier="TrainingMasterVC" id="hqp-ch-ToR" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="xSv-na-TWe"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K1F-Fp-WAC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2200" y="83"/>
+        </scene>
+        <!--Fine PrintVC-->
+        <scene sceneID="ZXa-uB-Qd2">
+            <objects>
+                <viewController storyboardIdentifier="FinePrintVC" id="F69-GQ-Lab" customClass="FinePrintVC" customModule="Kaihogyo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sEs-b8-vB3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YCw-Ro-bRt">
+                                <rect key="frame" x="16" y="40" width="288" height="508"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndD-JK-hot">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="V9a-mD-0bP"/>
+                                        </constraints>
+                                        <state key="normal" title="Privacy Policy"/>
+                                        <connections>
+                                            <action selector="privacyPolicyButtonTapped:" destination="F69-GQ-Lab" eventType="touchUpInside" id="0Hp-jw-YFw"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PsQ-sa-B6M">
+                                        <rect key="frame" x="0.0" y="50" width="288" height="458"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <mutableString key="text">Kaihogyo Terms of Service
+November 11, 2018
+
+Upon use of the Kaihogyo application, the user hereby agrees to the Terms of Service herein.  
+
+This document herein shall be referred to as the End-User License Agreement (EULA).  You, the user, shall herein be referred to as the End-User.  Kaihogyo shall herein be referred to as the Licensed Application.  
+
+Acknowledgement
+This EULA is concluded between the developers of the Licensed Application and not with Apple.  The developers of the Licensed Application are solely responsible for the Licensed Application and the content thereof.
+
+Scope of License 
+This license is granted to the End-User for the Licensed Application and is limited to a non-transferrable license to use the Licensed Application on any Apple-branded Products that the End-User owns or controls and as permitted by the Usage Rules set forth in the App Store Terms of Service, except that such Licensed Application may be accessed and used by other accounts associated with the purchaser via Family Sharing or volume purchasing.  
+
+Maintenance and Support
+The developers of the License Application are responsible for providing any maintenance and support services with respect to the Licensed Application, as specified in this EULA, or as required under applicable law.  The developers and the End-User hereby acknowledge that Apple has no obligation whatsoever to furnish any maintenance and support services with respect to the License Application.  
+
+Warranty
+The Licensed application is provided “as is,” without warranty of any kind, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose and noninfringement.  In no event shall the developers or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the user or other dealings in the software.
+
+In the event of failure of the Licensed Application to perform to the warranty, the End-User may notify Apple, and Apple will refund the purchase price for the Licensed Application to that End-User; and that, to the maximum extent permitted by applicable law, Apple will have no other warranty obligation whatsoever with respect to the License Application, and any other claims, losses, liabilities, damages, costs, or expenses attributable to any failure to confirm to any warranty will be the sole responsibility of the developers.  
+
+Product Claims
+The developer and the End-User hereby acknowledge that the developer, not Apple, is responsible for addressing any claims of the End-User or any third party relating to the Licensed Application or the end-user’s passion and/or use of the Licensed Application, including, but not limited to: (i) product liability claims, (ii) any claim that the Licensed Application fails to conform to any applicable legal or regulatory requirement; and (iii) claims arising under consumer protection, privacy, or similar legislation, including in connection with the Licensed Application’s use of the HealthKit framework.  
+
+Intellectual Property Rights
+The developer and the End-User acknowledge that, in the event of any third party claim that the License Application or the End-User’s possession and use of that Licensed Application infringes that third party’s intellectual property rights, the developer, not Apple, is solely responsible for the investigation, defense, settlement and discharge of any such intellectual property claim.
+
+Legal Complaince
+The End-User hereby represents and warrants that (i) he/she is not located in a country that is subject to a U.S. Government embargo, or that has been designated by the U.S. Government as a “terrorist supporting” country; and (ii) he/she is not listed on any U.S. Government list of prohibited or restricted parties.  
+
+Developer Information
+The developer, John Tate, may be contacted at tatejohnj@gmail.com, to which any End-User questions, complaints, or claims with respect to the Licensed Application should be directed.  
+
+Third Party Terms of Agreement
+The End-User must comply with applicable third party terms of agreement when using the Licensed Application.  These include any agreement made with the provider of a wireless or cellular Internet connection.  The Licensed Application uses the RunSignUp API in the “Find A Race” section of the app.  More information about the API is available at https://runsignup.com/api.  
+
+Third Party Beneficiary 
+The developer and the End-User acknowledge and agree that Apple, and Apple’s subsidiaries, are third party beneficiaries of this EULA, and that, upon the End-User’s acceptance of the terms and conditions of this EULA, Apple will have the right (and will be deemed to have accepted the right) to enforce this EULA against the End-User as a third party beneficiary thereof.  
+
+Disclaimer
+Training for a marathon or other footrace is an inherently dangerous activity.  By performing any exercise activities, you are performing them at your own risk.  You should consult your physician or other health care professional before starting a fitness program, including training for a marathon or other footrace using the Kaihogyo app.  Kaihogyo will not be responsible or liable for any injury or harm you sustain as a result of training using this app.  Do not begin training if your physician or health care provider advises against it.  If you experience pain, faintness, dizziness, or shortness of breath at any time while exercising, you should stop immediately.  
+
+This application is provided for entertainment purposes only.  The developer is not a licensed health care provider, and you should not reply on the application as a substitute for or replacement for professional medical advice, diagnosis, or treatment or advice from a distance running expert.  
+  
+Acknowledgements
+The following icons in the Kaihogyo application are used under license as indicated below:
+
+1.	Finish flag icon used for Find A Race
+License: Creative Commons (No Derivative Works 3.0 Unported) (https://creativecommons.org/licenses/by-nd/3.0/)
+Link to icon: https://www.iconfinder.com/icons/172465/finish_flag_goal_icon
+2.	Runner icon used for Train Hard and the app iconLicense: Creative Commons License (Attribution 3.0 Unported) https://creativecommons.org/licenses/by/3.0/
+Link to icon: https://www.iconfinder.com/icons/103061/runner_icon
+3.	Sunglasses icon user for Be Inspired
+License: Free for Commercial Use
+Link to icon: https://www.iconfinder.com/icons/315578/face_sunglasses_icon
+4.	Gear icon used for link to Privacy Policy/Terms of Service
+License: Freeward (Link Required)
+Link to icon: https://findicons.com/icon/567986/settings_filled
+
+The following photos in the Kaihogyo application are used under license as indicated below:
+
+1.	Amphora photo
+License: Public Domain
+Link to photo: https://commons.wikimedia.org/wiki/File:Panathenaic_amphora_Kleophrades_Louvre_F277.jpg
+2.	Mountain photo 
+License: CC0 (free for personal and commercial use; no attribution required)
+Link to photo: https://www.pexels.com/photo/black-and-white-mountain-over-yellow-white-and-blue-sky-46253/
+3.	Mountain with Japanese homes
+License: CC0 (free for personal and commercial use; no attribution required)
+Link to photo: https://www.pexels.com/photo/architecture-bungalows-daylight-home-259772/
+4.	Parthenon photo
+License: Pexels License (free for personal and commercial use; no attribution required)
+Link to photo: https://www.pexels.com/photo/parthenon-greece-landmark-951531/
+5.	Modern marathon photo
+License: CC0 (free for personal and commercial use; no attribution required)
+Link to photo: https://www.pexels.com/photo/jogger-jogging-sport-marathon-3629/
+</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ndD-JK-hot" firstAttribute="centerX" secondItem="YCw-Ro-bRt" secondAttribute="centerX" id="aA7-aB-eci"/>
+                                    <constraint firstItem="PsQ-sa-B6M" firstAttribute="width" secondItem="YCw-Ro-bRt" secondAttribute="width" id="q2K-Zn-nyn"/>
+                                    <constraint firstItem="ndD-JK-hot" firstAttribute="width" secondItem="YCw-Ro-bRt" secondAttribute="width" id="qrl-iH-WHQ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YCw-Ro-bRt" firstAttribute="centerX" secondItem="sEs-b8-vB3" secondAttribute="centerX" id="84g-br-x3n"/>
+                            <constraint firstItem="YCw-Ro-bRt" firstAttribute="top" secondItem="bgX-d8-g07" secondAttribute="top" constant="20" id="9ru-pe-2VG"/>
+                            <constraint firstItem="YCw-Ro-bRt" firstAttribute="width" secondItem="sEs-b8-vB3" secondAttribute="width" multiplier="0.9" id="Iye-la-cV6"/>
+                            <constraint firstItem="bgX-d8-g07" firstAttribute="bottom" secondItem="YCw-Ro-bRt" secondAttribute="bottom" constant="20" id="at6-ar-v4M"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bgX-d8-g07"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ek4-rU-m2n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3129" y="82"/>
+        </scene>
+        <!--InspiredMasterVC-->
+        <scene sceneID="AsN-cS-1Vv">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="InspiredMasterVC" storyboardName="BeInspired" referencedIdentifier="InspiredMasterVC" id="euK-L8-bo9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="TeW-6i-AvC"/>
+                    <navigationItem key="navigationItem" id="XJF-Rw-3Zf"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dhY-3j-wpY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2198" y="945"/>
+        </scene>
+        <!--RaceSearchVC-->
+        <scene sceneID="Xso-dn-dcN">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="RaceSearchVC" storyboardName="FindARace" referencedIdentifier="RaceSearchVC" id="XKh-xW-im5" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="9z6-9A-Y5B"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sTg-ZZ-b4h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2202" y="-781"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="NiT-Dx-dMI">
+            <objects>
+                <tabBarController id="2sb-rG-agN" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Cb0-oh-k7l">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="R8T-Mp-0Kr" kind="relationship" relationship="viewControllers" id="BNL-LA-3z2"/>
+                        <segue destination="EZc-Kd-amU" kind="relationship" relationship="viewControllers" id="Gzb-uo-tLN"/>
+                        <segue destination="lz0-wV-qTF" kind="relationship" relationship="viewControllers" id="d3j-OY-bXC"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0d1-Te-5Q4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="249" y="83"/>
+        </scene>
+        <!--FIND A RACE.-->
+        <scene sceneID="phe-At-mj2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="R8T-Mp-0Kr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="FIND A RACE." image="finish_flag_icon" id="mpn-Hk-diP"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2rO-We-qEn">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XKh-xW-im5" kind="relationship" relationship="rootViewController" id="fL8-lh-WPb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cXH-da-K8v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1203.75" y="-780"/>
+        </scene>
+        <!--TRAIN HARD.-->
+        <scene sceneID="Drz-VE-lpS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EZc-Kd-amU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="TRAIN HARD." image="runner_icon" id="5TC-Yj-UBr"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5k2-9i-waL">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hqp-ch-ToR" kind="relationship" relationship="rootViewController" id="EmM-1r-tl0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="63i-CR-nWr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1203.75" y="82.5"/>
+        </scene>
+        <!--BE INSPIRED.-->
+        <scene sceneID="gm5-15-68x">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lz0-wV-qTF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="BE INSPIRED." image="face_sunglasses_icon" id="xVE-Re-abw"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wOV-Sw-7ga">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="euK-L8-bo9" kind="relationship" relationship="rootViewController" id="nJK-12-hcq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="37o-Rk-3YS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1204" y="946"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="amphora" width="592.79998779296875" height="786"/>
+        <image name="face_sunglasses_icon" width="30" height="30"/>
+        <image name="finish_flag_icon" width="30" height="30"/>
+        <image name="runner_icon" width="30" height="30"/>
+    </resources>
 </document>

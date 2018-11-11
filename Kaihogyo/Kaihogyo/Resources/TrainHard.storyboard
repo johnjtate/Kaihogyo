@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CaesarDressing-Regular.ttf">
+            <string>CaesarDressing-Regular</string>
+        </array>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--FinePrintVC-->
+        <scene sceneID="TFb-jU-640">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="FinePrintVC" id="05i-6q-ve9" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yeE-P3-iSR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3137" y="-413"/>
+        </scene>
+        <!--Train Hard.-->
+        <scene sceneID="VCv-LY-eMD">
+            <objects>
+                <viewController storyboardIdentifier="TrainingMasterVC" id="x8j-ZZ-4uI" customClass="TrainingMasterVC" customModule="Kaihogyo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pRf-tM-LUB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wv9-Of-BNm">
+                                <rect key="frame" x="19" y="20" width="337.5" height="637"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2B6-qH-1fG">
+                                        <rect key="frame" x="0.0" y="0.0" width="337.5" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="1Sp-hs-UMl"/>
+                                            <constraint firstAttribute="height" constant="40" id="Rqd-zW-4ca"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="18"/>
+                                        <state key="normal" title="Start New Run">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Rrp-ry-ssW" kind="show" identifier="toNewWorkout" id="VXr-cx-ukD"/>
+                                        </connections>
+                                    </button>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Lls-tP-dzP">
+                                        <rect key="frame" x="0.0" y="60" width="337.5" height="577"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="workoutCell" textLabel="zl5-3F-RBG" detailTextLabel="lDM-kk-pd3" style="IBUITableViewCellStyleValue1" id="fn1-Rl-ecv">
+                                                <rect key="frame" x="0.0" y="28" width="337.5" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fn1-Rl-ecv" id="3hW-IM-Jms">
+                                                    <rect key="frame" x="0.0" y="0.0" width="337.5" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="(Date)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zl5-3F-RBG">
+                                                            <rect key="frame" x="15" y="12" width="44.5" height="20"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="(Duration)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lDM-kk-pd3">
+                                                            <rect key="frame" x="249" y="12" width="73.5" height="20"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <segue destination="Hkg-mH-LBc" kind="show" identifier="toWorkoutDetail" id="zaV-jQ-Fpo"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Lls-tP-dzP" firstAttribute="width" secondItem="wv9-Of-BNm" secondAttribute="width" id="Mrr-CI-Uwc"/>
+                                    <constraint firstItem="2B6-qH-1fG" firstAttribute="width" secondItem="wv9-Of-BNm" secondAttribute="width" id="d8i-05-k88"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wv9-Of-BNm" firstAttribute="width" secondItem="pRf-tM-LUB" secondAttribute="width" multiplier="0.9" id="daT-hU-qeq"/>
+                            <constraint firstItem="wv9-Of-BNm" firstAttribute="centerX" secondItem="pRf-tM-LUB" secondAttribute="centerX" id="lOl-WS-Kto"/>
+                            <constraint firstItem="7NS-ve-uJt" firstAttribute="bottom" secondItem="wv9-Of-BNm" secondAttribute="bottom" constant="10" id="n9P-Nm-G5Q"/>
+                            <constraint firstItem="wv9-Of-BNm" firstAttribute="top" secondItem="7NS-ve-uJt" secondAttribute="top" id="pCP-MQ-BTp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7NS-ve-uJt"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Train Hard." id="zVl-hz-6iL">
+                        <barButtonItem key="rightBarButtonItem" image="gear_icon" id="9if-gv-j7i">
+                            <connections>
+                                <action selector="settingsButtonTapped:" destination="x8j-ZZ-4uI" id="qd0-PZ-9aE"/>
+                                <segue destination="05i-6q-ve9" kind="show" identifier="toFinePrintVC" id="K15-fz-RuZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="startNewWorkoutButton" destination="2B6-qH-1fG" id="5Y2-1N-gnE"/>
+                        <outlet property="workoutsTableView" destination="Lls-tP-dzP" id="CmH-s7-1ya"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xkQ-Ba-waT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3140" y="82.3088455772114"/>
+        </scene>
+        <!--Workout DetailVC-->
+        <scene sceneID="bEE-bW-GtY">
+            <objects>
+                <viewController id="Hkg-mH-LBc" customClass="WorkoutDetailVC" customModule="Kaihogyo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3cs-zo-ksk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="qYy-d6-gvc">
+                                <rect key="frame" x="19" y="278.5" width="337.5" height="110.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wMs-cA-M0Z">
+                                        <rect key="frame" x="0.0" y="0.0" width="337.5" height="23.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNZ-gN-MuX">
+                                                <rect key="frame" x="0.0" y="0.0" width="163.5" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(start time)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18h-jr-g7s">
+                                                <rect key="frame" x="173.5" y="0.0" width="164" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mVn-hp-Ozq">
+                                        <rect key="frame" x="0.0" y="43.5" width="337.5" height="23.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1AG-on-AFl">
+                                                <rect key="frame" x="0.0" y="0.0" width="163.5" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(end time)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6S6-cl-uDf">
+                                                <rect key="frame" x="173.5" y="0.0" width="164" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hOG-0l-R9R">
+                                        <rect key="frame" x="0.0" y="87" width="337.5" height="23.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgb-LF-wMY">
+                                                <rect key="frame" x="0.0" y="0.0" width="163.5" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(duration)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWK-hN-e4g">
+                                                <rect key="frame" x="173.5" y="0.0" width="164" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="hOG-0l-R9R" firstAttribute="width" secondItem="qYy-d6-gvc" secondAttribute="width" id="9q3-tM-2n8"/>
+                                    <constraint firstItem="mVn-hp-Ozq" firstAttribute="width" secondItem="qYy-d6-gvc" secondAttribute="width" id="T7y-En-H0i"/>
+                                    <constraint firstItem="wMs-cA-M0Z" firstAttribute="width" secondItem="qYy-d6-gvc" secondAttribute="width" id="XcA-kK-hjJ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qYy-d6-gvc" firstAttribute="centerY" secondItem="3cs-zo-ksk" secondAttribute="centerY" id="Giv-SO-HP0"/>
+                            <constraint firstItem="qYy-d6-gvc" firstAttribute="width" secondItem="3cs-zo-ksk" secondAttribute="width" multiplier="0.9" id="aiv-8T-Ltl"/>
+                            <constraint firstItem="qYy-d6-gvc" firstAttribute="centerX" secondItem="3cs-zo-ksk" secondAttribute="centerX" id="eux-17-r6m"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dvo-Tt-q8C"/>
+                    </view>
+                    <connections>
+                        <outlet property="durationTextLabel" destination="xWK-hN-e4g" id="hwC-Aj-GwR"/>
+                        <outlet property="endTimeLabel" destination="6S6-cl-uDf" id="5tE-K9-l9h"/>
+                        <outlet property="startTimeLabel" destination="18h-jr-g7s" id="l19-c3-oUX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zx2-2j-Dbe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4100" y="600"/>
+        </scene>
+        <!--New WorkoutVC-->
+        <scene sceneID="h8y-vy-Sdo">
+            <objects>
+                <viewController id="Rrp-ry-ssW" customClass="NewWorkoutVC" customModule="Kaihogyo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="31O-kO-zrp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="d5g-bj-DC5">
+                                <rect key="frame" x="19" y="144.5" width="337.5" height="378.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sik-8I-CAx">
+                                        <rect key="frame" x="0.0" y="0.0" width="337.5" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="X6U-Tq-78d"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="18"/>
+                                        <state key="normal" title="Start Run Workout">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startRunWorkoutButtonTapped:" destination="Rrp-ry-ssW" eventType="touchUpInside" id="eBT-UC-nFP"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVx-Qb-VYU">
+                                        <rect key="frame" x="0.0" y="140" width="337.5" height="98.5"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="72"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehA-ei-ef8">
+                                        <rect key="frame" x="0.0" y="338.5" width="337.5" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="5Kn-cg-neD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="18"/>
+                                        <state key="normal" title="Finish and Save Workout">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="finishAndSaveWorkoutButtonTapped:" destination="Rrp-ry-ssW" eventType="touchUpInside" id="rSS-hu-bVW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="lVx-Qb-VYU" firstAttribute="width" secondItem="d5g-bj-DC5" secondAttribute="width" id="8TL-cm-nNl"/>
+                                    <constraint firstItem="ehA-ei-ef8" firstAttribute="width" secondItem="d5g-bj-DC5" secondAttribute="width" id="CDb-KZ-R9T"/>
+                                    <constraint firstItem="Sik-8I-CAx" firstAttribute="width" secondItem="d5g-bj-DC5" secondAttribute="width" id="Jj3-6s-nKZ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="d5g-bj-DC5" firstAttribute="centerX" secondItem="31O-kO-zrp" secondAttribute="centerX" id="6pG-3s-8Uq"/>
+                            <constraint firstItem="d5g-bj-DC5" firstAttribute="centerY" secondItem="31O-kO-zrp" secondAttribute="centerY" id="Nsi-TD-KjL"/>
+                            <constraint firstItem="d5g-bj-DC5" firstAttribute="width" secondItem="31O-kO-zrp" secondAttribute="width" multiplier="0.9" id="tbJ-55-iGH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="v5H-gM-9c7"/>
+                    </view>
+                    <connections>
+                        <outlet property="finishAndSaveWorkoutButton" destination="ehA-ei-ef8" id="Gxq-Dt-Byx"/>
+                        <outlet property="startRunWorkoutButton" destination="Sik-8I-CAx" id="9sA-L2-txM"/>
+                        <outlet property="timerTextLabel" destination="lVx-Qb-VYU" id="xj2-ji-Yas"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nyq-ld-5S1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4100" y="-132"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gear_icon" width="30" height="30"/>
+    </resources>
+</document>

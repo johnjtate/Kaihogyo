@@ -7,19 +7,90 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8729C5C5218A4D5300DA1298 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8729C5C4218A4D5300DA1298 /* CloudKit.framework */; };
 		873796A3218928B7004213CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873796A2218928B7004213CF /* AppDelegate.swift */; };
 		873796A8218928B7004213CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873796A6218928B7004213CF /* Main.storyboard */; };
 		873796AA218928B8004213CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 873796A9218928B8004213CF /* Assets.xcassets */; };
 		873796AD218928B8004213CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873796AB218928B8004213CF /* LaunchScreen.storyboard */; };
+		873796BA21892987004213CF /* QuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873796B921892987004213CF /* QuoteController.swift */; };
+		873796BC218929C6004213CF /* Quote+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873796BB218929C6004213CF /* Quote+Convenience.swift */; };
+		873796BF21892BCB004213CF /* Kaihogyo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 873796BD21892BCB004213CF /* Kaihogyo.xcdatamodeld */; };
+		873796C121892C53004213CF /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873796C021892C53004213CF /* Stack.swift */; };
+		873796C321893179004213CF /* QuoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873796C221893179004213CF /* QuoteVC.swift */; };
+		8738B1612193B947008A53EC /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8738B1602193B947008A53EC /* HealthKit.framework */; };
+		8767DADC2198B35C002548D9 /* FinePrintVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8767DADB2198B35C002548D9 /* FinePrintVC.swift */; };
+		876F6859218CB2B60028767D /* RaceListDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876F6858218CB2B60028767D /* RaceListDetailVC.swift */; };
+		876F685B218CDFA80028767D /* InspiredMasterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876F685A218CDFA80028767D /* InspiredMasterVC.swift */; };
+		876F685D218D0FA80028767D /* BeInspired.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 876F685C218D0FA80028767D /* BeInspired.storyboard */; };
+		876F685F218D11A70028767D /* FindARace.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 876F685E218D11A70028767D /* FindARace.storyboard */; };
+		876F6861218D14BD0028767D /* TrainingMasterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876F6860218D14BD0028767D /* TrainingMasterVC.swift */; };
+		876F6863218D14D50028767D /* TrainHard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 876F6862218D14D50028767D /* TrainHard.storyboard */; };
+		876F6EAB218A8A82002A8848 /* APIkeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 876F6EAA218A8A82002A8848 /* APIkeys.plist */; };
+		876F6EAD218A8AF1002A8848 /* RaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876F6EAC218A8AF1002A8848 /* RaceController.swift */; };
+		876F6EAF218A8B8E002A8848 /* Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876F6EAE218A8B8E002A8848 /* Race.swift */; };
+		877762B32190C90F00085F3A /* FirstMarathonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877762B22190C90F00085F3A /* FirstMarathonVC.swift */; };
+		877762B52190C93400085F3A /* MarathonMonksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877762B42190C93400085F3A /* MarathonMonksVC.swift */; };
+		877762B72190C95C00085F3A /* ModernMarathonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877762B62190C95C00085F3A /* ModernMarathonVC.swift */; };
+		87818E202195F54600E44626 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87818E1F2195F54600E44626 /* Workout.swift */; };
+		87818E222196025E00E44626 /* RunWorkoutSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87818E212196025E00E44626 /* RunWorkoutSession.swift */; };
+		87818E242196055500E44626 /* WorkoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87818E232196055500E44626 /* WorkoutController.swift */; };
+		87818E26219605EB00E44626 /* SetupHealthKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87818E25219605EB00E44626 /* SetupHealthKit.swift */; };
+		87818E2A2196402D00E44626 /* NewWorkoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87818E292196402D00E44626 /* NewWorkoutVC.swift */; };
+		87818E2C219640DC00E44626 /* WorkoutDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87818E2B219640DC00E44626 /* WorkoutDetailVC.swift */; };
+		8786F0EA218A0A0C007F43B0 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8786F0E9218A0A0C007F43B0 /* LoginVC.swift */; };
+		8786F0EC218A1FEB007F43B0 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8786F0EB218A1FEB007F43B0 /* TabBarController.swift */; };
+		8786F0F0218A299E007F43B0 /* CaesarDressing-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8786F0EE218A2921007F43B0 /* CaesarDressing-Regular.ttf */; };
+		8786F0F1218A29A5007F43B0 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8786F0EF218A292F007F43B0 /* OpenSans-Regular.ttf */; };
+		87F94D58218B67B70051037A /* APIkeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F94D57218B67B70051037A /* APIkeys.swift */; };
+		87F94D5A218B9A5D0051037A /* RaceSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F94D59218B9A5D0051037A /* RaceSearchVC.swift */; };
+		87F94D5C218BC4310051037A /* RaceListMasterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F94D5B218BC4310051037A /* RaceListMasterVC.swift */; };
+		87F94D5E218BC57F0051037A /* RaceMasterListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F94D5D218BC57F0051037A /* RaceMasterListCell.swift */; };
+		87F94D60218BD2970051037A /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F94D5F218BD2970051037A /* ActivityIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8729C5C2218A4D4D00DA1298 /* Kaihogyo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Kaihogyo.entitlements; sourceTree = "<group>"; };
+		8729C5C4218A4D5300DA1298 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		8737969F218928B7004213CF /* Kaihogyo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kaihogyo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		873796A2218928B7004213CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		873796A7218928B7004213CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		873796A9218928B8004213CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		873796AC218928B8004213CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873796AE218928B8004213CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		873796B921892987004213CF /* QuoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteController.swift; sourceTree = "<group>"; };
+		873796BB218929C6004213CF /* Quote+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quote+Convenience.swift"; sourceTree = "<group>"; };
+		873796BE21892BCB004213CF /* Quote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Quote.xcdatamodel; sourceTree = "<group>"; };
+		873796C021892C53004213CF /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		873796C221893179004213CF /* QuoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteVC.swift; sourceTree = "<group>"; };
+		8738B1602193B947008A53EC /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		8767DADB2198B35C002548D9 /* FinePrintVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinePrintVC.swift; sourceTree = "<group>"; };
+		876F6858218CB2B60028767D /* RaceListDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListDetailVC.swift; sourceTree = "<group>"; };
+		876F685A218CDFA80028767D /* InspiredMasterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspiredMasterVC.swift; sourceTree = "<group>"; };
+		876F685C218D0FA80028767D /* BeInspired.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BeInspired.storyboard; sourceTree = "<group>"; };
+		876F685E218D11A70028767D /* FindARace.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FindARace.storyboard; sourceTree = "<group>"; };
+		876F6860218D14BD0028767D /* TrainingMasterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingMasterVC.swift; sourceTree = "<group>"; };
+		876F6862218D14D50028767D /* TrainHard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TrainHard.storyboard; sourceTree = "<group>"; };
+		876F6EAA218A8A82002A8848 /* APIkeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = APIkeys.plist; sourceTree = "<group>"; };
+		876F6EAC218A8AF1002A8848 /* RaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceController.swift; sourceTree = "<group>"; };
+		876F6EAE218A8B8E002A8848 /* Race.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Race.swift; sourceTree = "<group>"; };
+		877762B22190C90F00085F3A /* FirstMarathonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstMarathonVC.swift; sourceTree = "<group>"; };
+		877762B42190C93400085F3A /* MarathonMonksVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarathonMonksVC.swift; sourceTree = "<group>"; };
+		877762B62190C95C00085F3A /* ModernMarathonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernMarathonVC.swift; sourceTree = "<group>"; };
+		87818E1F2195F54600E44626 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		87818E212196025E00E44626 /* RunWorkoutSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunWorkoutSession.swift; sourceTree = "<group>"; };
+		87818E232196055500E44626 /* WorkoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutController.swift; sourceTree = "<group>"; };
+		87818E25219605EB00E44626 /* SetupHealthKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupHealthKit.swift; sourceTree = "<group>"; };
+		87818E292196402D00E44626 /* NewWorkoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWorkoutVC.swift; sourceTree = "<group>"; };
+		87818E2B219640DC00E44626 /* WorkoutDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailVC.swift; sourceTree = "<group>"; };
+		8786F0E9218A0A0C007F43B0 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		8786F0EB218A1FEB007F43B0 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		8786F0EE218A2921007F43B0 /* CaesarDressing-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CaesarDressing-Regular.ttf"; sourceTree = "<group>"; };
+		8786F0EF218A292F007F43B0 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		87F94D57218B67B70051037A /* APIkeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIkeys.swift; sourceTree = "<group>"; };
+		87F94D59218B9A5D0051037A /* RaceSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceSearchVC.swift; sourceTree = "<group>"; };
+		87F94D5B218BC4310051037A /* RaceListMasterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceListMasterVC.swift; sourceTree = "<group>"; };
+		87F94D5D218BC57F0051037A /* RaceMasterListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceMasterListCell.swift; sourceTree = "<group>"; };
+		87F94D5F218BD2970051037A /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +98,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8729C5C5218A4D5300DA1298 /* CloudKit.framework in Frameworks */,
+				8738B1612193B947008A53EC /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8729C5C3218A4D5300DA1298 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8738B1602193B947008A53EC /* HealthKit.framework */,
+				8729C5C4218A4D5300DA1298 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		87379696218928B7004213CF = {
 			isa = PBXGroup;
 			children = (
 				873796A1218928B7004213CF /* Kaihogyo */,
 				873796A0218928B7004213CF /* Products */,
+				8729C5C3218A4D5300DA1298 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,41 +135,61 @@
 		873796A1218928B7004213CF /* Kaihogyo */ = {
 			isa = PBXGroup;
 			children = (
-				873796B4218928DE004213CF /* Model */,
-				873796B5218928E5004213CF /* Model Controller */,
-				873796B6218928ED004213CF /* View Controller */,
-				873796B7218928FE004213CF /* View */,
+				8729C5C2218A4D4D00DA1298 /* Kaihogyo.entitlements */,
+				873796B4218928DE004213CF /* Models */,
+				873796B5218928E5004213CF /* Model Controllers */,
+				8786F0E5218A09BF007F43B0 /* View Controllers--Find a Race */,
+				8786F0E6218A09C7007F43B0 /* View Controllers--Train Hard */,
+				873796B6218928ED004213CF /* View Controllers--Be Inspired */,
+				8786F0E8218A09D9007F43B0 /* View Controllers--Other */,
+				873796B7218928FE004213CF /* Views */,
+				8786F0ED218A277C007F43B0 /* Fonts */,
 				873796B82189290C004213CF /* Resources */,
 			);
 			path = Kaihogyo;
 			sourceTree = "<group>";
 		};
-		873796B4218928DE004213CF /* Model */ = {
+		873796B4218928DE004213CF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				873796BD21892BCB004213CF /* Kaihogyo.xcdatamodeld */,
+				873796BB218929C6004213CF /* Quote+Convenience.swift */,
+				876F6EAE218A8B8E002A8848 /* Race.swift */,
+				873796C021892C53004213CF /* Stack.swift */,
+				87818E1F2195F54600E44626 /* Workout.swift */,
+				87818E212196025E00E44626 /* RunWorkoutSession.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		873796B5218928E5004213CF /* Model Controller */ = {
+		873796B5218928E5004213CF /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				873796B921892987004213CF /* QuoteController.swift */,
+				876F6EAC218A8AF1002A8848 /* RaceController.swift */,
+				87818E232196055500E44626 /* WorkoutController.swift */,
 			);
-			path = "Model Controller";
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
-		873796B6218928ED004213CF /* View Controller */ = {
+		873796B6218928ED004213CF /* View Controllers--Be Inspired */ = {
 			isa = PBXGroup;
 			children = (
+				876F685A218CDFA80028767D /* InspiredMasterVC.swift */,
+				873796C221893179004213CF /* QuoteVC.swift */,
+				877762B22190C90F00085F3A /* FirstMarathonVC.swift */,
+				877762B42190C93400085F3A /* MarathonMonksVC.swift */,
+				877762B62190C95C00085F3A /* ModernMarathonVC.swift */,
 			);
-			path = "View Controller";
+			path = "View Controllers--Be Inspired";
 			sourceTree = "<group>";
 		};
-		873796B7218928FE004213CF /* View */ = {
+		873796B7218928FE004213CF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				87F94D5D218BC57F0051037A /* RaceMasterListCell.swift */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		873796B82189290C004213CF /* Resources */ = {
@@ -94,11 +197,57 @@
 			children = (
 				873796A2218928B7004213CF /* AppDelegate.swift */,
 				873796A6218928B7004213CF /* Main.storyboard */,
+				876F685E218D11A70028767D /* FindARace.storyboard */,
+				876F6862218D14D50028767D /* TrainHard.storyboard */,
+				876F685C218D0FA80028767D /* BeInspired.storyboard */,
 				873796A9218928B8004213CF /* Assets.xcassets */,
 				873796AB218928B8004213CF /* LaunchScreen.storyboard */,
 				873796AE218928B8004213CF /* Info.plist */,
+				876F6EAA218A8A82002A8848 /* APIkeys.plist */,
+				87F94D57218B67B70051037A /* APIkeys.swift */,
+				87F94D5F218BD2970051037A /* ActivityIndicator.swift */,
+				87818E25219605EB00E44626 /* SetupHealthKit.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		8786F0E5218A09BF007F43B0 /* View Controllers--Find a Race */ = {
+			isa = PBXGroup;
+			children = (
+				87F94D59218B9A5D0051037A /* RaceSearchVC.swift */,
+				87F94D5B218BC4310051037A /* RaceListMasterVC.swift */,
+				876F6858218CB2B60028767D /* RaceListDetailVC.swift */,
+			);
+			path = "View Controllers--Find a Race";
+			sourceTree = "<group>";
+		};
+		8786F0E6218A09C7007F43B0 /* View Controllers--Train Hard */ = {
+			isa = PBXGroup;
+			children = (
+				876F6860218D14BD0028767D /* TrainingMasterVC.swift */,
+				87818E292196402D00E44626 /* NewWorkoutVC.swift */,
+				87818E2B219640DC00E44626 /* WorkoutDetailVC.swift */,
+			);
+			path = "View Controllers--Train Hard";
+			sourceTree = "<group>";
+		};
+		8786F0E8218A09D9007F43B0 /* View Controllers--Other */ = {
+			isa = PBXGroup;
+			children = (
+				8786F0E9218A0A0C007F43B0 /* LoginVC.swift */,
+				8786F0EB218A1FEB007F43B0 /* TabBarController.swift */,
+				8767DADB2198B35C002548D9 /* FinePrintVC.swift */,
+			);
+			path = "View Controllers--Other";
+			sourceTree = "<group>";
+		};
+		8786F0ED218A277C007F43B0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8786F0EE218A2921007F43B0 /* CaesarDressing-Regular.ttf */,
+				8786F0EF218A292F007F43B0 /* OpenSans-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +282,17 @@
 				TargetAttributes = {
 					8737969E218928B7004213CF = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -159,9 +319,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				876F6863218D14D50028767D /* TrainHard.storyboard in Resources */,
+				876F685F218D11A70028767D /* FindARace.storyboard in Resources */,
+				8786F0F1218A29A5007F43B0 /* OpenSans-Regular.ttf in Resources */,
 				873796AD218928B8004213CF /* LaunchScreen.storyboard in Resources */,
+				876F685D218D0FA80028767D /* BeInspired.storyboard in Resources */,
 				873796AA218928B8004213CF /* Assets.xcassets in Resources */,
+				876F6EAB218A8A82002A8848 /* APIkeys.plist in Resources */,
 				873796A8218928B7004213CF /* Main.storyboard in Resources */,
+				8786F0F0218A299E007F43B0 /* CaesarDressing-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,7 +338,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87F94D58218B67B70051037A /* APIkeys.swift in Sources */,
+				87F94D60218BD2970051037A /* ActivityIndicator.swift in Sources */,
+				873796BF21892BCB004213CF /* Kaihogyo.xcdatamodeld in Sources */,
+				877762B52190C93400085F3A /* MarathonMonksVC.swift in Sources */,
+				873796C121892C53004213CF /* Stack.swift in Sources */,
+				876F6859218CB2B60028767D /* RaceListDetailVC.swift in Sources */,
+				87818E26219605EB00E44626 /* SetupHealthKit.swift in Sources */,
+				876F6EAD218A8AF1002A8848 /* RaceController.swift in Sources */,
+				87818E2C219640DC00E44626 /* WorkoutDetailVC.swift in Sources */,
+				87818E2A2196402D00E44626 /* NewWorkoutVC.swift in Sources */,
+				8786F0EA218A0A0C007F43B0 /* LoginVC.swift in Sources */,
+				876F6EAF218A8B8E002A8848 /* Race.swift in Sources */,
+				873796BA21892987004213CF /* QuoteController.swift in Sources */,
+				873796C321893179004213CF /* QuoteVC.swift in Sources */,
+				873796BC218929C6004213CF /* Quote+Convenience.swift in Sources */,
 				873796A3218928B7004213CF /* AppDelegate.swift in Sources */,
+				877762B72190C95C00085F3A /* ModernMarathonVC.swift in Sources */,
+				876F6861218D14BD0028767D /* TrainingMasterVC.swift in Sources */,
+				87818E242196055500E44626 /* WorkoutController.swift in Sources */,
+				87F94D5C218BC4310051037A /* RaceListMasterVC.swift in Sources */,
+				8767DADC2198B35C002548D9 /* FinePrintVC.swift in Sources */,
+				876F685B218CDFA80028767D /* InspiredMasterVC.swift in Sources */,
+				877762B32190C90F00085F3A /* FirstMarathonVC.swift in Sources */,
+				8786F0EC218A1FEB007F43B0 /* TabBarController.swift in Sources */,
+				87818E202195F54600E44626 /* Workout.swift in Sources */,
+				87818E222196025E00E44626 /* RunWorkoutSession.swift in Sources */,
+				87F94D5E218BC57F0051037A /* RaceMasterListCell.swift in Sources */,
+				87F94D5A218B9A5D0051037A /* RaceSearchVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +511,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Kaihogyo/Kaihogyo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 74SYWHWN72;
 				INFOPLIST_FILE = "$(SRCROOT)/Kaihogyo/Resources/Info.plist";
@@ -336,6 +530,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Kaihogyo/Kaihogyo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 74SYWHWN72;
 				INFOPLIST_FILE = "$(SRCROOT)/Kaihogyo/Resources/Info.plist";
@@ -372,6 +567,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		873796BD21892BCB004213CF /* Kaihogyo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				873796BE21892BCB004213CF /* Quote.xcdatamodel */,
+			);
+			currentVersion = 873796BE21892BCB004213CF /* Quote.xcdatamodel */;
+			path = Kaihogyo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 87379697218928B7004213CF /* Project object */;
 }
