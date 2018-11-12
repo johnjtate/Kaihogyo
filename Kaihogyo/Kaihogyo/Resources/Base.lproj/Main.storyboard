@@ -135,18 +135,18 @@
                                             <action selector="privacyPolicyButtonTapped:" destination="F69-GQ-Lab" eventType="touchUpInside" id="0Hp-jw-YFw"/>
                                         </connections>
                                     </button>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="PsQ-sa-B6M">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PsQ-sa-B6M">
                                         <rect key="frame" x="0.0" y="50" width="288" height="458"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <mutableString key="text">Kaihogyo Terms of Service
-November 11, 2018
+November 12, 2018
 
 Upon use of the Kaihogyo application, the user hereby agrees to the Terms of Service herein.  
 
 Disclaimer
 Training for a marathon or other footrace is an inherently dangerous activity.  By performing any exercise activities, you are performing them at your own risk.  You should consult your physician or other health care professional before starting a fitness program, including training for a marathon or other footrace using the Kaihogyo app.  Kaihogyo will not be responsible or liable for any injury or harm you sustain as a result of training using this app.  Do not begin training if your physician or health care provider advises against it.  If you experience pain, faintness, dizziness, or shortness of breath at any time while exercising, you should stop immediately.  
 
-This application is provided for entertainment purposes only.  The developer is not a licensed health care provider, and you should not reply on the application as a substitute for or replacement for professional medical advice, diagnosis, or treatment or advice from a distance running expert.  
+This application is provided for entertainment purposes only.  The developer is not a licensed health care provider, and you should not rely on the application as a substitute for or replacement for professional medical advice, diagnosis, or treatment or advice from a distance running expert.  
   
 Acknowledgements
 The following icons in the Kaihogyo application are used under license as indicated below:
