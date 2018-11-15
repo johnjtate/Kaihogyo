@@ -10,21 +10,14 @@ import UIKit
 
 class ModernMarathonVC: UIViewController {
 
+    // MARK: - IBOutlets
+    @IBOutlet weak var modernMarathonImageView: UIImageView!
+    
+    // MARK: - Lifecycle Functions
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        modernMarathonImageView.layer.cornerRadius = 10.0
+        modernMarathonImageView.layer.masksToBounds = true
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

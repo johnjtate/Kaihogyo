@@ -39,7 +39,7 @@
                                     <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJ9-4j-qbd">
                                         <rect key="frame" x="0.0" y="0.0" width="310" height="118.5"/>
                                         <fontDescription key="fontDescription" name="CaesarDressing-Regular" family="Caesar Dressing" pointSize="20"/>
-                                        <state key="normal" image="mountain_button" backgroundImage="mountain_button">
+                                        <state key="normal" backgroundImage="mountain_button">
                                             <color key="titleColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -49,7 +49,7 @@
                                     <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Art-9M-ZXz">
                                         <rect key="frame" x="0.0" y="123.5" width="310" height="118.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" image="parthenon_button">
+                                        <state key="normal" backgroundImage="parthenon_button">
                                             <color key="titleColor" red="1" green="0.14347468799999999" blue="0.1014017243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -203,6 +203,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AxR-0H-uTc"/>
                     </view>
+                    <connections>
+                        <outlet property="modernMarathonImageView" destination="hvd-hH-7qT" id="BoD-Xx-bVn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xhb-kV-f8b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -254,6 +257,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3RZ-fM-nns"/>
                     </view>
+                    <connections>
+                        <outlet property="japaneseMountainImageView" destination="D2C-pj-wbl" id="eJp-Lu-afS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mGT-Dp-ZLp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
